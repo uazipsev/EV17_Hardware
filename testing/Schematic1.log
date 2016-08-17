@@ -1,0 +1,4 @@
+Circuit: * Schematics Netlist *
+
+Fatal Error: Unknown subcircuit called in:
+   x_u3a $n_0004 $n_0004 $n_0004 $n_0005 $n_0001 $n_0002 $g_dpwr $g_dgnd  7474 params:  io_level=0 mntymxdly=0

@@ -1,0 +1,90 @@
+Partlist
+
+Exported from Charger_PCB.sch at 4/21/2016 6:51 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value           Device                  Package                  Library             Sheet
+
+C1       0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C2       0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C3       0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C4       10UF            CAP-POL_10UF_16V        EIA3216-16V              FSAE Electric       1
+C5       0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C6       0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C7       0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C8       1UF             CAP_1UF_50V             1206                     FSAE Electric       1
+C9       100UF           CAP-POL_100UF_50V_SMD   PANASONIC-G              FSAE Electric       1
+C10      0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C11      10UF            CAP-POL_10UF_16V        EIA3216-16V              FSAE Electric       1
+C12      100UF           CAP-POL_100UF_50V_SMD   PANASONIC-G              FSAE Electric       1
+C13      0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C14      10UF            CAP-POL_10UF_16V        EIA3216-16V              FSAE Electric       1
+C15      1UF             CAP_1UF_50V_0805        0805                     FSAE Electric       1
+C16      1UF             CAP_1UF_50V_0805        0805                     FSAE Electric       1
+C17      0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       1
+C18      0.1UF           CAP_0.1UF_50V_0805      0805                     FSAE Electric       2
+C19      10UF            CAP-POL_10UF_16V        EIA3216-16V              FSAE Electric       1
+CASE1                    DMB-4772_A              DMB-4772-A               FSAE Electric       1
+D1       GREEN           LED_GREEN               CHIP_LED0805             FSAE Electric       1
+D2       GREEN           LED_GREEN               CHIP_LED0805             FSAE Electric       2
+D3       AMBER           LED_AMBER               CHIP_LED0805             FSAE Electric       1
+D4       RED             LED_RED                 CHIP_LED0805             FSAE Electric       1
+D5       RF201L2STE25    DIODE_RF201L2STE25      SMA                      FSAE Electric       1
+D6       GREEN           LED_GREEN               CHIP_LED0805             FSAE Electric       1
+D7       GREEN           LED_GREEN               CHIP_LED0805             FSAE Electric       1
+D8       GREEN           LED_GREEN               CHIP_LED0805             FSAE Electric       1
+D9       GREEN           LED_GREEN               CHIP_LED0805             FSAE Electric       1
+D10      RED             LED_RED                 CHIP_LED0805             FSAE Electric       1
+J1       M4_1X4_LOCK     M4_1X4_LOCK             MOLEX_1X4                FSAE Electric       1
+J2       M2X5_IDC        M2X5_IDC                3020-10-0100-00          FSAE Electric       1
+JP3                      M05LOCK_LONGPADS        1X05_LOCK_LONGPADS       SparkFun-Connectors 1
+JP6                      JUMPER-2SMD-NO          SJ_2S-NO                 SparkFun-Passives   2
+K5       OJ-SS-124LMH2   OJ-SS-124LMH2           OJ-SS-124LMH2            FSAE Electric       2
+K6       OJ-SS-124LMH2   OJ-SS-124LMH2           OJ-SS-124LMH2            FSAE Electric       2
+K7       OJ-SS-124LMH2   OJ-SS-124LMH2           OJ-SS-124LMH2            FSAE Electric       2
+K8       OJ-SS-124LMH2   OJ-SS-124LMH2           OJ-SS-124LMH2            FSAE Electric       2
+Q1       NUD3160LT1G     NUD3160LT1G             SOT23                    FSAE Electric       2
+Q2       NUD3160LT1G     NUD3160LT1G             SOT23                    FSAE Electric       2
+Q3       NUD3160LT1G     NUD3160LT1G             SOT23                    FSAE Electric       2
+Q4       BSS123          MOS-N_BSS123            SOT23                    FSAE Electric       2
+Q5       BSS123          MOS-N_BSS123            SOT23                    FSAE Electric       2
+Q6       BSS123          MOS-N_BSS123            SOT23                    FSAE Electric       2
+Q7       BSS123          MOS-N_BSS123            SOT23                    FSAE Electric       2
+Q8       NUD3160LT1G     NUD3160LT1G             SOT23                    FSAE Electric       2
+Q9       BSS123          MOS-N_BSS123            SOT23                    FSAE Electric       1
+R1       1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R2       10K             RN-4_10K                MNR14                    FSAE Electric       2
+R3       1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R4       1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R5       1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R6       1K              RN-4_1K                 MNR14                    FSAE Electric       2
+R7       1K              RES_1K_1%_0805          0805                     FSAE Electric       2
+R8       10K             RES_10K_1%_0805         0805                     FSAE Electric       1
+R9       10K             RES_10K_1%_0805         0805                     FSAE Electric       2
+R10      1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R11      16.2K           RES_16.2K_1%_0805       0805                     FSAE Electric       1
+R12      1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R13      1K              RN-4_1K                 MNR14                    FSAE Electric       2
+R14      10K             RES_10K_1%_0805         0805                     FSAE Electric       2
+R15      1k              RES_1K_1%_0805          0805                     FSAE Electric       1
+R16      1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R17      10K             RN-4_10K                MNR14                    FSAE Electric       2
+R18      120             RES_120_1%_0805         0805                     FSAE Electric       1
+R19      383K            RES_383K_1%_0805        0805                     FSAE Electric       1
+R20      1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+R21      1K              RES_1K_1%_0805          0805                     FSAE Electric       1
+SJ2                      JUMPER-PAD-2-NOYES_SILK PAD-JUMPER-2-NO_YES_SILK SparkFun-Passives   1
+U1       ISO7221         ISO7221                 SO-8                     FSAE Electric       1
+U2       CD74HC4052PWR   CD74HC4052PWR           TSSOP-16                 FSAE Electric       1
+U3       PTN78060HAH     PTN78060HAH             PTN78060HAH              FSAE Electric       1
+U4       SN74LVC2G241    SN74LVC2G241            VFSOP-8                  FSAE Electric       1
+U5       APXW003A0X3-SRZ APXW003A0X3-SRZ         APXW003A0X3-SRZ          FSAE Electric       1
+U6       SN75HVD08DRSOIC SN75HVD08DRSOIC         SO-8                     FSAE Electric       1
+U7       74LVC8T245      74LVC8T245              TSSOP-24                 FSAE Electric       1
+U8       PIC18F45K22     PIC18F45K22             TQFP-44                  FSAE Electric       1
+U9       NC7S14M5X       NC7S14M5X               SOT23-5                  FSAE Electric       2
+U10      NCP1117DT_3.3   NCP1117DT_3.3           DPAK                     FSAE Electric       1
+U11      FT230X          FT230X                  SSOP-16                  FSAE Electric       1

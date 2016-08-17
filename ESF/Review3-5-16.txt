@@ -1,0 +1,38 @@
+1.	Section 1: did you change design post packaging where you now have (5) sections with 14S3P, resulting in 70S3P, confusion based on Fig 52 
+2.	Fig 2 does not match anything else in this document, I doubt you intend to route 3 wires/service plugs between each segment 
+2.1.2	and fig8, precharge coil drive shown in parallel with –AIR.. Needs to be discretely manipulated. Shutdown circuit does not appear to be fused. 
+3.	Figure 8 how many amps do you predict will flow through your precharge resistor/fuse? 
+4.	Fig 11 and 12, please explain the difference between the inertia switch and crash sensor, maybe some labels were mixed up on your figures. 
+5.	Table 2.3 How does your IMD threshold level satisfy EV5.5.3? how does the output of IMD interface to shutdown circuit…if it drives a relay how is back EMF addressed? 
+6.	Figure 2.2.2 IMD HV+/- need to be fused 
+7.	Table 2.3.2 what is the range of operation for your crash senor, will a 1g impact open the circuit? How much current is required to power this device, how does it work? 
+8.	2.4.1 why is the current set point 16.6A, how did you determine this level? 
+9.	2.4.2 Where is your reset button for plausibility circuit, does it comply with EV5.1.4, does driver have access to it? 
+10.	Fig 22 does not provide enough detail on the interlock, please provide a mechanization diagram, rather than schematic…something easy to comprehend 
+11.	Fig 24 What does v+ and v- represent? Is there a HV fuse? It is unclear how the TSAL enable circuit interfaces with LED driver portion. 
+12.	2.8.1 Missing spec sheet in appendix for TSMP resistor…what power rating have you specified for a potential shorted TSMP? 
+13.	2.9.1 conflict with schematic, it depicts a 2kohm precharge resistor, but text states (2) 150ohm. Does the precharge relay ever turn off? Perhaps after Main + relay has been enabled? Side note: the purpose of precharge is to limit current into the capacitors of the traction system, as they appear, initially as a short due to low ESR (equivalent series resistance)…without current limit resistor(precharge) in series, these capacitors would enjoy a rapid current inrush, and perhaps be damaged. 
+14.	2.9.2 includes template instructions, remove please… 
+15.	2.9.2 Please append schematic with functional blocks explaining what each part of circuit does, what does LED7 indicate, what level of voltage is comparator looking for, how does it translate to HV bus value? 
+16.	Figure 32 shows a precharge plot, please explain the contents of formula, not clear what resistance is used…previous text stated (2) 150 ohm resistors 
+17.	2.10.1 as sentence reads “It works by being a normally closed relay shorting the output of the accumulators and only opens when the precharge system activates and main AIRs open.” Perhaps the word “accumulators” should be changed with Motor Controller capacitors. Perhaps the main AIRs are “closed” when this circuit is open? 
+18.	Fig 37 is unclear how precharge and main neg are discreetly controlled. Discharge relay is depicted as NO…is it supposed to be NC? 
+19.	2.12.1 is brake apply part of the startup process, how is EV4.10.2 satisfied? 
+20.	3.1.3 your description indicates a 12S3P configuration, but figure 43 shows 3 discrete 12S1P per segment. 
+21.	3.1.3 if cells are clamped back to back, how is EV6.1.4 satisfied? 
+22.	Figure 44 does not show maintenance plugs in schematic, provide more detail, how are they removed? 
+23.	3.1.4 how many temperature sensors are used, how does this satisfy EV3.6.6? 
+24.	3.1.5 “At a minimum cell voltage of 3.8 and a maximum of 4.2, the BMS will take actions to bypass the affected cell(s)”..what do you mean by “bypass”? why would you bypass a cell at 3.8vdc? How long does this condition have to exist before you act on it? Is a zero volt cell, also consider an open sense lead? How are the sense leads fused? 
+25.	3.1.5 the schematic provided is not legible by zooming in, extract the subject areas of topic and elaborate, a mechanization diagram would be more helpful. 
+26.	3.1.6 you depict monitoring of the 1st and last AIR.. are there more in your design? 
+27.	3.1.6 you still have instructions from template, these need to be removed. 
+28.	3.1.6 only see provisions for optically isolated TSAL, where do you provide accumulator indicator? 
+29.	3.1.7 this area looks to comprehend more info on the tractions side wires, what terminals are used and how you hoop convey energy to the AIR and out of the accumulator to the inverter. 
+30.	3.1.9 looks like the fuse needs to be mounted somehow, don’t consider the fuse to be connected/bolted to a floating wire. This would not be acceptable. 
+31.	3.1.10 show a detailed diagram and include all mentioned attributes, as well as, your Estop per EV8.3.6. 
+32.	3.1.11 this configuration of cells does not match anything in this presentation, what is your final design? 
+33.	4.1 Incomplete… there is documentation on the meter, you should be able to show how this is integrated into your system, fusing, power, ect. 
+34.	5.1.1 how is EV2.2.7 satisfied? 
+35.	5.1.1 what gage size is the wire fed to motor? How are wire shields addressed when HV wires are attached to motor? How are wire shields addressed when HV wires are attached to AIR’s? 
+36.	6.1.2 good description, please show more detail on this, photos work, looking to comprehend strain relief/service loop. 
+37.	11 appendix needs some general cleanup, remove unnecessary content 

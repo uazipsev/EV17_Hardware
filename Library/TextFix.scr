@@ -1,0 +1,11 @@
+#FSAE PCB silk setup :)
+#By: Richard Johnson
+
+GRID MIL (>0 0);
+GROUP ALL (>0 0);
+SMASH (>0 0);
+DISPLAY = TNAMES BNAMES;
+GROUP ALL;
+CHANGE FONT VECTOR (>0 0);
+CHANGE RATIO 20 (>0 0);
+CHANGE SIZE 50 (>0 0);

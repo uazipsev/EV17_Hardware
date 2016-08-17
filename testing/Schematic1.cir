@@ -1,0 +1,22 @@
+* C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Feb 02 02:36:33 2014
+
+
+
+** Analysis setup **
+.tran 0s 10s 0 0.5s
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+.INC "Schematic1.als"
+
+
+.probe
+
+
+.END

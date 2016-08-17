@@ -1,0 +1,115 @@
+Partlist
+
+Exported from MCS.sch at 4/27/2016 6:43 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value             Device                Package            Library                    Sheet
+
++3V      GREEN             LED_GREEN             CHIP_LED0805       FSAE Electric              1
++5V      GREEN             LED_GREEN             CHIP_LED0805       FSAE Electric              2
++9V      GREEN             LED_GREEN             CHIP_LED0805       FSAE Electric              1
+C1       10UF              CAP-POL_10UF_60V      EIA7343            FSAE Electric              1
+C2       10UF              CAP-POL_10UF_60V      EIA7343            FSAE Electric              1
+C3       0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C4       10UF              CAP-POL_10UF_16V      EIA3216-16V        FSAE Electric              2
+C5       0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              2
+C6       0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C7       10UF              CAP-POL_10UF_16V      EIA3216-16V        FSAE Electric              1
+C8       10UF              CAP-POL_10UF_16V      EIA3216-16V        FSAE Electric              1
+C9       0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C10      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C11      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C12      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C13      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C14      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C15      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C16      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              1
+C17      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              2
+C18      0.1uF             CAP_0.1UF_50V_0805    0805               FSAE Electric              2
+C19      10UF              CAP-POL_10UF_16V      EIA3216-16V        FSAE Electric              1
+C20      10UF              CAP-POL_10UF_16V      EIA3216-16V        FSAE Electric              1
+C21      12PF              CAP_12PF_50V_0805     0805               FSAE Electric              1
+C22      12PF              CAP_12PF_50V_0805     0805               FSAE Electric              1
+D1       S1B               DIODE_S1B             SMA                FSAE Electric              1
+D2       11V               DIODE-ZENER_11V       SOD-123            FSAE Electric              1
+D5       AMBER             LED_AMBER             CHIP_LED0805       FSAE Electric              1
+J1                         M05LOCK_LONGPADS      1X05_LOCK_LONGPADS SparkFun-Connectors        1
+J3       36638NEW          36638NEW              36638-M            FSAE Electric              1
+JP1      FTDI_DEVICE       FTDI_DEVICE           FTDI_DEVICE_SIDE   SparkFun-Connectors        1
+K1       TQ2-2M-24V        TQ2-2M-24V            TQ2-2M-24V         FSAE Electric              1
+K2       TQ2-2M-24V        TQ2-2M-24V            TQ2-2M-24V         FSAE Electric              2
+L1       L_FB_2A           L_FB_2A               0805               FSAE Electric              1
+L2       L_FB_2A           L_FB_2A               0805               FSAE Electric              1
+L3       L_FB_2A           L_FB_2A               0805               FSAE Electric              1
+NTC                        RESISTOR0805-RES      0805               SparkFun-Passives          1
+Q1       NUD3160LT1G       NUD3160LT1G           SOT23              FSAE Electric              2
+Q2       BSS123            MOS-N_BSS123          SOT23              FSAE Electric              2
+Q3       2N7002DW-7-F      2N7002DW-7-F          SOT-363            FSAE Electric              1
+Q4       BSS123            MOS-N_BSS123          SOT23              FSAE Electric              2
+Q5       2N7002DW-7-F      2N7002DW-7-F          SOT-363            FSAE Electric              1
+Q6       2N7002DW-7-F      2N7002DW-7-F          SOT-363            FSAE Electric              1
+Q7       SI2309CDS         MOS-P_SI2309CDS       SOT23              FSAE Electric              1
+Q8       SI2309CDS         MOS-P_SI2309CDS       SOT23              FSAE Electric              1
+Q9       NUD3160LT1G       NUD3160LT1G           SOT23              FSAE Electric              1
+Q10      BSS123            MOS-N_BSS123          SOT23              FSAE Electric              1
+R1       10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R2       1k                RES_1K_1%_0805        0805               FSAE Electric              2
+R3       120               RES_120_1%_0805       0805               FSAE Electric              2
+R4       10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R5       1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R6       100k              RES_1K_1%_0805        0805               FSAE Eletric               1
+R7       10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R8       10k               RES_10K_1%_0805       0805               FSAE Electric              1
+R9       10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R10      10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R11      10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R12      10k               RES_10K_1%_0805       0805               FSAE Electric              2
+R13      1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R14      1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R15      1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R16      10k               RES_10K_1%_0805       0805               FSAE Electric              1
+R17      1K                RES_1K_1%_0805        0805               FSAE Eletric               1
+R18      1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R19      1k                RES_1K_1%_0805        0805               FSAE Electric              2
+R20      383k              RES_383K_1%_0805      0805               FSAE Eletric               1
+R21      1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R22      1.2k              RES_1.2K_1%_0805      0805               FSAE Electric              1
+R23      499               RES_499_1%_0805       0805               FSAE Electric              1
+R24      499               RES_499_1%_0805       0805               FSAE Electric              1
+R25      499               RES_499_1%_0805       0805               FSAE Electric              1
+R26      10k               RES_10K_1%_0805       0805               FSAE Electric              1
+R27      10k               RES_10K_1%_0805       0805               FSAE Electric              1N
+R28      10k               RES_10K_1%_0805       0805               FSAE Electric              1
+R29      1k                RES_1K_1%_0805        0805               FSAE Electric              1
+R30      RN-4_1K           RN-4_1K               MNR14              FSAE Electric              1
+R31      120               RES_120_1%_0805       0805               FSAE Electric              1
+R32      10k               RES_10K_1%_0805       0805               FSAE Electric              1
+R33      10k               RES_10K_1%_0805       0805               FSAE Electric              1
+RX1      RED               LED_RED               CHIP_LED0805       FSAE Electric              1
+RX2      RED               LED_RED               CHIP_LED0805       FSAE Electric              1
+S2       ts                SWITCH-MOMENTARY-2PTH TACTILE-PTH        SparkFun-Electromechanical 1
+SJ1      SJ-NO             SOLDERJUMPERNO        SJ_2S-NO           SparkFun-Passives          1
+TP1      TP                TP                    0603               FSAE Electric              2
+TP2      TP                TP                    0603               FSAE Electric              2
+TP3      TP                TP                    0603               FSAE Electric              2
+TP4      TP                TP                    0603               FSAE Electric              2
+TP5      TP                TP                    0603               FSAE Electric              2
+TP6      TP                TP                    0603               FSAE Electric              2
+TX1      GREEN             LED_GREEN             CHIP_LED0805       FSAE Electric              1
+TX2      GREEN             LED_GREEN             CHIP_LED0805       FSAE Electric              1
+U1       DSPIC33FJ128GP804 DSPIC33FJ128GP804     TQFP-44            FSAE Electric              1
+U2       SN75HVD08DRMSOP   SN75HVD08DRMSOP       MSOP-8             FSAE Electric              1
+U3       MCP4725           MCP4725               SOT23-6            FSAE Electric              2
+U4       MCP4725           MCP4725               SOT23-6            FSAE Electric              2
+U5       PTN78060HAH       PTN78060HAH           PTN78060HAH        FSAE Electric              1
+U6       OPA344            OPA344                SOT23-5            FSAE Electric              2
+U7       OPA344            OPA344                SOT23-5            FSAE Electric              2
+U8       NCP1117DT_3.3     NCP1117DT_3.3         DPAK               FSAE Electric              1
+U9       MAX823TEUK+T_3.08 MAX823TEUK+T_3.08     SOT23-5            FSAE Electric              1
+U10      NCV7805BDTRKG     NCV7805BDTRKG         DPAK               FSAE Electric              1
+U11      ADM3101E          ADM3101E              SSOP-16            FSAE Electric              1
+V1       10.8V             VARISTOR_10.8V        0805               FSAE Electric              1
+Y1       12Mhz             CRYSTAL5X3            CRYSTAL-SMD-5X3    SparkFun-FreqCtrl          1

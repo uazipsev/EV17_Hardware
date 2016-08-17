@@ -1,0 +1,30 @@
+#usage "<b>Count Pads, Vias, Smds and Holes of a board</b>\n"
+       "<p>"
+       "<author>Author: support@cadsoft.de</author>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+//int i, j, k, h, l, s ;
+//i = j = k = h = l = 0;
+string saved_visible_layers[], textorientation, h, cmd;
+
+if (board) {
+board(B) {
+    cmd += "grid mil;\n";
+	cmd += "display none tOrigin bOrigin;\n";
+	cmd += "group all;\n";
+	cmd += "smash (>0 0);\n";
+	cmd += "display last;\n";
+	cmd += "display none tNames bNames;\n";
+	cmd += "group all;\n";
+	cmd += "change font vector (>0 0);\n";
+	cmd += "change ratio 8 (>0 0);\n";
+	cmd += "change size 35 (>0 0);\n";
+	cmd += "display last;\n";
+ }
+}
+
+else {
+   dlgMessageBox("\n    Start this ULP in a Board    \n");
+   exit (0);
+ }

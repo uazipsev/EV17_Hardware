@@ -1,0 +1,49 @@
+Partlist
+
+Exported from TSAL_3_5_16.brd at 4/21/2016 5:39 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package      Library       Position (inch)       Orientation
+
+C1       1uF            0805@1       FSAE Electric (0.78181102 0.40614961) R270
+C2       1uF            0805@1       FSAE Electric (0.69568504 0.23773228) R90
+C3       22uF           0805@1       FSAE Electric (0.825 0.18)          MR0
+C4       1uF            0805@1       FSAE Electric (1.16074803 0.35380315) MR270
+C5       2.2 uF         0603@1       FSAE Electric (1.56507874 0.31956693) R90
+C6       2.2uF          0603@1       FSAE Electric (1.16594488 0.32531496) R90
+D1       DIODE-ZENERSMB SMB-DIODE    FSAE Electric (0.4454252 0.28230709) R90
+D2       TVS            DO-214AC     FSAE Electric (0.59837008 0.28530709) R90
+D3       LED_TSALLED    LED_TSAL     FSAE Electric (1.565 0.55)          R0
+D4       LED_TSALLED    LED_TSAL     FSAE Electric (1.765 0.05)          R0
+D5       LED_TSALLED    LED_TSAL     FSAE Electric (1.365 0.05)          R0
+D6       LED_TSALLED    LED_TSAL     FSAE Electric (0.965 0.05)          R0
+D7       LED_TSALLED    LED_TSAL     FSAE Electric (0.565 0.05)          R0
+D8       B340A          SMA-DIODE    FSAE Electric (1.81944882 0.34074803) R270
+D9       LED_TSALLED    LED_TSAL     FSAE Electric (0.565 0.55)          R0
+D10      LED_TSALLED    LED_TSAL     FSAE Electric (0.965 0.55)          R0
+D11      LED_TSALLED    LED_TSAL     FSAE Electric (1.365 0.55)          R0
+D12      LED_TSALLED    LED_TSAL     FSAE Electric (1.165 0.55)          R0
+D13      LED_TSALLED    LED_TSAL     FSAE Electric (1.765 0.55)          R0
+D14      LED_TSALLED    LED_TSAL     FSAE Electric (1.565 0.05)          R0
+D15      B340A          SMA-DIODE    FSAE Electric (1.4146063 0.34062992) R270
+D16      LED_TSALLED    LED_TSAL     FSAE Electric (1.165 0.05)          R0
+D17      LED_TSALLED    LED_TSAL     FSAE Electric (0.765 0.05)          R0
+D18      LED_TSALLED    LED_TSAL     FSAE Electric (0.365 0.05)          R0
+D19      LED_TSALLED    LED_TSAL     FSAE Electric (0.365 0.55)          R180
+D20      LED_TSALLED    LED_TSAL     FSAE Electric (0.765 0.55)          R0
+IC1      LM555D         SO08         FSAE Electric (0.96795276 0.35325197) MR90
+L1       33uH           1007         FSAE Electric (1.68220472 0.45704724) R270
+L2       33uH           1007         FSAE Electric (1.28370079 0.44909449) R270
+POT1     22AR100KLFTR   22AR100KLFTR FSAE Electric (1.43580315 0.24681102) MR0
+R1       2k             0805@1       FSAE Electric (1.085 0.18)          MR180
+R2       10k            0805@1       FSAE Electric (0.955 0.18)          MR180
+R4       10k            0805@1       FSAE Electric (1.34 0.4)            MR90
+R5       10k            0805@1       FSAE Electric (1.55582677 0.26927559) MR270
+R7       499            0603@1       FSAE Electric (1.27897638 0.18519685) R0
+R8       499            0603@1       FSAE Electric (1.68511811 0.18007874) R0
+U1       NCV7805BDTRKG  DPAK         FSAE Electric (0.55689764 0.33707087) MR90
+U2       AL8805WS       SOT23-5      FSAE Electric (1.68464567 0.32185039) R180
+U3       AL8805WS       SOT23-5      FSAE Electric (1.28429134 0.31141732) R180

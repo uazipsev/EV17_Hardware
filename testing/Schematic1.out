@@ -1,0 +1,485 @@
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Feb 02 02:36:33 2014
+
+
+
+** Analysis setup **
+.tran 0s 10s 0 0.5s
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+R_R6         0 $N_0001  1k  
+R_R8         0 $N_0002  1k  
+R_R5         $N_0004 $N_0003  1k  
+V_V1         $N_0003 0 5V
+X_U3A         $N_0004 $N_0004 $N_0004 $N_0005 $N_0001 $N_0002 $G_DPWR $G_DGND
++  7474 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+V_V2         $N_0006 0 DC 5 
++PULSE 5v 0v 2s 0.1ms 0.1s 1s 5s
+E_U4         $N_0005 0 VALUE {LIMIT(V($N_0006,$N_0007)*1E6,-15V,+15V)}
+V_V3         $N_0007 0 2.5V
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R6            R6(1=0 2=$N_0001 )
+R_R8            R8(1=0 2=$N_0002 )
+R_R5            R5(1=$N_0004 2=$N_0003 )
+V_V1            V1(+=$N_0003 -=0 )
+X_U3A           U3A(CLRbar=$N_0004 D=$N_0004 CLK=$N_0004 PREbar=$N_0005
++  Q=$N_0001 Qbar=$N_0002 PWR=$G_DPWR GND=$G_DGND )
+V_V2            V2(+=$N_0006 -=0 )
+E_U4            U4(OUT=$N_0005 +=$N_0006 -=$N_0007 )
+V_V3            V3(+=$N_0007 -=0 )
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node $N_0001
+*
+* Moving X_U3A.UFF1:Q1 from analog node $N_0001 to new digital node $N_0001$DtoA
+X$$N_0001_DtoA1
++ $N_0001$DtoA
++ $N_0001
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node $N_0002
+*
+* Moving X_U3A.UFF1:QBAR1 from analog node $N_0002 to new digital node $N_0002$DtoA
+X$$N_0002_DtoA1
++ $N_0002$DtoA
++ $N_0002
++ $G_DPWR
++ $G_DGND
++ DtoA_STD
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node $N_0004
+*
+* Moving X_U3A.UFF1:D1 from analog node $N_0004 to new digital node $N_0004$AtoD
+X$$N_0004_AtoD1
++ $N_0004
++ $N_0004$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U3A.UFF1:CLK from analog node $N_0004 to new digital node $N_0004$AtoD2
+X$$N_0004_AtoD2
++ $N_0004
++ $N_0004$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U3A.UFF1:CLRBAR from analog node $N_0004 to new digital node $N_0004$AtoD3
+X$$N_0004_AtoD3
++ $N_0004
++ $N_0004$AtoD3
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node $N_0005
+*
+* Moving X_U3A.UFF1:PREBAR from analog node $N_0005 to new digital node $N_0005$AtoD
+X$$N_0005_AtoD1
++ $N_0005
++ $N_0005$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_STD
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+
+X$DIGIFPWR 0 DIGIFPWR
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         D74             
+          IS    1.000000E-15  100.000000E-18 
+          RS    2              25            
+         CJO    2.000000E-12    2.000000E-12 
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q74             
+               NPN             
+          IS  100.000000E-18 
+          BF   49            
+          NF    1            
+         ISE  100.000000E-18 
+          BR     .03         
+          NR    1            
+         ISC  400.000000E-18 
+          RB   50            
+          RC   20            
+         CJE    1.000000E-12 
+         VJE     .9          
+         MJE     .5          
+         CJC  500.000000E-15 
+         VJC     .8          
+         CJS    3.000000E-12 
+         VJS     .7          
+         MJS     .33         
+          TF  200.000000E-12 
+          TR   10.000000E-09 
+          CN    2.42         
+           D     .87         
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74           
+        FILE DSO_DTOA        
+      FORMAT    6            
+    TIMESTEP  100.000000E-12 
+      S0NAME 0               
+       S0TSW    3.500000E-09 
+       S0RLO    7.13         
+       S0RHI  389            
+      S1NAME 1               
+       S1TSW    5.500000E-09 
+       S1RLO  467            
+       S1RHI  200            
+      S2NAME X               
+       S2TSW    3.500000E-09 
+       S2RLO   42.9          
+       S2RHI  116            
+      S3NAME R               
+       S3TSW    3.500000E-09 
+       S3RLO   42.9          
+       S3RHI  116            
+      S4NAME F               
+       S4TSW    3.500000E-09 
+       S4RLO   42.9          
+       S4RHI  116            
+      S5NAME Z               
+       S5TSW    3.500000E-09 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74            
+        FILE DSO_ATOD        
+      FORMAT    6            
+     CHGONLY    1            
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI    2            
+       S0VLO     .8          
+      S1NAME 0               
+       S1VHI     .8          
+       S1VLO   -1.5          
+      S2NAME R               
+       S2VHI    1.4          
+       S2VLO     .8          
+      S3NAME R               
+       S3VHI    2            
+       S3VLO    1.3          
+      S4NAME X               
+       S4VHI    2            
+       S4VLO     .8          
+      S5NAME 1               
+       S5VHI    7            
+       S5VLO    2            
+      S6NAME F               
+       S6VHI    2            
+       S6VLO    1.3          
+      S7NAME F               
+       S7VHI    1.4          
+       S7VLO     .8          
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_74            
+  TPCLKQLHMN    5.600000E-09 
+  TPCLKQLHTY   14.000000E-09 
+  TPCLKQLHMX   25.000000E-09 
+  TPCLKQHLMN    8.000000E-09 
+  TPCLKQHLTY   20.000000E-09 
+  TPCLKQHLMX   40.000000E-09 
+   TPPCQLHMN    6.250000E-09 
+   TPPCQLHTY   15.625000E-09 
+   TPPCQLHMX   25.000000E-09 
+   TPPCQHLMN   10.000000E-09 
+   TPPCQHLTY   25.000000E-09 
+   TPPCQHLMX   40.000000E-09 
+    TWCLKLMN   37.000000E-09 
+    TWCLKLTY   37.000000E-09 
+    TWCLKLMX   37.000000E-09 
+    TWCLKHMN   30.000000E-09 
+    TWCLKHTY   30.000000E-09 
+    TWCLKHMX   30.000000E-09 
+     TWPCLMN   30.000000E-09 
+     TWPCLTY   30.000000E-09 
+     TWPCLMX   30.000000E-09 
+   TSUDCLKMN   20.000000E-09 
+   TSUDCLKTY   20.000000E-09 
+   TSUDCLKMX   20.000000E-09 
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    5.000000E-09 
+    THDCLKTY    5.000000E-09 
+    THDCLKMX    5.000000E-09 
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STD          
+        DRVL  104            
+        DRVH   96.4          
+       AtoD1 AtoD_STD        
+       AtoD2 AtoD_STD_NX     
+       AtoD3 AtoD_STD        
+       AtoD4 AtoD_STD_NX     
+       DtoA1 DtoA_STD        
+       DtoA2 DtoA_STD        
+       DtoA3 DtoA_STD        
+       DtoA4 DtoA_STD        
+      TSWHL1    1.373000E-09 
+      TSWHL2    1.346000E-09 
+      TSWHL3    1.511000E-09 
+      TSWHL4    1.487000E-09 
+      TSWLH1    3.382000E-09 
+      TSWLH2    3.424000E-09 
+      TSWLH3    3.517000E-09 
+      TSWLH4    3.564000E-09 
+       TPWRT  100.000000E+03 
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
+
+($N_0001)    1.3089                   ($N_0002)    1.3089                       
+
+($N_0003)    5.0000                   ($N_0004)    4.9389                       
+
+($N_0005)   15.0000                   ($N_0006)    5.0000                       
+
+($N_0007)    2.5000                   (X$$N_0004_AtoD1.1)    1.5648             
+
+(X$$N_0004_AtoD1.2)     .7824         (X$$N_0004_AtoD1.3)    2.2862             
+
+(X$$N_0004_AtoD2.1)    1.5648         (X$$N_0004_AtoD2.2)     .7824             
+
+(X$$N_0004_AtoD2.3)    2.2862         (X$$N_0004_AtoD3.1)    1.5648             
+
+(X$$N_0004_AtoD3.2)     .7824         (X$$N_0004_AtoD3.3)    2.2862             
+
+(X$$N_0005_AtoD1.1)    1.5648         (X$$N_0005_AtoD1.2)     .7824             
+
+(X$$N_0005_AtoD1.3)    2.2862         
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+($N_0004$AtoD) : 1                    ($N_0002$DtoA) : X                        
+
+($N_0004$AtoD2) : 1                   ($N_0001$DtoA) : X                        
+
+($N_0004$AtoD3) : 1                   ($N_0005$AtoD) : 1                    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.106E-05
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+    X$DIGIFPWR.VDPWR  -6.636E-02
+    X$DIGIFPWR.VDGND  -2.541E-03
+
+    TOTAL POWER DISSIPATION   3.32E-01  WATTS
+
+
+**** 02/02/14 02:52:49 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Rick's\Google Drive\FSAE\Document Control\Electrical\Subsystem Control\New folder\Schematic1.sch
+
+
+ ****     SIMULATION ERRORS
+
+
+******************************************************************************
+
+
+
+
+DIGITAL Message ID#1 (SERIOUS):
+DIGITAL INPUT VOLTAGE Hazard at time 0s
+  Device: X$$N_0005_AtoD1.O0
+  Voltage V($N_0005,$G_DGND)= 15.0000 is beyond the ranges defined in model DO74
+
+
+DIGITAL Message ID#2 (SERIOUS):
+DIGITAL INPUT VOLTAGE Hazard at time 2.0000500001s
+  Device: X$$N_0005_AtoD1.O0
+  Voltage V($N_0005,$G_DGND)=-6.3551 is beyond the ranges defined in model DO74
+
+
+DIGITAL Message ID#3 (SERIOUS):
+DIGITAL INPUT VOLTAGE Hazard at time 3.05010014s
+  Device: X$$N_0005_AtoD1.O0
+  Voltage V($N_0005,$G_DGND)= 7.0000 is beyond the ranges defined in model DO74
+
+
+DIGITAL Message ID#4 (SERIOUS):
+DIGITAL INPUT VOLTAGE Hazard at time 7.0000500001s
+  Device: X$$N_0005_AtoD1.O0
+  Voltage V($N_0005,$G_DGND)=-6.3551 is beyond the ranges defined in model DO74
+
+
+DIGITAL Message ID#5 (SERIOUS):
+DIGITAL INPUT VOLTAGE Hazard at time 8.0501001401s
+  Device: X$$N_0005_AtoD1.O0
+  Voltage V($N_0005,$G_DGND)= 7.0050 is beyond the ranges defined in model DO74
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .08
+

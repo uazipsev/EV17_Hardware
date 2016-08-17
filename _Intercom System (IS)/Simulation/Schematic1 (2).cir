@@ -1,0 +1,23 @@
+* E:\New folder\FSAE\2015\Electrical\_Intercom System (IS)\Simulation\Schematic1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Aug 03 20:24:44 2014
+
+
+
+** Analysis setup **
+.tran 0ns 1s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+.INC "Schematic1.als"
+
+
+.probe
+
+
+.END

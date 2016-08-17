@@ -1,0 +1,123 @@
+Partlist
+
+Exported from A6SS-4.brd at 4/22/2016 5:32 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value             Package            Library             Position (mil)        Orientation
+
+C1       0.1UF             0805               FSAE Electric       (2457 491)            MR0
+C2       0.1UF             0805               FSAE Electric       (2232 466)            MR270
+C3       1UF               0805               FSAE Electric       (1023 1352)           MR270
+C4       0.1UF             0805               FSAE Electric       (307 1020)            MR180
+C5       0.1UF             0805               FSAE Electric       (438 906)             MR180
+C6       100UF             1206               FSAE Electric       (436 570)             R270
+C7       100UF             1206               FSAE Electric       (1342 689)            MR270
+C8       1UF               0805               FSAE Electric       (576 1356)            MR270
+C9       0.1UF             0805               FSAE Electric       (1671 530)            MR270
+C10      0.1UF             0805               FSAE Electric       (2263 1259)           R0
+C11      0.1UF             0805               FSAE Electric       (1035 386)            MR270
+C12      0.1UF             0805               FSAE Electric       (891 514)             MR180
+C13      0.1UF             0805               FSAE Electric       (2082 1045)           MR180
+C14      1UF               0805               FSAE Electric       (167 1427)            MR180
+C15      0.1UF             0805               FSAE Electric       (966 1067)            MR180
+C16      0.1UF             0805               FSAE Electric       (953 586)             MR180
+C17      0.1UF             0805               FSAE Electric       (728 875)             MR270
+C18      1UF               0805               FSAE Electric       (794 1355)            MR270
+C19      0.1UF             0805               FSAE Electric       (1404 605)            R90
+C20      0.1UF             0805               FSAE Electric       (1969 729)            MR0
+C21      0.1UF             0805               FSAE Electric       (1308 830)            R90
+C22      0.1UF             0805               FSAE Electric       (1470 606)            R90
+C23      10UF              EIA3216-16V        FSAE Electric       (527 114)             R0
+C25      0.1UF             0805               FSAE Electric       (295 593)             MR180
+C26      1UF               0805               FSAE Electric       (344 1365)            MR270
+CARD1    CARD-2016CARD     CARD-2016          FSAE Electric       (-1 -1)               R0
+CLK      TP                0603               FSAE Electric       (789 1064)            R0
+CS       TP                0603               FSAE Electric       (719 293)             R180
+CSP      TP                0603               FSAE Electric       (832 1164)            R90
+D1       AMBER             CHIP_LED0805       FSAE Electric       (1718 636)            R270
+D2       GREEN             CHIP_LED0805       FSAE Electric       (97 355)              R180
+D3       GREEN             CHIP_LED0805       FSAE Electric       (203 306)             R90
+D4       GREEN             CHIP_LED0805       FSAE Electric       (103 1008)            R180
+D5       GREEN             CHIP_LED0805       FSAE Electric       (498 962)             R0
+D6       GREEN             CHIP_LED0805       FSAE Electric       (1425 848)            R90
+D7       GREEN             CHIP_LED0805       FSAE Electric       (1353 342)            R90
+D8       GREEN             CHIP_LED0805       FSAE Electric       (2491 1053)           R90
+D9       RED               CHIP_LED0805       FSAE Electric       (2493 1178)           R90
+DLY      TP                0603               FSAE Electric       (265 862)             R0
+IMD      TP                0603               FSAE Electric       (1532 612)            R270
+IMDI     TP                0603               FSAE Electric       (1269 563)            R90
+J1       M2M1X2            MOLEX-1X2          FSAE Electric       (1550 1138)           R180
+J2       M2M1X2            MOLEX-1X2          FSAE Electric       (1334 1140)           R180
+JP1                        1X05_LOCK_LONGPADS SparkFun-Connectors (2068 1435)           R180
+JP2                        SJ_2S-NO           SparkFun-Passives   (1515 499)            R180
+MAIN     TP                0603               FSAE Electric       (396 1121)            R180
+POT1     22AR100KLFTR      22AR100KLFTR       FSAE Eletric        (130 1369)            R0
+POT2     22AR100KLFTR      22AR100KLFTR       FSAE Eletric        (345 1372)            R0
+POT3     22AR100KLFTR      22AR100KLFTR       FSAE Eletric        (792 1370)            R0
+POT4     22AR100KLFTR      22AR100KLFTR       FSAE Eletric        (1022 1367)           R0
+POT5     22AR100KLFTR      22AR100KLFTR       FSAE Eletric        (576 1372)            R0
+PS       TP                0603               FSAE Electric       (1148 331)            R270
+PSP      TP                0603               FSAE Electric       (681 1210)            R0
+Q1       MMBT4403LT3G      SOT23              FSAE Electric       (168 754)             R0
+R1       2.2K              0805               FSAE Electric       (335 307)             R0
+R2       115K              0805               FSAE Electric       (310 643)             R0
+R3       1K                0805               FSAE Electric       (2488 1185)           MR0
+R4       10K               0805               FSAE Electric       (2016 1313)           MR0
+R5       5                 0805               FSAE Electric       (308 715)             R0
+R6       2.7K              0805               FSAE Electric       (275 1114)            R180
+R7       2.7K              0805               FSAE Electric       (264 919)             R180
+R8       1K                0805               FSAE Electric       (2487 1053)           MR0
+R9       28K               0805               FSAE Electric       (1330 558)            R90
+R10      5K                0805               FSAE Electric       (1330 437)            R90
+R11      1k                0805               FSAE Electric       (711 799)             R270
+R12      1k                0805               FSAE Electric       (776 798)             R90
+R13      10K               0805               FSAE Electric       (960 524)             R270
+R14      10K               0805               FSAE Electric       (746 399)             R90
+R15      10K               0805               FSAE Electric       (1142 966)            R90
+R16      1k                0805               FSAE Electric       (1395 437)            R90
+R17      5K                0805               FSAE Electric       (1967 461)            R180
+R18      28K               0805               FSAE Electric       (1793 461)            R180
+R19      1K                0805               FSAE Electric       (1712 706)            R0
+R20      1K                0805               FSAE Electric       (98 488)              R90
+R21      1K                0805               FSAE Electric       (116 617)             R270
+R22      1K                0805               FSAE Electric       (392 921)             R0
+R23      1K                0805               FSAE Electric       (154 1113)            R180
+R24      115K              0805               FSAE Electric       (1246 708)            MR90
+R25      2.7K              0805               FSAE Electric       (1511 958)            MR0
+R26      1K                0805               FSAE Electric       (1581 847)            R0
+R27      28k               0805               FSAE Electric       (335 373)             R0
+R28      5K                0805               FSAE Electric       (335 447)             R180
+R29      91K               0805               FSAE Electric       (646 808)             R90
+R30      976K              0805               FSAE Electric       (645 959)             MR270
+R31      182K              0805               FSAE Electric       (735 1049)            MR0
+R32      2.7K              0805               FSAE Electric       (1391 959)            MR0
+R33      2.7K              0805               FSAE Electric       (1624 795)            MR270
+R34      120               0805               FSAE Electric       (1765 498)            MR0
+RD       TP                0603               FSAE Electric       (2209 1178)           R0
+RG       TP                0603               FSAE Electric       (249 409)             R90
+RSTT     TP                0603               FSAE Electric       (1427 737)            MR90
+RX       TP                0603               FSAE Electric       (2365 1178)           R0
+SJ1                        SJ_2S-NO           SparkFun-Passives   (2179 1447)           R180
+SP       TP                0603               FSAE Electric       (1237 822)            MR180
+SRT      TP                0603               FSAE Electric       (117 856)             R0
+STMR     TP                0603               FSAE Electric       (1528 684)            MR180
+TX       TP                0603               FSAE Electric       (2358 1055)           R0
+U1       PIC18F45K22       TQFP-44            FSAE Electric       (2040 882)            R270
+U2       SN74HC21DR        SO-14              FSAE Electric       (958 812)             MR270
+U3       MAX6818           SSOP-20            FSAE Electric       (2380 339)            R0
+U4       LM358PSR          SO-8               FSAE Electric       (930 365)             R270
+U5       LTC6991           TSOT-23-6          FSAE Electric       (728 951)             R180
+U6       NC7S14M5X         SOT23-5            FSAE Electric       (1495 447)            R0
+U7       SN75HVD08DRMSOP   MSOP-8             FSAE Electric       (1766 644)            MR180
+U8       SN74AHC1G08DBVR   SOT23-5            FSAE Electric       (280 1017)            R90
+U9       NC7SZ08P5X        SC-70-5            FSAE Electric       (886 530)             R0
+U10      MCP6541RT-E/OT    SOT23-5            FSAE Electric       (301 543)             R270
+U11      MCP6541RT-E/OT    SOT23-5            FSAE Electric       (1378 861)            MR270
+U12      SN74LVC1G132DBVR  SOT23-5            FSAE Electric       (1526 799)            MR180
+U13      MAX6817EUT+T      SOT23-6            FSAE Electric       (2182 539)            R270
+U14      MAX823TEUK+T_3.08 SOT23-5            FSAE Electric       (2278 1350)           R90
+U16      MCP6541RT-E/OT    SOT23-5            FSAE Electric       (408 829)             R270
+U18      CD4015BM96        SO-16              FSAE Electric       (962 827)             R90

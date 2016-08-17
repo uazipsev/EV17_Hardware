@@ -1,0 +1,11 @@
+Fuse for FAN and PUMP:
+http://www.digikey.com/product-detail/en/0326012.HXP/F2648-ND/777364
+
+Fuse holder (check if old one will work)
+http://www.digikey.com/product-detail/en/03420006Z/F1479-ND/414289
+
+Fuse for IMD and precharge / discharge:
+http://www.digikey.com/product-detail/en/0477.500MXEP/F4945-ND/1982205
+
+
+

@@ -1,0 +1,62 @@
+Partlist
+
+Exported from SAS_rev04.brd at 4/22/16 7:16 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value              Package            Library                    Position (mil)        Orientation
+
+C8       10uF               EIA3216-16V        FSAE Electric              (250 2534)            R90
+C12      .1uF               0603               FSAE Electric              (-1230 1167)          R270
+C21      100n               C0805              adafruit                   (-135 2961)           R90
+C22      10n                0603               FSAE Electric              (-265 3021)           R270
+D1       1N4001             SOD123             diode                      (1107.89998 1717.79995) R270
+D2       MM5Z30             SOD-523F           EmEndev                    (1231.10002 1617.20005) R180
+D3       BZX384-B3V3        SOD-323            SparkFun                   (-841 1313)           R90
+D4       BZX384-B3V3        SOD-323            SparkFun                   (-947 1532)           R180
+D5       BZX384-B3V3        SOD-323            SparkFun                   (-363 1738)           R180
+D6       BZX384-B3V3        SOD-323            SparkFun                   (-546 1367)           R180
+D7       BZX384-B3V3        SOD-323            SparkFun                   (-1204 1750)          R0
+D14      BZX384-B3V3        SOD-323            SparkFun                   (-102 1763.5)         R0
+F1       FUSE_0.12A_48V_PTC 1206               FSAE Electric              (-1628 1225)          R270
+J1       36638NEW           36638-M            FSAE Electric              (-1371 282)           R0
+JP1      FTDI_BASICPTH      FTDI_BASIC         SparkFun-Connectors        (647 2938)            R0
+JP9      ICSP               1X05_LOCK_LONGPADS SparkFun-Connectors        (419 2973)            R180
+L1       FB                 0603               EmEndev                    (1153.0999 1377.10002) R90
+L2       FB                 0603               EmEndev                    (1302.70005 1377.05007) R90
+L3       FB                 0603               SparkFun-Passives          (-363 2920)           R90
+LED1                        CHIP-LED0805       adafruit                   (1308 1883)           R270
+LED3                        CHIP-LED0805       adafruit                   (-1323 1168)          R180
+LED7                        CHIP-LED0805       adafruit                   (264 2114)            R270
+R2       220                0603               FSAE Electric              (599 1068)            R270
+R7       220                0603               FSAE Electric              (431 1105)            R270
+R8       220                0603               FSAE Electric              (270 1107)            R270
+R9       220                0603               FSAE Electric              (104 1110)            R270
+R10      10k                0603               FSAE Electric              (15 1428)             R270
+R11      10k                0603               FSAE Electric              (272 1670)            R270
+R12      10k                0603               FSAE Electric              (428 1648)            R180
+R13      10k                0603               FSAE Electric              (653 1600)            R180
+R15      10k                PVG3               FSAE Electric              (-935 1654)           R90
+R17      RES_68_1%          0603               FSAE Electric              (-98 1400)            R180
+R18      RES_68_1%          0603               FSAE Electric              (-340 1402)           R180
+R19      10K                0805               FSAE Electric              (-1100 1364)          R180
+R20      RES_1K_5%          0603               FSAE Electric              (-1297 1652)          MR270
+R21      RES_68_1%          0603               FSAE Electric              (-1177 769)           MR180
+R27      1K                 0805               FSAE Eletric               (-1108 2051)          R90
+R28      1k                 0805               FSAE Eletric               (-1214 2050)          R90
+R40      10k                0805               FSAE Eletric               (-447 2990)           R270
+RX1                         CHIPLED_0805       adafruit                   (371 2320)            R180
+RX2                         CHIPLED_0805       adafruit                   (-1210 1860)          R180
+S2       ts                 TACTILE-PTH        SparkFun-Electromechanical (-1070 2934)          R180
+SJ1      SJ-NO              SJ_2S-NO           SparkFun-Passives          (-682 2942)           R90
+TX1                         CHIPLED_0805       adafruit                   (672 2557)            R180
+TX2                         CHIPLED_0805       adafruit                   (-1104 1869)          R180
+U4       SN75HVD08DRSOIC    SO-8               FSAE Electric              (-628 1616)           R180
+U7       LM334SM/NOPB-ND    SO-8               FSAE Electric              (-149 1145)           R180
+U9       MAX823             SOT23-5L           NASA_LIB                   (-720 2581)           R270
+U10      LM334SM/NOPB-ND    SO-8               FSAE Electric              (-389 1153)           R180
+U13          SO-8               FSAE Electric              (578 2197)            R180
+U14      LM334SM/NOPB-ND    SO-8               FSAE Electric              (-1134 530)           MR180
+V1       13Vdc              0603               EmEndev                    (1226.75 1514.15022)  R180

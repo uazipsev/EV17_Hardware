@@ -1,0 +1,550 @@
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Oct 26 22:20:10 2015
+
+
+
+** Analysis setup **
+.tran 0s 4s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+R_R3         0 $N_0001  1k  
+X_U2         0 $N_0002 Sw_tOpen PARAMS: tOpen=1s ttran=1u Rclosed=0.01
++  Ropen=1Meg
+R_R6         $N_0003 $N_0002  10k  
+R_R7         0 $N_0004  2k  
+C_C1         0 $N_0005  22uF  
+C_C2         0 $N_0006  10nF  
+E_U3         $N_0007 0 VALUE {LIMIT(V($N_0003,$N_0004)*1E6,0V,+5V)}
+X_X1         0 $N_0007 $N_0001 $N_0008 $N_0006 $N_0005 $N_0005 $N_0008 555D
++  PARAMS: MAXFREQ=3E6
+R_R2         $N_0005 $N_0008  10k  
+R_R5         $N_0003 $N_0008  10k  
+V_V1         $N_0008 0 5V
+R_R9         $N_0004 $N_0008  1k  
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R3            R3(1=0 2=$N_0001 )
+X_U2            U2(1=0 2=$N_0002 )
+R_R6            R6(1=$N_0003 2=$N_0002 )
+R_R7            R7(1=0 2=$N_0004 )
+C_C1            C1(1=0 2=$N_0005 )
+C_C2            C2(1=0 2=$N_0006 )
+E_U3            U3(OUT=$N_0007 +=$N_0003 -=$N_0004 )
+X_X1            X1(GND=0 TRIGGER=$N_0007 OUTPUT=$N_0001 RESET=$N_0008
++  CONTROL=$N_0006 THRESHOLD=$N_0005 DISCHARGE=$N_0005 VCC=$N_0008 )
+R_R2            R2(1=$N_0005 2=$N_0008 )
+R_R5            R5(1=$N_0003 2=$N_0008 )
+V_V1            V1(+=$N_0008 -=0 )
+R_R9            R9(1=$N_0004 2=$N_0008 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node $N_0001
+*
+* Moving X_X1.u1:Q1 from analog node $N_0001 to new digital node $N_0001$DtoA
+X$$N_0001_DtoA1
++ $N_0001$DtoA
++ $N_0001
++ $N_0008
++ 0
++ dtoa_555
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node $N_0008
+*
+* Moving X_X1.u1:CLRBAR from analog node $N_0008 to new digital node $N_0008$AtoD
+X$$N_0008_AtoD1
++ $N_0008
++ $N_0008$AtoD
++ $N_0008
++ 0
++ atod_555
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node X_X1.qb
+*
+* Moving X_X1.u1:QBAR1 from analog node X_X1.qb to new digital node X_X1.qb$DtoA
+X$X_X1.qb_DtoA1
++ X_X1.qb$DtoA
++ X_X1.qb
++ $N_0008
++ 0
++ dtoa_555
++       PARAMS: DRVH=  96.4   DRVL= 104    CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+
+X$DIGIFPWR 0 DIGIFPWR
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X1.nchan      
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    1.000000E-12 
+        CGDO    1.000000E-12 
+        CGBO    1.000000E-12 
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.Smod       
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               din555          
+        FILE DSO_DTOA        
+      FORMAT    6            
+    TIMESTEP  100.000000E-12 
+      S0NAME 0               
+       S0TSW  700.000000E-12 
+       S0RLO  100            
+       S0RHI    1.000000E+06 
+      S1NAME 1               
+       S1TSW  700.000000E-12 
+       S1RLO    1.000000E+06 
+       S1RHI  300            
+      S2NAME x               
+       S2TSW  700.000000E-12 
+       S2RLO  200            
+       S2RHI  200            
+      S3NAME r               
+       S3TSW  700.000000E-12 
+       S3RLO  200            
+       S3RHI  200            
+      S4NAME f               
+       S4TSW  700.000000E-12 
+       S4RLO  200            
+       S4RHI  200            
+      S5NAME z               
+       S5TSW  700.000000E-12 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X1.cmp        do555           
+        FILE DSO_ATOD        DSO_ATOD        
+      FORMAT    6               6            
+     CHGONLY    1               1            
+    TIMESTEP  100.000000E-12  100.000000E-12 
+      S0NAME 0               X               
+       S0VHI                    2            
+       S0VLO -500                .8          
+      S1NAME 1               0               
+       S1VHI  500                .8          
+       S1VLO                   -1.5          
+      S2NAME                 R               
+       S2VHI                    1.4          
+       S2VLO                     .8          
+      S3NAME                 R               
+       S3VHI                    2            
+       S3VLO                    1.3          
+      S4NAME                 X               
+       S4VHI                    2            
+       S4VLO                     .8          
+      S5NAME                 1               
+       S5VHI                   50            
+       S5VLO                    2            
+      S6NAME                 F               
+       S6VHI                    2            
+       S6VLO                    1.3          
+      S7NAME                 F               
+       S7VHI                    1.4          
+       S7VLO                     .8          
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     Digital Gated FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X1.t_srff     
+    TPDQLHMN    0            
+    TPDQLHTY    0            
+    TPDQLHMX    0            
+    TPDQHLMN    0            
+    TPDQHLTY    0            
+    TPDQHLMX    0            
+    TPGQLHMN    0            
+    TPGQLHTY    0            
+    TPGQLHMX    0            
+    TPGQHLMN    0            
+    TPGQHLTY    0            
+    TPGQHLMX    0            
+   TPPCQLHMN   48.000000E-09 
+   TPPCQLHTY  120.000000E-09 
+   TPPCQLHMX  192.000000E-09 
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+      TWGHMN    0            
+      TWGHTY    0            
+      TWGHMX    0            
+     TWPCLMN    0            
+     TWPCLTY    0            
+     TWPCLMX    0            
+     TSUDGMN    0            
+     TSUDGTY    0            
+     TSUDGMX    0            
+   TSUPCGHMN    0            
+   TSUPCGHTY    0            
+   TSUPCGHMX    0            
+      THDGMN    0            
+      THDGTY    0            
+      THDGMX    0            
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     Digital Delay Line MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X1.dlymod     
+       DLYMN  166.666700E-09 
+       DLYTY  166.666700E-09 
+       DLYMX  166.666700E-09 
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X1.io_555     io_std          io_stm          
+        DRVL  104             104               0            
+        DRVH   96.4            96.4             0            
+       AtoD1 atod_555        AtoD_STD                        
+       AtoD2 atod_555        AtoD_STD_NX                     
+       AtoD3 atod_555        AtoD_STD                        
+       AtoD4 atod_555        AtoD_STD_NX                     
+       DtoA1 dtoa_555        DtoA_STD        DtoA_STM        
+       DtoA2 dtoa_555        DtoA_STD        DtoA_STM        
+       DtoA3 dtoa_555        DtoA_STD        DtoA_STM        
+       DtoA4 dtoa_555        DtoA_STD        DtoA_STM        
+      TSWHL1                    1.373000E-09                 
+      TSWHL2                    1.346000E-09                 
+      TSWHL3                    1.511000E-09                 
+      TSWHL4                    1.487000E-09                 
+      TSWLH1                    3.382000E-09                 
+      TSWLH2                    3.424000E-09                 
+      TSWLH3                    3.517000E-09                 
+      TSWLH4                    3.564000E-09                 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U2.3)    1.0000 ($G_DGND)    0.0000                   ($G_DPWR)    5.0000    
+
+($N_0001)    3.8453                   ($N_0002) 2.500E-06                       
+
+($N_0003)    2.5000                   ($N_0004)    3.3333                       
+
+($N_0005)    5.0000                   ($N_0006)    3.3333                       
+
+($N_0007)    0.0000                   ($N_0008)    5.0000                       
+
+(X_X1.qb) 500.0E-06                   (X_X1.botm)    1.6667                 
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(  X_X1.r) : 1     ( X_X1.sd) : 1     ( X_X1.rd) : 1     (X_X1.strt) : 0        
+
+(  X_X1.s) : 1     ($N_0001$DtoA) : 1                    ( X_X1.hi) : 1         
+
+($N_0008$AtoD) : 1                    (X_X1.qb$DtoA) : 0                    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.899E-03
+    X_U2.V1     -1.000E-12
+    X$DIGIFPWR.VDPWR  -5.000E-06
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   2.95E-02  WATTS
+
+
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         E_U3      
+V-SOURCE     0.000E+00
+I-SOURCE     1.667E-12
+
+
+**** MOSFETS
+
+
+NAME         X_X1.m1   
+MODEL        X_X1.nchan
+ID           1.25E-09 
+VGS          5.00E-04 
+VDS          5.00E+00 
+VBS          0.00E+00 
+VTH          0.00E+00 
+VDSAT        5.00E-04 
+Lin0/Sat1   -1.00E+00 
+if          -1.00E+00 
+ir          -1.00E+00 
+TAU         -1.00E+00 
+GM           5.00E-06 
+GDS          0.00E+00 
+GMB          0.00E+00 
+CBD          0.00E+00 
+CBS          0.00E+00 
+CGSOV        1.00E-15 
+CGDOV        1.00E-15 
+CGBOV        2.00E-18 
+CGS          0.00E+00 
+CGD          0.00E+00 
+CGB          0.00E+00 
+
+
+**** VOLTAGE CONTROLLED SWITCHES
+
+
+NAME         X_U2.S1   
+MODEL        X_U2.Smod 
+I LOAD      -2.50E-04 
+V LOAD      -2.50E-06 
+R LOAD       1.00E-02 
+V CTRL       1.00E+00 
+**** 10/26/15 22:20:10 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(X_U2.3)    1.0000 ($G_DGND)    0.0000                   ($G_DPWR)    5.0000    
+
+($N_0001)    3.8453                   ($N_0002) 2.500E-06                       
+
+($N_0003)    2.5000                   ($N_0004)    3.3333                       
+
+($N_0005)    5.0000                   ($N_0006)    3.3333                       
+
+($N_0007)    0.0000                   ($N_0008)    5.0000                       
+
+(X_X1.qb) 500.0E-06                   (X_X1.botm)    1.6667                 
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(  X_X1.r) : 1     ( X_X1.sd) : 1     ( X_X1.rd) : 1     (X_X1.strt) : 0        
+
+(  X_X1.s) : 1     ($N_0001$DtoA) : 1                    ( X_X1.hi) : 1         
+
+($N_0008$AtoD) : 1                    (X_X1.qb$DtoA) : 0                    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.899E-03
+    X_U2.V1     -1.000E-12
+    X$DIGIFPWR.VDPWR  -5.000E-06
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   2.95E-02  WATTS
+
+
+WARNING -- EVALUATION VERSION Logic Transition Limit (10000) Exceeded
+ 
+
+ERROR -- Fatal Digital Simulator Error 4
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            8.08
+

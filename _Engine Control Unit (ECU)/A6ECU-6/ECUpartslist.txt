@@ -1,0 +1,79 @@
+Partlist
+
+Exported from A6ECU-6.brd at 4/28/2016 6:18 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value             Package                  Library                    Position (mil)        Orientation
+
+C1       0.1UF             0603                     FSAE Electric              (1373 281)            R90
+C2       0.1UF             0603                     FSAE Electric              (122 1038)            MR0
+C3       0.1UF             0603                     FSAE Electric              (320 724)             MR90
+C4       10UF              EIA3216-16V              FSAE Electric              (680 940)             MR0
+C5       0.1UF             0603                     FSAE Electric              (1176 306)            R90
+C6       0.1UF             0603                     FSAE Electric              (2007 1111)           R270
+C7       0.1UF             0603                     FSAE Electric              (378 199)             R0
+C8       0.1UF             0603                     FSAE Electric              (1502 451)            MR90
+C9       0.1UF             0603                     FSAE Electric              (557 700)             MR0
+C10      0.1UF             0603                     FSAE Electric              (478 412)             MR180
+C11      0.1UF             0603                     FSAE Electric              (191 404)             MR90
+C12      10UF              EIA3216-16V              FSAE Electric              (259 299)             R270
+C14      0.1UF             0603                     FSAE Electric              (1956 1356)           R180
+C15      12PF              0805                     FSAE Electric              (698 794)             R90
+C16      0.1UF             0603                     FSAE Electric              (1792 997)            R270
+C17      12PF              0805                     FSAE Electric              (998 809)             R270
+C18      10UF              EIA3216-16V              FSAE Electric              (1701 971)            R90
+CARD1    CARD-2016CARD     CARD-2016                FSAE Electric              (19 -16)              R0
+D1       RED               CHIP_LED0805             FSAE Electric              (2523 1278)           R180
+D2       GREEN             CHIP_LED0805             FSAE Electric              (2514 1447)           R180
+D3       RED               CHIP_LED0805             FSAE Electric              (1075 1146)           R180
+D4       RED               CHIP_LED0805             FSAE Electric              (931 1146)            R180
+D5       RED               CHIP_LED0805             FSAE Electric              (780 1145)            R180
+D6       RED               CHIP_LED0805             FSAE Electric              (624 1147)            R180
+D7       GREEN             CHIP_LED0805             FSAE Electric              (1142 1146)           R180
+D8       GREEN             CHIP_LED0805             FSAE Electric              (844 1145)            R180
+D9       GREEN             CHIP_LED0805             FSAE Electric              (693 1146)            R180
+D10      GREEN             CHIP_LED0805             FSAE Electric              (1002 1145)           R180
+D11      ORANGE            CHIP_LED0805             FSAE Electric              (815 249)             R180
+D12      AMBER             CHIP_LED0805             FSAE Electric              (658 281)             R180
+D13      GREEN             CHIP_LED0805             FSAE Electric              (173 419)             R0
+FC       TESTPOINT         R0603                    DFT2                       (1296 681)            R90
+FC2      TESTPOINT         R0603                    DFT2                       (1047 573)            R90
+ICSP     ICSP              1X05_LOCK_LONGPADS       SparkFun-Connectors        (497 1172)            R180
+J1       M4_1X4_LOCK       MOLEX_1X4                FSAE Electric              (2232 1447)           R180
+R1       RN-4_1K           MNR14                    FSAE Electric              (739 1174)            MR0
+R2       RN-4_1K           MNR14                    FSAE Electric              (1036 1174)           MR0
+R3       1K                0603                     FSAE Electric              (2517 1277)           MR90
+R4       1K                0603                     FSAE Electric              (2517 1451)           MR270
+R5       1K                0603                     FSAE Electric              (1829 1161)           R0
+R6       1K                0603                     FSAE Electric              (815 386)             R90
+R7       2k                0603                     FSAE Eletric               (560 349)             R0
+R8       1K                0603                     FSAE Electric              (2353 774)            R90
+R9       30k               0603                     FSAE Eletric               (737 252)             R270
+R10      10k               0603                     FSAE Eletric               (737 377.5)           R270
+R11      499               0603                     FSAE Eletric               (173 286.5)           R270
+R12      10K               0603                     FSAE Electric              (447 1072)            MR0
+R14      499               0603                     FSAE Eletric               (659 411)             R90
+R16      1k                0603                     FSAE Eletric               (917 365)             R90
+R20      2k                0603                     FSAE Eletric               (560 264)             R0
+R25      499               0603                     FSAE Eletric               (168 777)             MR270
+RX0      TESTPOINT         R0603                    DFT2                       (1127 573)            R90
+RX1      TESTPOINT         R0603                    DFT2                       (1364 683)            R90
+RX2      TESTPOINT         R0603                    DFT2                       (1510 559)            R90
+S1       DPDT              AYZ0202                  SparkFun-Electromechanical (1349 1122)           R270
+SJ2                        PAD-JUMPER-2-NO_YES_SILK SparkFun-Passives          (2136 1046)           R90
+SW1      SPST_TACT-EVQQ2   EVQ-Q2                   adafruit                   (309 1393)            R180
+TX0      TESTPOINT         R0603                    DFT2                       (966 573)             R90
+TX1      TESTPOINT         R0603                    DFT2                       (1204 684)            R90
+TX2      TESTPOINT         R0603                    DFT2                       (1445 559)            R90
+U1       SN75HVD08DRMSOP   MSOP-8                   FSAE Electric              (1280 330)            R180
+U2       ISL83077MSOP      MSOP8                    NASA_LIB                   (1465 359)            R180
+U3       SN75HVD08DRMSOP   MSOP-8                   FSAE Electric              (1083 349)            R180
+U4       FT230X            SSOP-16                  FSAE Electric              (2238 1204)           R90
+U5       24LC00T-I/OT      SOT23-5                  FSAE Eletric               (407 307)             R90
+U6       RM024             RM024-TH                 FSAE Eletric               (2034 780)            R90
+U7       DSPIC33EP256GM306 TQFP-64                  FSAE Electric              (408 702)             R270
+U8       SN74LVC2G241      VFSOP-8                  FSAE Electric              (1868 1250)           R90
+Y1       12Mhz             CRYSTAL-SMD-5X3          SparkFun-FreqCtrl          (847 806)             R180

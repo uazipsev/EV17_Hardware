@@ -1,0 +1,237 @@
+
+**** 08/03/14 20:24:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * E:\New folder\FSAE\2015\Electrical\_Intercom System (IS)\Simulation\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Aug 03 20:24:44 2014
+
+
+
+** Analysis setup **
+.tran 0ns 1s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  100pF  
+R_R5         $N_0003 $N_0002  10k  
+R_R1         $N_0001 $N_0002  10k  
+R_R7         $N_0004 $N_0001  100k  
+Q_Q3         $N_0003 $N_0005 0 Q2N2222
+RT_R3         $N_0006 $N_0007 {(47k*(1-0.75))+.001}
+RB_R3        $N_0007 $N_0002 {(47k*0.75)+.001}
+RT_R4         $N_0005 $N_0008 {(47K*(1-0.7))+.001}
+RB_R4        $N_0008 $N_0008 {(47K*0.7)+.001}
+V_V2         $N_0002 0 5V
+V_V1         $N_0001 0 DC 0 
++PULSE 0 5 0.01S 0 0 0.1S 
+Q_Q1         $N_0006 $N_0004 0 Q2N2222
+R_R2         $N_0006 $N_0002  47k  
+Q_Q2         $N_0008 $N_0007 $N_0002 Q2N3906
+C_C2         0 $N_0008  4.7uF  
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=0 2=$N_0001 )
+R_R5            R5(1=$N_0003 2=$N_0002 )
+R_R1            R1(1=$N_0001 2=$N_0002 )
+R_R7            R7(1=$N_0004 2=$N_0001 )
+Q_Q3            Q3(c=$N_0003 b=$N_0005 e=0 )
+RT_R3            R3(1=$N_0006 t=$N_0007 )
+RB_R3           R3(t=$N_0007 2=$N_0002 )
+RT_R4            R4(1=$N_0005 t=$N_0008 )
+RB_R4           R4(t=$N_0008 2=$N_0008 )
+V_V2            V2(+=$N_0002 -=0 )
+V_V1            V1(+=$N_0001 -=0 )
+Q_Q1            Q1(c=$N_0006 b=$N_0004 e=0 )
+R_R2            R2(1=$N_0006 2=$N_0002 )
+Q_Q2            Q2(c=$N_0008 b=$N_0007 e=$N_0002 )
+C_C2            C2(1=0 2=$N_0008 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+**** 08/03/14 20:24:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * E:\New folder\FSAE\2015\Electrical\_Intercom System (IS)\Simulation\Schematic1.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         Q2N3906         
+               NPN             PNP             
+          IS   14.340000E-15    1.410000E-15 
+          BF  255.9           180.7          
+          NF    1               1            
+         VAF   74.03           18.7          
+         IKF     .2847           .08         
+         ISE   14.340000E-15                 
+          NE    1.307                        
+          BR    6.092           4.977        
+          NR    1               1            
+          RB   10              10            
+          RC    1               2.5          
+         CJE   22.010000E-12    8.063000E-12 
+         MJE     .377            .3677       
+         CJC    7.306000E-12    9.728000E-12 
+         MJC     .3416           .5776       
+          TF  411.100000E-12  179.300000E-12 
+         XTF    3               6            
+         VTF    1.7             4            
+         ITF     .6              .4          
+          TR   46.910000E-09   33.420000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 08/03/14 20:24:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * E:\New folder\FSAE\2015\Electrical\_Intercom System (IS)\Simulation\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    5.0000                       
+
+($N_0003)    5.0000                   ($N_0004) 82.31E-09                       
+
+($N_0005)     .2119                   ($N_0006)    5.0000                       
+
+($N_0007)    5.0000                   ($N_0008)     .2119                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -5.000E-04
+    V_V1         5.000E-04
+
+    TOTAL POWER DISSIPATION   2.50E-03  WATTS
+
+
+**** 08/03/14 20:24:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * E:\New folder\FSAE\2015\Electrical\_Intercom System (IS)\Simulation\Schematic1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q3        Q_Q1        Q_Q2      
+MODEL        Q2N2222     Q2N2222     Q2N3906   
+IB           6.98E-12   -8.23E-13    9.62E-13 
+IC           6.14E-11    6.18E-12   -6.98E-12 
+VBE          2.12E-01    8.23E-08   -1.30E-07 
+VBC         -4.79E+00   -5.00E+00    4.79E+00 
+VCE          5.00E+00    5.00E+00   -4.79E+00 
+BETADC       8.80E+00   -7.50E+00   -7.25E+00 
+GM           2.14E-09    5.24E-13   -1.88E-13 
+RPI          4.31E+09    2.32E+12    1.71E+14 
+RX           1.00E+01    1.00E+01    1.00E+01 
+RO           5.45E+11    8.81E+11    6.61E+11 
+CBE          2.49E-11    2.20E-11    8.06E-12 
+CBC          3.69E-12    3.64E-12    3.07E-12 
+CJS          0.00E+00    0.00E+00    0.00E+00 
+BETAAC       9.21E+00    1.22E+00   -3.22E+01 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       1.19E+01    3.25E-03   -2.68E-03 
+
+
+**** 08/03/14 20:24:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * E:\New folder\FSAE\2015\Electrical\_Intercom System (IS)\Simulation\Schematic1.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    5.0000                       
+
+($N_0003)    5.0000                   ($N_0004) 82.31E-09                       
+
+($N_0005)     .2119                   ($N_0006)    5.0000                       
+
+($N_0007)    5.0000                   ($N_0008)     .2119                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -5.000E-04
+    V_V1         5.000E-04
+
+    TOTAL POWER DISSIPATION   2.50E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

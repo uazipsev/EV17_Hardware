@@ -1,0 +1,144 @@
+
+**** 02/22/15 00:49:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2015\testing\GasSenTest\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Feb 22 00:49:54 2015
+
+
+
+** Analysis setup **
+.OP 
+.STMLIB "Schematic1.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 3.3v
+R_R5         0 $N_0002  5  
+R_R3         $N_0001 $N_0003  100  
+V_V2         $N_0004 0 3.3v
+R_R7         0 $N_0005  5  
+R_R8         $N_0004 $N_0006  100  
+R_R9         $N_0005 $N_0006 {0*1+.001}
+R_R6         $N_0002 $N_0003 {2k*1+.001}
+V_V3         $N_0007 0 3.3v
+R_R10         0 $N_0008  5  
+R_R11         $N_0007 $N_0009  100  
+R_R13         0 $N_0010  5  
+V_V4         $N_0011 0 3.3v
+R_R15         $N_0010 0 {1k*1+.001}
+R_R14         $N_0011 0  100  
+R_R12         $N_0008 $N_0009 {2G*1+.001}
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+R_R5            R5(1=0 2=$N_0002 )
+R_R3            R3(1=$N_0001 2=$N_0003 )
+V_V2            V2(+=$N_0004 -=0 )
+R_R7            R7(1=0 2=$N_0005 )
+R_R8            R8(1=$N_0004 2=$N_0006 )
+R_R9            R9(1=$N_0005 2=$N_0006 )
+R_R6            R6(1=$N_0002 2=$N_0003 )
+V_V3            V3(+=$N_0007 -=0 )
+R_R10           R10(1=0 2=$N_0008 )
+R_R11           R11(1=$N_0007 2=$N_0009 )
+R_R13           R13(1=0 2=$N_0010 )
+V_V4            V4(+=$N_0011 -=0 )
+R_R15           R15(1=$N_0010 2=0 )
+R_R14           R14(1=$N_0011 2=0 )
+R_R12           R12(1=$N_0008 2=$N_0009 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+**** 02/22/15 00:49:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2015\testing\GasSenTest\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    3.3000                   ($N_0002)     .0078                       
+
+($N_0003)    3.1432                   ($N_0004)    3.3000                       
+
+($N_0005)     .1571                   ($N_0006)     .1572                       
+
+($N_0007)    3.3000                   ($N_0008) 8.250E-09                       
+
+($N_0009)    3.3000                   ($N_0010)    0.0000                       
+
+($N_0011)    3.3000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.568E-03
+    V_V2        -3.143E-02
+    V_V3        -1.650E-09
+    V_V4        -3.300E-02
+
+    TOTAL POWER DISSIPATION   2.18E-01  WATTS
+
+
+**** 02/22/15 00:49:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Dropbox\EV\2015\testing\GasSenTest\Schematic1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

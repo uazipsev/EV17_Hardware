@@ -1,0 +1,213 @@
+HTML, BODY
+{
+	height: 100%;
+}
+UL
+{
+	list-style-type: none;
+}
+BODY
+{
+	margin: 0px;
+	padding: 0px;
+	background: #171717;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #767676;
+}
+H1, H2, H3
+{
+	margin: 0;
+	padding: 0;
+}
+P, OL, UL
+{
+	margin-top: 0px;
+}
+LI
+{
+	list-style: disc;
+}
+A
+{
+	color: #171717;
+}
+A:hover
+{
+	text-decoration: none;
+}
+A IMG
+{
+	border: none;
+}
+#wrapper
+{
+	background: #ABABAB;
+	color: #000000;
+}
+
+.half_size {
+	width: 50%;
+	height: 50%;
+}
+
+.buybutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff520d), color-stop(1, #ff520d) );
+	background:-moz-linear-gradient( center top, #ff520d 5%, #ff520d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff520d', endColorstr='#ff520d');
+	background-color:#ff520d;
+	-moz-border-radius: 11px;
+	-webkit-border-radius:11px;
+	border-radius: 0px;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#000000;
+	font-family:Impact;
+	font-size:18px;
+	font-weight:normal;
+	padding:8px 58px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ff520d;
+}.buybutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff520d), color-stop(1, #ff520d) );
+	background:-moz-linear-gradient( center top, #ff520d 5%, #ff520d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff520d', endColorstr='#ff520d');
+	background-color:#ffffff;
+	color:#ffffff;
+}.buybutton:active {
+	position:relative;
+	top:1px;
+}
+
+.basebutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff520d), color-stop(1, #ff520d) );
+	background:-moz-linear-gradient( center top, #ff520d 5%, #ff520d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff520d', endColorstr='#ff520d');
+	background-color:#ff520d;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius: 0px;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#000000;
+	font-family:Impact;
+	font-size:38px;
+	font-weight:normal;
+	padding:8px 58px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ff520d;
+}.basebutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff520d), color-stop(1, #ff520d) );
+	background:-moz-linear-gradient( center top, #ff520d 5%, #ff520d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff520d', endColorstr='#ff520d');
+	background-color:#ffffff;
+	color:#ffffff;
+}.basebutton:active {
+	position:relative;
+	top:1px;
+}
+
+/********************************************************************************
+Header
+********************************************************************************/
+#header
+{
+	position: inherit;
+/*	overflow: hidden; */
+	height: 9em;
+	background: #FF530D;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/********************************************************************************
+Logo
+********************************************************************************/
+#logo
+{
+	position: absolute;
+	left: 0;
+	top: 0.5em;
+	height: 8em;
+	background: #FF530D;
+}
+/********************************************************************************
+Company Name
+********************************************************************************/
+#company_name
+{
+	padding-left: 150px;
+	height: 1em;	
+	font-size: 50pt;
+	font-family: Impact;
+}
+#company_slogan
+{
+	padding-left: 155px;
+	height: 1em;
+	font-size: 18pt;
+}
+/********************************************************************************
+Menu
+********************************************************************************/
+#menu
+{
+	position: absolute;
+	display: block;
+	top: 6em;
+	right: 1em;
+	text-align: center;
+}
+#menu LI
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+#menu LI A
+{
+	display: block;
+	padding: 0.8em 0.8em;
+	letter-spacing: 0.25em;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	outline: 0;
+	color: #CCE7FF;
+}
+#menu LI:hover A, #menu LI.active A, #menu LI.active SPAN
+{
+	color: #000000;
+}
+/********************************************************************************
+Page
+********************************************************************************/
+#page
+{
+/*	overflow: hidden; */
+	padding: 1em 0em 1em;
+}
+/********************************************************************************
+Content
+********************************************************************************/
+#content
+{
+/*	float: inherit; */
+	max-width: 1150px; 
+	text-align: left;
+}
+/*********************************************************************************/
+#copyright
+{
+/*	overflow: hidden; */
+	padding: 1em 0em;
+}
+#copyright P
+{
+	letter-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #6F6F6F;
+}

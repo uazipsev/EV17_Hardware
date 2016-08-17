@@ -1,0 +1,23 @@
+* D:\Dropbox\EV\2016 Hardware\Calc\BPAZ\Schematic1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Oct 26 22:20:10 2015
+
+
+
+** Analysis setup **
+.tran 0s 4s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+.INC "Schematic1.als"
+
+
+.probe
+
+
+.END

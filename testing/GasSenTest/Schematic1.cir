@@ -1,0 +1,23 @@
+* D:\Dropbox\EV\2015\testing\GasSenTest\Schematic1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Feb 22 00:49:54 2015
+
+
+
+** Analysis setup **
+.OP 
+.STMLIB "Schematic1.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+.INC "Schematic1.als"
+
+
+.probe
+
+
+.END

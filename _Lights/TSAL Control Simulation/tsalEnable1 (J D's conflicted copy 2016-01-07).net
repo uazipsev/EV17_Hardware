@@ -1,0 +1,22 @@
+* C:\Users\Desktop\Dropbox\EV\2016 Hardware\_Lights Done\TSAL Simulation\tsalEnable1.asc
+XU1 N005 N003 N002 LT1083
+C1 N002 0 10µf
+R1 N005 0 1k
+C2 N003 0 10µf
+XU2 N008 N006 N004 NC_01 N007 LTC6244
+R3 N003 N004 2k
+D1 N002 N001 KDZ27B
+D2 0 N004 UMZ12K
+R4 N003 N008 10k
+R5 N008 0 1k
+R6 N004 N006 2k
+R7 N003 N005 40
+V1 N001 0 SINE(40 20 100)
+D4 0 N006 UDZV6_2B
+.model D D
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.dio
+.tran .2
+.lib LT1083.lib
+.lib LTC5.lib
+.backanno
+.end

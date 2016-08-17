@@ -1,0 +1,22 @@
+Circuit: * C:\Users\Joseph\Dropbox\EV\2016 Hardware\_Back Plane (PDU)\HornCircuit\HornTankCircuit2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Feb 23 15:43:30 2016
+Total elapsed time: 0.179 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 18312
+traniter = 18300
+tranpoints = 7813
+accept = 5662
+rejected = 2151
+matrix size = 14
+fillins = 1
+solver = Normal
+Matrix Compiler1: 760 bytes object code size  0.5/0.2/[0.2]
+Matrix Compiler2: off  [0.2]/0.5/0.3
+
+

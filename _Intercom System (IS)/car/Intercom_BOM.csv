@@ -1,0 +1,75 @@
+Qty-1,Part References,Value,Package,Mfg Part Num,Mfg Name,VID,Vendor Part Num,Description,Pkg Code,XREF
+1,"D1",,SOD-323,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+3,"LED4, RX1, TX1",,CHIPLED_0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"JP2",,1X03_LOCK_LONGPADS,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"JP1",,1X03,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"ICSP",,1X05_LOCK_LONGPADS,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"SJ3",,SJ_2S-NO,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"S3",,TACTILE-PTH-SIDEEZ,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R40",,CA6H,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"L1",0,1007,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+15,"C5, C6, C7, C8, C9, C10, C11, C13, C23, C24, C25, C26, C37, C43, C46",0.1uF,0805,C0805C104K5RACTU,Kemet,DK,399-1170-1-ND,CAP CER 0.1UF 50V 10% X7R 0805,0805 (2012 Metric),REF12
+1,"R39",1.5k,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"R17, R81",1K,R0805,ERJ-6GEYJ102V,Panasonic Electronic Components,DK,P1.0KACT-ND,RES SMD 1K OHM 5% 1/8W 0805,0805 (2012 Metric),REF15
+1,"R10",1M,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+4,"R6, R7, R9, R11",1M 1%,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R82",1k,R0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+3,"R16, R38, R45",1k,0805,ERJ-6GEYJ102V,Panasonic Electronic Components,DK,P1.0KACT-ND,RES SMD 1K OHM 5% 1/8W 0805,0805 (2012 Metric),REF15
+5,"C19, C32, C33, C34, C39",1uF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R12",2M,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C16",3.3nf,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"Y1",8MHz,RESONATOR-SMD,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R23",10,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R33",10K,0805,RC0805FR-0710KL,Yageo,DK,311-10.0KCRCT-ND,RES SMD 10K OHM 1% 1/8W 0805,0805 (2012 Metric),REF55
+7,"R1, R2, R3, R4, R8, R14, R19",10k,0805,RC0805FR-0710KL,Yageo,DK,311-10.0KCRCT-ND,RES SMD 10K OHM 1% 1/8W 0805,0805 (2012 Metric),REF55
+2,"C21, C22",10nF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+6,"C28, C30, C36, C38, C44, C45",10uF,EIA3216,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C29",10uF,EIA7343,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C27",10uF,CT6032,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"Y2",12.288MHz,CRYSTAL-SMD-5X3,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"R24, R25",20,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"C17, C18",22pF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"R31, R34",47k,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C20",47nF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"R30, R41",68k,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+8,"R20, R21, R22, R26, R27, R28, R29, R37",100k,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+3,"C1, C12, C41",100nF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C42",100nf,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C4",100uF,EIA3216,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C14",100uF,EIA3528-KIT,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R15",120,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R5",120k,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C31",220pF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R13",300k,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+4,"R32, R35, R36, R46",330,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"R18",470,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"C35, C40",470nF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+3,"R42, R43, R44",499,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"C15",680pF,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"IC2",7805DT,TO252,MC7805BDTRKG,ON Semiconductor,DK,MC7805BDTRKGOSCT-ND,IC REG LDO 5V 1A DPAK,TO-252-3, DPak (2 Leads + Tab), SC-63,REF114
+1,"U5",ATMEGA328,TQFP32-08,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"L2",BLM18EG221TN1D,0603,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"L4",BLM18HG102SN1D,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+3,"Q1, Q2, Q3",BSS123,SOT23,BSS123L,Fairchild Semiconductor,DK,BSS123LCT-ND,MOSFET N-CH 100V 0.17A SOT-23,TO-236-3, SC-59, SOT-23-3,REF19
+1,"CARD1",CARD,CARD-64,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"A1",CONSMA003.062,CONSMA003.062,CONSMA002,Linx Technologies Inc.,DK,CONSMA002-ND,CONN SMA JACK R/A 50 OHM PCB,None,REF120
+2,"C2, C3",DNC,0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+3,"LED1, LED3, LED5",GREEN,CHIPLED_0805,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"LED2",LED-TRICOLOR,LED-TRICOLOR-SMD,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U12",LMV358,SO08,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"JP7",M02LOCK,1X02_LOCK,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"U9, U13",NCP1117DT,V-REG_DPACK,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"IC1",NE555D,SO08,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"SJ1",NO,SJ_2S-NO,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U14",OPA344,SOT23-5,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U$5",OSHW-LOGOM,OSHW-LOGO-M,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U8",PIC18F45K22,TQFP-44,PIC18F45K22T-I/PT,Microchip Technology,DK,PIC18F45K22T-I/PTCT-ND,IC MCU 8BIT 32KB FLASH 44TQFP,44-TQFP,REF105
+1,"JP9",PROG,2X3-NS,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"L3, L5",SDE0805A-220M,CR54,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+2,"U2, U6",SN74LVC1G3157DBVR,SOT23-6,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U11",SN75HVD08DR,SO-8,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U10",SP6214 1.8V,SC70,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U1",SR-FRS-1W,SR-FRS-1W,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U3",TPA2000D1TPWRQ1,TSSOP-16,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U7",USD-SOCKET,MICRO-SD-SOCKET-PP,***PART# '*' NOT FOUND***,*,*,*,*,*,*
+1,"U4",VS1053,LQFP-48,***PART# '*' NOT FOUND***,*,*,*,*,*,*

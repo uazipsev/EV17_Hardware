@@ -1,0 +1,15 @@
+* Schematics Netlist *
+
+
+
+R_R6         0 $N_0001  1k  
+R_R8         0 $N_0002  1k  
+R_R5         $N_0004 $N_0003  1k  
+V_V1         $N_0003 0 5V
+X_U3A         $N_0004 $N_0004 $N_0004 $N_0005 $N_0001 $N_0002 $G_DPWR $G_DGND
++  7474 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+V_V2         $N_0006 0 DC 5 
++PULSE 5v 0v 2s 0.1ms 0.1s 1s 5s
+E_U4         $N_0005 0 VALUE {LIMIT(V($N_0006,$N_0007)*1E6,-15V,+15V)}
+V_V3         $N_0007 0 2.5V

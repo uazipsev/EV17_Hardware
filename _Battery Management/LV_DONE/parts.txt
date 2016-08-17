@@ -1,0 +1,129 @@
+Partlist
+
+Exported from BMS-LV.brd at 4/22/2016 3:45 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value            Package                  Library       Position (mil)        Orientation
+
+C1       0.1uF            0603                     FSAE Electric (2977 980)            MR270.3
+C2       0.1uF            0805                     FSAE Electric (2871 1539)           MR90
+C3       0.1uF            0603                     FSAE Electric (2978 1684)           MR180
+C4       4.7uF            1206@1                   FSAE Electric (2103 1093)           MR180
+C5       0.1uF            0603                     FSAE Electric (2005.5 1315.5)       R0
+C6       1uF              0805                     FSAE Electric (2228 1128)           MR270
+C7       100pF            0603                     FSAE Electric (1878 1315.5)         R0
+C8       10uF             1206@1                   FSAE Electric (1908 1038)           R0
+C9       10uF             1206@1                   FSAE Electric (1908 938)            R0
+C10      0.1uF            0603                     FSAE Electric (2436 1644)           MR0
+C11      0.1uF            0603                     FSAE Electric (2324 1652)           MR270
+C12      0.1uF            0603                     FSAE Electric (2553 599)            MR0
+C13      10nF             0603                     FSAE Electric (1286 1662)           MR0
+C14      10nF             0603                     FSAE Electric (1106 1662)           MR0
+C15      10nF             0603                     FSAE Electric (966 1662)            MR0
+C16      10nF             0603                     FSAE Electric (796 1662)            MR0
+C17      10nF             0603                     FSAE Electric (666 1662)            MR0
+C18      10nF             0603                     FSAE Electric (536 1662)            MR0
+C19      10nF             0603                     FSAE Electric (366 1662)            MR0
+C20      10nF             0603                     FSAE Electric (216 1662)            MR0
+C21      1uF              0805                     FSAE Electric (770 1120)            MR90
+C22      1uF              0805                     FSAE Electric (850 1118)            MR90
+C23      1uF              0805                     FSAE Electric (1050 1142)           MR90
+C24      10uF             1206@1                   FSAE Electric (1142 236)            MR0
+C25      0.1uF            0603                     FSAE Electric (1436 363)            MR180
+C26      0.1uF            0603                     FSAE Electric (1360 290)            R180
+D1       LED_GREEN        CHIP_LED0805             FSAE Electric (1336 1972)           R180
+D2       LED_GREEN        CHIP_LED0805             FSAE Electric (1156 1972)           R180
+D3       LED_GREEN        CHIP_LED0805             FSAE Electric (976 1972)            R180
+D4       LED_GREEN        CHIP_LED0805             FSAE Electric (796 1972)            R180
+D5       LED_GREEN        CHIP_LED0805             FSAE Electric (616 1972)            R180
+D6       LED_GREEN        CHIP_LED0805             FSAE Electric (436 1972)            R180
+D7       LED_GREEN        CHIP_LED0805             FSAE Electric (256 1972)            R180
+D8       LED_AMBER        CHIP_LED0805             FSAE Electric (2680 1040)           R180
+D9       LED_GREEN        CHIP_LED0805             FSAE Electric (2750 1040)           R180
+D10      22V              SOD-323                  FSAE Electric (2198 898)            R0
+F1       0.12A 48V PTC    1206@1                   FSAE Electric (2482 842)            R90
+F2       FUSE CLIPS       FUSECLIP-3550            FSAE Electric (2952 2258)           R270
+J1       M1x5             5X.1                     FSAE Electric (2738 1614)           R270
+J2       M1x4             MOLEX_1X4                FSAE Electric (1830 2350)           R90
+J3       M1x4             MOLEX_1X4                FSAE Electric (1830 1930)           R90
+J4       M1x4             MOLEX_1X4                FSAE Electric (1580 1930)           R90
+J5       M1x2             MOLEX-1X2                FSAE Electric (1580 2250)           R90
+J6       MX150L           MOLEX-MX150L             FSAE Electric (2720 350)            R0
+J7       M2770166         1-770166-0               FSAE Electric (2382 2342)           R270
+J8       M1x5             5X.1                     FSAE Electric (211 1327)            R90
+J9       M80022232081-2   MOLEX-1X8-2              FSAE Electric (746 2442)            R0
+K1       ADJ14024         ADJ14024                 FSAE Electric (3362 1850)           R270
+L1       SRN4018-220M     SRN4018                  FSAE Electric (1918 1168)           R180
+Q2       40V 0.2A         SOT23                    FSAE Electric (2168 998)            R90
+Q3       BDX34C           TO-220                   FSAE Electric (1335 114)            R180
+QB1      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (1246 2002)           MR180
+QB2      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (1066 2002)           MR180
+QB3      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (886 2002)            MR180
+QB4      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (706 2002)            MR180
+QB5      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (526 2002)            MR180
+QB6      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (346 2002)            MR180
+QB7      MOS-P_DMP2305U-7 SOT23                    FSAE Electric (166 2002)            MR180
+R1       1k               0603                     FSAE Electric (2675 1170)           R90
+R2       1k               0603                     FSAE Electric (2760 1170)           R90
+R3       120              0603                     FSAE Electric (2605 460)            MR0
+R4       10k              0603                     FSAE Electric (2817.5 1769.5)       MR270
+R5       3.3k             0805                     FSAE Electric (1246 1882)           MR180
+R6       3.3k             0805                     FSAE Electric (1066 1882)           MR180
+R7       3.3k             0805                     FSAE Electric (886 1882)            MR180
+R8       3.3k             0805                     FSAE Electric (706 1882)            MR180
+R9       3.3k             0805                     FSAE Electric (526 1882)            MR180
+R10      3.3k             0805                     FSAE Electric (346 1882)            MR180
+R11      3.3k             0805                     FSAE Electric (166 1882)            MR180
+R12      10k              MNR14                    FSAE Electric (1926 1672)           MR180
+R13      10k              MNR14                    FSAE Electric (1686 1672)           MR0.1
+R14      16               RR02J16RTB               FSAE Electric (1336 2132)           R270
+R15      16               RR02J16RTB               FSAE Electric (1156 2132)           R270
+R16      16               RR02J16RTB               FSAE Electric (976 2132)            R270
+R17      16               RR02J16RTB               FSAE Electric (796 2132)            R270
+R18      100              0603                     FSAE Electric (1326 1772)           MR90
+R19      100              0603                     FSAE Electric (1246 1772)           MR270
+R20      16               RR02J16RTB               FSAE Electric (616 2132)            R270
+R21      16               RR02J16RTB               FSAE Electric (436 2132)            R270
+R22      16               RR02J16RTB               FSAE Electric (256 2132)            R270
+R23      100              0603                     FSAE Electric (1066 1772)           MR90
+R24      100              0603                     FSAE Electric (886 1772)            MR90
+R25      100              0603                     FSAE Electric (706 1772)            MR90
+R26      100              0603                     FSAE Electric (526 1772)            MR90
+R27      100              0603                     FSAE Electric (346 1772)            MR90
+R28      100              0603                     FSAE Electric (166 1772)            MR90
+R29      1k               0603                     FSAE Electric (1246 1972)           R270
+R30      1k               0603                     FSAE Electric (1066 1972)           R270
+R31      1k               0603                     FSAE Electric (886 1972)            R270
+R32      1k               0603                     FSAE Electric (706 1972)            R270
+R33      1k               0603                     FSAE Electric (526 1972)            R270
+R34      1k               0603                     FSAE Electric (346 1972)            R270
+R35      1k               0603                     FSAE Electric (166 1972)            R270
+R36      1k               0603                     FSAE Electric (1196 357)            MR270
+R37      4.99k            0603                     FSAE Electric (1401.5 1539.5)       R90
+R38      0.5              CHASSIS-MNT-RES-TE-HSA25 FSAE Electric (1120 740)            R180
+R39      10k              0603                     FSAE Electric (2068 898)            R180
+R40      10k              0603                     FSAE Electric (2328 898)            MR0
+R41      91k              0805                     FSAE Electric (1928 1178)           MR270
+R42      47k              0603                     FSAE Electric (2288 1088)           R180
+R43      12.4k            0603                     FSAE Electric (2330.5 1128)         MR90
+R44      10k              0603                     FSAE Electric (2328 898)            R0
+R45      100k             0805                     FSAE Electric (1911 1600)           R270
+R46      1k               0805                     FSAE Electric (1992 1701)           R90
+R47      RES_0_1%         0603                     FSAE Electric (978 1142)            MR270
+R48      32.4k            0603                     FSAE Electric (3168 980)            MR270
+R49      5.36k            0603                     FSAE Electric (3072 980)            MR90
+R50      4.99k            0603                     FSAE Electric (1321 1499)           R90
+R51      4.99k            0603                     FSAE Electric (1240 1459)           R90
+R52      4.99k            0603                     FSAE Electric (1156 1399)           R90
+R53      100              0603                     FSAE Electric (1440 215)            MR180
+U1       PIC18F45K22      TQFP-44                  FSAE Electric (2356 1614)           R179.9
+U2       LTC6804-2        SSOP-48                  FSAE Electric (846 1262)            R180
+U3       ACS712           SO-8                     FSAE Electric (3062 1514)           MR270
+U4       SN75HVD08DRSOIC  SO-8                     FSAE Electric (2720 700)            MR180
+U6       NUD3160DMT1G     SC74-6                   FSAE Electric (3460 1712)           MR90
+U7       ISL85415-FRZ-T7A DFN-12                   FSAE Electric (2158 1188)           R90
+U8       BSS308PE         SOT23                    FSAE Electric (1807 1606)           R180
+U9       OPA344           SOT23-5                  FSAE Electric (1310 288)            MR0

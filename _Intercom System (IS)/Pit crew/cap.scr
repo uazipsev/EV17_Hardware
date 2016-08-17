@@ -1,0 +1,3300 @@
+# Library script
+# 
+# Exported from C:/Program Files (x86)/EAGLE-6.6.0/lbr/SparkFun-Capacitors.lbr at 9/30/2015 9:41:56 PM
+# 
+# EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+# 
+Set Wire_Bend 2;
+# Grid changed to 'mm' to avoid loss of precision!
+Grid mm;
+Layer   1 Top;
+Layer   2 Route2;
+Layer   3 Route3;
+Layer   4 Route4;
+Layer   5 Route5;
+Layer   6 Route6;
+Layer   7 Route7;
+Layer   8 Route8;
+Layer   9 Route9;
+Layer  10 Route10;
+Layer  11 Route11;
+Layer  12 Route12;
+Layer  13 Route13;
+Layer  14 Route14;
+Layer  15 Route15;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  50 dxf;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer  53 tGND_GNDA;
+Layer  54 bGND_GNDA;
+Layer  56 wert;
+Layer  91 Nets;
+Layer  92 Busses;
+Layer  93 Pins;
+Layer  94 Symbols;
+Layer  95 Names;
+Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
+Layer 100 Muster;
+Layer 101 Patch_Top;
+Layer 102 Vscore;
+Layer 103 tMap;
+Layer 104 Name;
+Layer 105 tPlate;
+Layer 106 bPlate;
+Layer 107 Crop;
+Layer 116 Patch_BOT;
+Layer 121 _tsilk;
+Layer 122 _bsilk;
+Layer 125 _tNames;
+Layer 144 Drill_legend;
+Layer 151 HeatSink;
+Layer 200 200bmp;
+Layer 201 201bmp;
+Layer 202 202bmp;
+Layer 203 203bmp;
+Layer 204 204bmp;
+Layer 205 205bmp;
+Layer 206 206bmp;
+Layer 207 207bmp;
+Layer 208 208bmp;
+Layer 209 209bmp;
+Layer 210 210bmp;
+Layer 211 211bmp;
+Layer 212 212bmp;
+Layer 213 213bmp;
+Layer 214 214bmp;
+Layer 215 215bmp;
+Layer 216 216bmp;
+Layer 217 217bmp;
+Layer 218 218bmp;
+Layer 219 219bmp;
+Layer 220 220bmp;
+Layer 221 221bmp;
+Layer 222 222bmp;
+Layer 223 223bmp;
+Layer 224 224bmp;
+Layer 250 Descript;
+Layer 251 SMDround;
+Layer 254 cooling;
+Description '\
+<h3>SparkFun Electronics'' preferred foot prints</h3>\n\
+In this library you''ll find resistors, capacitors, inductors, test points, jumper pads, etc.<br><br>\n\
+We''ve spent an enormous amount of time creating and checking these footprints and parts, but it is the end user''s responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.\n\
+<br><br>\n\
+<b>Licensing:</b> Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ \n\
+<br><br>\n\
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.';
+
+Edit 'CAP.sym';
+Layer 94;
+Change Style continuous;
+Wire  0.1524 (0 2.54) (0 2.032);
+Wire  0.1524 (0 0) (0 0.508);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (1.524 2.921);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (1.524 -2.159);
+Layer 94;
+Rect R0 (-2.032 0.508) (2.032 1.016);
+Layer 94;
+Rect R0 (-2.032 1.524) (2.032 2.032);
+Pin '1' pas none short R270 off 1 (0 5.08);
+Pin '2' pas none short R90 off 1 (0 -2.54);
+
+Edit 'CAP_ADJ.sym';
+Layer 94;
+Wire  0.254 (-2.032 -0.762) (2.032 3.302);
+Wire  0.254 (1.016 3.302) (2.032 3.302) (2.032 2.286);
+Wire  0.1524 (0 2.54) (0 2.032);
+Wire  0.1524 (0 0) (0 0.508);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>NAME' R0 (1.524 2.921);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (1.524 -2.159);
+Layer 94;
+Rect R0 (-2.032 0.508) (2.032 1.016);
+Layer 94;
+Rect R0 (-2.032 1.524) (2.032 2.032);
+Pin '3' pas none short R270 off 1 (0 5.08);
+Pin '4' pas none short R90 off 1 (0 -2.54);
+
+Edit 'CAP_POL.sym';
+Layer 94;
+Wire  0.254 (-2.54 0) (2.54 0);
+Wire  0.1524 (0 -1.016) (0 -2.54);
+Wire  0.254 (0 -1) flat -37.8782 (2.4892 -1.8542);
+Wire  0.254 (-2.4669 -1.8504) flat -37.3763 (0 -1.0161);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>NAME' R0 (1.016 0.635);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (1.016 -4.191);
+Layer 94;
+Rect R0 (-2.253 0.668) (-1.364 0.795);
+Layer 94;
+Rect R0 (-1.872 0.287) (-1.745 1.176);
+Pin '+' pas none short R270 off 1 (0 2.54);
+Pin '-' pas none short R90 off 1 (0 -5.08);
+
+Edit 'CAP-PTH-SMALL.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (1.27 0.635) (1.27 -0.635);
+Change Drill 0.7;Pad '1' round 1.651 R0 (0 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 (2.54 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (0.508 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (0.254 -1.524);
+
+Edit 'CAP-PTH-SMALL2.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (1.27 0.635) (1.27 -0.635);
+Wire  0.2032 (-1.27 1.27) (3.81 1.27) (3.81 -1.27) (-1.27 -1.27) \
+      (-1.27 1.27);
+Change Drill 0.7;Pad '1' round 1.651 R0 (0 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 (2.54 0);
+Layer 25;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>Name' R0 (-1.27 1.905);
+Layer 27;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>Value' R0 (-1.27 -2.54);
+
+Edit 'CAP-PTH-SMALLEZ.pac';
+Description '\
+This is the "EZ" version of the .1" spaced ceramic thru-hole cap.<br>\n\
+It has reduced top mask to make it harder to put the component on the wrong side of the board.';
+Layer 21;
+Wire  0.2032 (1.27 0.635) (1.27 -0.635);
+Wire  0.2032 (-1.27 1.27) (3.81 1.27) (3.81 -1.27) (-1.27 -1.27) \
+      (-1.27 1.27);
+Change Drill 0.7;Pad '1' round 1.651 R0 NOSTOP (0 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 NOSTOP (2.54 0);
+Layer 25;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>Name' R0 (-1.27 1.905);
+Layer 27;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>Value' R0 (-1.27 -2.54);
+Layer 30;
+Circle 0 (0 0) (0.898025 0);
+Layer 30;
+Circle 0 (2.54 0) (3.455809375 0);
+Layer 29;
+Circle 0 (0 0) (0.40160625 0);
+Layer 29;
+Circle 0 (2.54 0) (2.94160625 0);
+
+Edit '0805.pac';
+Description '';
+Layer 21;
+Wire  0.1524 (-0.3 0.6) (0.3 0.6);
+Wire  0.1524 (-0.3 -0.6) (0.3 -0.6);
+Layer 1;
+Smd '1' 0.8 1.2 -0 R0 (-0.9 0);
+Layer 1;
+Smd '2' 0.8 1.2 -0 R0 (0.9 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.762 0.8255);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.016 -1.397);
+
+Edit 'CAP-PTH-LARGE.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (0 0.635) (0 0) (0 -0.635);
+Wire  0.2032 (0 0) (-2.54 0);
+Wire  0.2032 (0 0) (2.54 0);
+Change Drill 0.9;Pad '1' round 1.905 R0 (-4.826 0);
+Change Drill 0.9;Pad '2' round 1.905 R0 (4.572 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.762 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-1.016 -1.524);
+
+Edit 'GRM43D.pac';
+Description '';
+Layer 51;
+Wire  0.127 (2.25 1.6) (1.1 1.6) (-1.1 1.6) (-2.25 1.6) \
+      (-2.25 -1.6) (-1.1 -1.6) (1.1 -1.6) (2.25 -1.6) \
+      (2.25 1.6);
+Wire  0.127 (1.1 1.6) (1.1 -1.6);
+Wire  0.127 (-1.1 1.6) (-1.1 -1.6);
+Layer 21;
+Wire  0.127 (-2.3 1.8) (2.3 1.8);
+Wire  0.127 (-2.3 -1.8) (2.3 -1.8);
+Layer 1;
+Smd 'A' 3.2 1.65 -0 R90 (1.927 0);
+Layer 1;
+Smd 'C' 3.2 1.65 -0 R90 (-1.927 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2 2);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R180 (0 -2);
+Layer 51;
+Rect R0 (-2.2 -1.6) (-1.1 1.6);
+Layer 51;
+Rect R0 (1.1 -1.6) (2.2 1.6);
+
+Edit '0603-CAP.pac';
+Description '';
+Layer 39;
+Wire  0.0508 (-1.473 0.983) (1.473 0.983) (1.473 -0.983) (-1.473 -0.983) \
+      (-1.473 0.983);
+Layer 51;
+Wire  0.1016 (-0.356 0.432) (0.356 0.432);
+Wire  0.1016 (-0.356 -0.419) (0.356 -0.419);
+Layer 21;
+Wire  0.5588 (0 0.0305) (0 -0.0305);
+Layer 1;
+Smd '1' 1.1 1 -0 R0 (-0.85 0);
+Layer 1;
+Smd '2' 1.1 1 -0 R0 (0.85 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font vector;
+Text '>NAME' R0 (-0.889 0.762);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.016 -1.143);
+Layer 51;
+Rect R0 (-0.8382 -0.4699) (-0.3381 0.4801);
+Layer 51;
+Rect R0 (0.3302 -0.4699) (0.8303 0.4801);
+Layer 35;
+Rect R0 (-0.1999 -0.3) (0.1999 0.3);
+
+Edit '0402-CAP.pac';
+Description '\
+<b>CAPACITOR</b><p>\n\
+chip';
+Layer 51;
+Wire  0.1524 (-0.245 0.224) (0.245 0.224);
+Wire  0.1524 (0.245 -0.224) (-0.245 -0.224);
+Layer 39;
+Wire  0.0508 (-1.473 0.483) (1.473 0.483) (1.473 -0.483) (-1.473 -0.483) \
+      (-1.473 0.483);
+Layer 21;
+Wire  0.4064 (0 0.0305) (0 -0.0305);
+Layer 1;
+Smd '1' 0.7 0.9 -0 R0 (-0.65 0);
+Layer 1;
+Smd '2' 0.7 0.9 -0 R0 (0.65 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-0.889 0.6985);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.0795 -1.143);
+Layer 51;
+Rect R0 (-0.554 -0.3048) (-0.254 0.2951);
+Layer 51;
+Rect R0 (0.2588 -0.3048) (0.5588 0.2951);
+Layer 35;
+Rect R0 (-0.1999 -0.3) (0.1999 0.3);
+
+Edit 'CAP-PTH-5MM.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (0 0.635) (0 -0.635);
+Change Drill 0.7;Pad '1' round 1.651 R0 (-2.5 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 (2.5 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.762 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-1.016 -1.524);
+
+Edit 'AXIAL-5MM.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-1.14 0.762) (1.14 0.762) (1.14 0) (1.14 -0.762) \
+      (-1.14 -0.762) (-1.14 0) (-1.14 0.762);
+Wire  0.2032 (1.14 0) (1.394 0);
+Wire  0.2032 (-1.14 0) (-1.394 0);
+Change Drill 0.9;Pad 'P$1' round 1.8796 R0 (-2.5 0);
+Change Drill 0.9;Pad 'P$2' round 1.8796 R0 (2.5 0);
+Layer 25;
+Change Size 0.4;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 1.17);
+Layer 21;
+Change Size 0.4;
+Change Ratio 15;
+Change Align bottom left;
+Text '>Value' R0 (-1.032 -0.208);
+
+Edit '1210.pac';
+Description '';
+Layer 51;
+Wire  0.127 (-1.6 1.3) (1.6 1.3) (1.6 -1.3) (-1.6 -1.3) \
+      (-1.6 1.3);
+Layer 21;
+Wire  0.2032 (-1.6 1.3) (1.6 1.3);
+Wire  0.2032 (-1.6 -1.3) (1.6 -1.3);
+Layer 1;
+Smd '1' 1.2 2 -0 R0 (-1.6 0);
+Layer 1;
+Smd '2' 1.2 2 -0 R0 (1.6 0);
+Layer 25;
+Change Size 0.4064;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R0 (-0.8 0.5);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.9 -0.7);
+
+Edit '1206.pac';
+Description '';
+Layer 39;
+Wire  0.0508 (-2.473 0.983) (2.473 0.983);
+Wire  0.0508 (2.473 -0.983) (-2.473 -0.983) (-2.473 0.983);
+Wire  0.0508 (2.473 0.983) (2.473 -0.983);
+Layer 51;
+Wire  0.1016 (-0.965 0.787) (0.965 0.787);
+Wire  0.1016 (-0.965 -0.787) (0.965 -0.787);
+Layer 1;
+Smd '1' 1.6 1.8 -0 R0 (-1.4 0);
+Layer 1;
+Smd '2' 1.6 1.8 -0 R0 (1.4 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.143);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.397 -1.524);
+Layer 51;
+Rect R0 (-1.7018 -0.8509) (-0.9517 0.8491);
+Layer 51;
+Rect R0 (0.9517 -0.8491) (1.7018 0.8509);
+Layer 35;
+Rect R0 (-0.1999 -0.4001) (0.1999 0.4001);
+
+Edit 'CTZ3.pac';
+Description 'CTZ3 Series land pattern for variable capacitor - CTZ3E-50C-W1-PF';
+Layer 51;
+Wire  0.127 (-1.6 1.4) (-1.6 -2.25) (1.6 -2.25);
+Wire  0.127 (1.6 1.4) (1.6 -2.25);
+Wire  0.127 (-0.5 0) (0.5 0);
+Wire  0.127 (-1.6 1.4) (-1 2.2);
+Wire  0.127 (1.6 1.4) (1 2.2);
+Wire  0.127 (-1 2.2) (1 2.2);
+Wire  0.127 (0 0.8) (0 -0.8);
+Wire  0.127 (-0.8 0) (0.8 0);
+Layer 21;
+Wire  0.127 (-1.05 2.25) (-1.7 1.45) (-1.7 -2.35) (-1.05 -2.35);
+Wire  0.127 (1.05 2.25) (1.7 1.4) (1.7 -2.35) (1.05 -2.35);
+Layer 1;
+Smd '+' 1.5 1.2 -0 R0 (0 2.05);
+Layer 1;
+Smd '-' 1.5 1.2 -0 R0 (0 -2.05);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2 3);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-2 -3.4);
+
+Edit 'CAP-PTH-SMALL-KIT.pac';
+Description '\
+<h3>CAP-PTH-SMALL-KIT</h3>\n\
+Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).<br>\n\
+<br>\n\
+<b>Warning:</b> This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn''t cover the diameter of the pad. This means only the bottom side of the pads'' copper will be exposed. You''ll only be able to solder to the bottom side.';
+Layer 21;
+Wire  0.254 (0 0.635) (0 -0.635);
+Wire  0.254 (-2.667 1.27) (2.667 1.27) (2.667 -1.27) (-2.667 -1.27) \
+      (-2.667 1.27);
+Change Drill 1.016;Pad '1' round 2.032 R0 NOSTOP (-1.397 0);
+Change Drill 1.016;Pad '2' round 2.032 R0 NOSTOP (1.397 0);
+Layer 30;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (-1.4021 -0.9475) -90 (-2.357 -0.0178) -90.0117 (-1.4046 0.9576) -90 (-0.4546 -0.0204) -90.0242 \
+      (-1.4021 -0.9475);
+Layer 29;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (-1.4046 -0.4395) -90.0129 (-1.8491 -0.0153) -90 (-1.4046 0.452) -90 (-0.9627 -0.0051) -90.013 \
+      (-1.4046 -0.4395);
+Layer 30;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (1.397 -0.9475) -90 (0.4421 -0.0178) -90.0117 (1.3945 0.9576) -90 (2.3445 -0.0204) -90.0242 \
+      (1.397 -0.9475);
+Layer 29;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (1.3945 -0.4395) -90.0129 (0.95 -0.0153) -90 (1.3945 0.452) -90 (1.8364 -0.0051) -90.013 \
+      (1.3945 -0.4395);
+
+Edit 'EIA3216.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-1 -1.2) (-2.5 -1.2) (-2.5 1.2) \
+      (-1 1.2);
+Wire  0.2032 (1 -1.2) (2.1 -1.2) (2.5 -0.8) (2.5 0.8) \
+      (2.1 1.2) (1 1.2);
+Wire  0.127 (0.381 1.016) (0.381 -1.016);
+Layer 1;
+Smd 'C' 1.6 1.4 -0 R90 (-1.4 0);
+Layer 1;
+Smd 'A' 1.6 1.4 -0 R90 (1.4 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2.54 1.381);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (0.408 1.332);
+
+Edit 'EIA3528.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-0.9 -1.6) (-2.6 -1.6) (-2.6 1.55) (-0.9 1.55);
+Wire  0.2032 (1 -1.55) (2.2 -1.55) (2.6 -1.2) (2.6 1.25) \
+      (2.2 1.55) (1 1.55);
+Wire  0.2032 (2.2 1.55) (1 1.55);
+Change Style longdash;
+Wire  0.2032 (0.609 1.311) (0.609 -1.286);
+Layer 1;
+Smd 'C' 2.5 1.2 -0 R90 (-1.65 0);
+Layer 1;
+Smd 'A' 2.5 1.2 -0 R90 (1.65 0);
+Layer 25;
+Change Size 1.27;
+Change Align bottom left;
+Text '>NAME' R90 (-2.27 -1.27);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R90 (3.24 -1.37);
+
+Edit 'CPOL-RADIAL-100UF-25V.pac';
+Description '';
+Layer 21;
+Change Style continuous;
+Wire  0.2032 (-0.635 1.27) (-1.905 1.27);
+Layer 21;
+Circle 0.2032 (0 0) (3.25 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 (-1.27 0);
+Change Drill 0.7;Pad '1' square 1.651 R0 (1.27 0);
+Layer 27;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-1.905 -4.318);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.762 1.651);
+
+Edit 'CPOL-RADIAL-10UF-25V.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-0.762 1.397) (-1.778 1.397);
+Layer 21;
+Circle 0.2032 (0 0) (2.5 0);
+Change Drill 0.7;Pad '1' square 1.651 R0 (1.27 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 (-1.27 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.889 1.524);
+Layer 27;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-1.905 -3.683);
+
+Edit 'EIA7343.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-5 2.5) (-2 2.5);
+Wire  0.2032 (-5 2.5) (-5 -2.5) (-2 -2.5);
+Wire  0.2032 (2 2.5) (4 2.5) (5 1.5) (5 -1.5) \
+      (4 -2.5) (2 -2.5);
+Layer 1;
+Smd 'C' 2.55 2.7 -0 R180 (-3.17 0);
+Layer 1;
+Smd 'A' 2.55 2.7 -0 R180 (3.17 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-1.27 -1.27);
+
+Edit 'PANASONIC_G.pac';
+Description '<b>Panasonic Aluminium Electrolytic Capacitor VS-Serie Package G</b>';
+Layer 51;
+Wire  0.1016 (-5.1 5.1) (2.8 5.1) (5.1 2.8) (5.1 -2.8) \
+      (2.8 -5.1) (-5.1 -5.1) (-5.1 5.1);
+Layer 21;
+Wire  0.2032 (-5.1 1) (-5.1 5.1) (2.8 5.1) (5.1 2.8) \
+      (5.1 1);
+Wire  0.2032 (5.1 -1) (5.1 -2.8) (2.8 -5.1) (-5.1 -5.1) \
+      (-5.1 -1);
+Wire  0.2032 (-4.85 -1) flat +156.699 (4.85 -1);
+Wire  0.2032 (-4.85 1) flat -156.699 (4.85 1);
+Layer 51;
+Wire  0.1016 (-3.25 3.7) (-3.25 -3.65);
+Layer 51;
+Circle 0.1016 (0 0) (4.95 0);
+Layer 1;
+Smd '-' 3.9 1.6 -0 R0 (-4.25 0);
+Layer 1;
+Smd '+' 3.9 1.6 -0 R0 (4.25 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -2.54);
+Layer 51;
+Rect R0 (-5.85 -0.45) (-4.9 0.45);
+Layer 51;
+Rect R0 (4.9 -0.45) (5.85 0.45);
+Layer 51;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.1016  (-3.3 3.6) (-4.05 2.75) (-4.65 1.55) (-4.85 0.45) \
+      (-4.85 -0.45) (-4.65 -1.55) (-4.05 -2.75) (-3.3 -3.6) \
+      (-3.3 3.55) (-3.3 3.6);
+
+Edit 'PANASONIC_E.pac';
+Description '<b>Panasonic Aluminium Electrolytic Capacitor VS-Serie Package E</b>';
+Layer 51;
+Wire  0.1016 (-4.1 4.1) (1.8 4.1) \
+      (4.1 1.8) (4.1 -1.8) (1.8 -4.1) (-4.1 -4.1) \
+      (-4.1 4.1);
+Layer 21;
+Wire  0.2032 (-4.1 0.9) (-4.1 4.1) (1.8 4.1) (4.1 1.8) \
+      (4.1 0.9);
+Wire  0.2032 (4.1 -0.9) (4.1 -1.8) (1.8 -4.1) (-4.1 -4.1) \
+      (-4.1 -0.9);
+Layer 51;
+Wire  0.1016 (-2.2 3.25) (-2.2 -3.25);
+Layer 21;
+Wire  0.2032 (-3.85 0.9) flat -153.685 (3.85 0.9);
+Wire  0.2032 (-3.85 -0.9) flat +153.685 (3.85 -0.9);
+Layer 51;
+Circle 0.1016 (0 0) (3.95 0);
+Layer 1;
+Smd '-' 3.8 1.4 -0 R0 (-3 0);
+Layer 1;
+Smd '+' 3.8 1.4 -0 R0 (3 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -2.54);
+Layer 51;
+Rect R0 (-4.5 -0.35) (-3.8 0.35);
+Layer 51;
+Rect R0 (3.8 -0.35) (4.5 0.35);
+Layer 51;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.1016  (-2.25 3.2) (-3 2.5) (-3.6 1.5) (-3.85 0.65) \
+      (-3.85 -0.65) (-3.55 -1.6) (-2.95 -2.55) (-2.25 -3.2) \
+      (-2.25 3.15) (-2.25 3.2);
+
+Edit 'PANASONIC_C.pac';
+Description '<b>Panasonic Aluminium Electrolytic Capacitor VS-Serie Package E</b>';
+Layer 21;
+Wire  0.2032 (-2.6 2.45) (1.6 2.45) \
+      (2.7 1.35);
+Wire  0.2032 (2.7 -1.75) (1.6 -2.85) (-2.6 -2.85);
+Layer 51;
+Wire  0.1016 (-2.6 2.45) (1.6 2.45) (2.7 1.35);
+Wire  0.1016 (2.7 -1.75) (1.6 -2.85) (-2.6 -2.85);
+Layer 21;
+Wire  0.2032 (-2.6 2.45) (-2.6 0.35);
+Wire  0.2032 (-2.6 -2.85) (-2.6 -0.75);
+Wire  0.2032 (2.7 1.35) (2.7 0.35);
+Wire  0.2032 (2.7 -1.75) (2.7 -0.7);
+Layer 51;
+Wire  0.1016 (-2.6 2.45) (-2.6 -2.85);
+Wire  0.1016 (2.7 1.35) (2.7 -1.75);
+Layer 21;
+Wire  0.2032 (-2.4 0.35) -156.699 (2.45 0.3);
+Wire  0.2032 (2.5 -0.7) -154.695 (-2.4 -0.75);
+Layer 51;
+Circle 0.1016 (0.05 -0.2) (2.5504 -0.2);
+Layer 1;
+Smd '-' 2.2 0.65 -0 R0 (-1.8 -0.2);
+Layer 1;
+Smd '+' 2.2 0.65 -0 R0 (1.9 -0.2);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2.6 2.7);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.6 -3.45);
+
+Edit 'NIPPON_F80.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-3.3 3.3) (1.7 3.3) (3.3 2);
+Wire  0.2032 (3.3 -2) (1.7 -3.3) (-3.3 -3.3);
+Layer 51;
+Wire  0.1016 (-3.3 3.3) (1.7 3.3) (3.3 2);
+Wire  0.1016 (3.3 -2) (1.7 -3.3) (-3.3 -3.3);
+Layer 21;
+Wire  0.2032 (-3.3 3.3) (-3.3 0.685);
+Wire  0.2032 (-3.3 -3.3) (-3.3 -0.685);
+Wire  0.2032 (3.3 2) (3.3 0.685);
+Wire  0.2032 (3.3 -2) (3.3 -0.685);
+Layer 51;
+Wire  0.1016 (-3.3 3.3) (-3.3 -3.3);
+Wire  0.1016 (3.3 2) (3.3 -2);
+Layer 21;
+Wire  0.2032 (-3.1 0.685) -156.5 (3.1 0.685);
+Wire  0.2032 (3.1 -0.685) -154.748 (-3.1 -0.685);
+Layer 51;
+Circle 0.1016 (0 0) (3.15 0);
+Layer 1;
+Smd '-' 2.95 1 -0 R0 (-2.4 0);
+Layer 1;
+Smd '+' 2.95 1 -0 R0 (2.4 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-3.2 3.5);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-3.2 -3.85);
+
+Edit 'PANASONIC_D.pac';
+Description '';
+Layer 51;
+Wire  0.1016 (-3.25 3.25) (1.55 3.25) (3.25 1.55) (3.25 -1.55) \
+      (1.55 -3.25) (-3.25 -3.25) (-3.25 3.25);
+Layer 21;
+Wire  0.1016 (-3.25 0.95) (-3.25 3.25) (1.55 3.25) (3.25 1.55) \
+      (3.25 0.95);
+Wire  0.1016 (3.25 -0.95) (3.25 -1.55) (1.55 -3.25) (-3.25 -3.25) \
+      (-3.25 -0.95);
+Wire  0.1016 (2.95 0.95) +144.299 (-2.95 0.95);
+Wire  0.1016 (-2.95 -0.95) +144.299 (2.95 -0.95);
+Layer 51;
+Wire  0.1016 (-2.1 2.25) (-2.1 -2.2);
+Layer 51;
+Circle 0.1016 (0 0) (3.1 0);
+Layer 1;
+Smd '+' 3 1.4 -0 R0 (2.4 0);
+Layer 1;
+Smd '-' 3 1.4 -0 R0 (-2.4 0);
+Layer 25;
+Change Size 1.016;
+Change Align bottom left;
+Text '>NAME' R0 (-1.75 1);
+Layer 27;
+Change Size 1.016;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.75 -1.975);
+Layer 51;
+Rect R0 (-3.65 -0.35) (-3.05 0.35);
+Layer 51;
+Rect R0 (3.05 -0.35) (3.65 0.35);
+Layer 51;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.1016  (-2.15 2.15) (-2.6 1.6) (-2.9 0.9) (-3.05 0) \
+      (-2.9 -0.95) (-2.55 -1.65) (-2.15 -2.15) (-2.15 2.1) \
+      (-2.15 2.15);
+
+Edit 'CPOL-RADIAL-1000UF-63V.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-3.175 1.905) (-4.445 1.905);
+Layer 21;
+Circle 0.2032 (0 0) (8.001 0);
+Change Drill 1.016;Pad '2' round 1.6764 R0 (-3.81 0);
+Change Drill 1.016;Pad '1' square 1.651 R0 (3.81 0);
+Layer 27;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-2.54 8.89);
+Layer 25;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 10.16);
+
+Edit 'CPOL-RADIAL-1000UF-25V.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-1.905 1.27) (-3.175 1.27);
+Layer 21;
+Circle 0.2032 (0 0) (5.461 0);
+Change Drill 0.9;Pad '-' round 1.9304 R0 (-2.54 0);
+Change Drill 0.9;Pad '+' square 1.9304 R0 (2.54 0);
+Layer 27;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-1.905 -4.318);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.762 2.921);
+
+Edit 'VISHAY_C.pac';
+Description '';
+Layer 21;
+Wire  0.254 (0 1.27) (0 1.905);
+Wire  0.127 (-2.0574 4.2926) (-2.0574 -4.2926) (2.0574 -4.2926) (2.0574 4.2926) \
+      (-2.0574 4.2926);
+Layer 1;
+Smd '+' 3.556 1.778 -0 R0 (0 3.048);
+Layer 1;
+Smd '-' 3.556 1.778 -0 R0 (0 -3.048);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.905 4.445);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.905 -5.08);
+
+Edit 'PANASONIC_H13.pac';
+Description '';
+Layer 51;
+Wire  0.1016 (-6.75 6.75) (4 6.75) (6.75 4) (6.75 -4) \
+      (4 -6.75) (-6.75 -6.75) (-6.75 6.75);
+Layer 21;
+Wire  0.2032 (-6.75 1) (-6.75 6.75) (4 6.75) (6.75 4) \
+      (6.75 1);
+Wire  0.2032 (6.75 -1) (6.75 -4) (4 -6.75) (-6.75 -6.75) \
+      (-6.75 -1);
+Wire  0.2032 (-6.55 -1.2) flat +156.693 (6.45 -1.2);
+Wire  0.2032 (-6.55 1.2) flat -156.698 (6.55 1.2);
+Layer 51;
+Wire  0.1016 (-5 4.25) (-4.95 -4.35);
+Layer 51;
+Circle 0.1016 (0 0) (6.6 0);
+Layer 1;
+Smd '-' 5 1.6 -0 R0 (-4.7 0);
+Layer 1;
+Smd '+' 5 1.6 -0 R0 (4.7 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -2.54);
+Layer 51;
+Rect R0 (-7.55 -0.45) (-6.6 0.45);
+Layer 51;
+Rect R0 (6.6 -0.45) (7.55 0.45);
+Layer 51;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.1016  (-5 4.2) (-5.75 3.15) (-6.25 2.05) (-6.55 0.45) \
+      (-6.55 -0.45) (-6.35 -1.65) (-5.75 -3.25) (-5 -4.2) \
+      (-5 4.2);
+
+Edit 'EIA6032.pac';
+Description '';
+Layer 21;
+Wire  0.127 (3.2 -1.6) (3.2 1.6);
+Wire  0.127 (-2.8 -1.6) (3.2 -1.6);
+Wire  0.127 (3.2 1.6) (-2.8 1.6) (-3.4 1) (-3.4 -1);
+Wire  0.127 (-2.8 -1.6) (-3.4 -1);
+Layer 1;
+Smd 'P$1' 1.5 2.4 -0 R0 (-2.3 0);
+Layer 1;
+Smd 'P$2' 1.5 2.4 -0 R0 (2.3 0);
+
+Edit 'EN_J2.pac';
+Description 'Type J2 package for SMD supercap PRT-10317 (p# EEC-EN0F204J2)';
+Layer 51;
+Wire  0.127 (-2.5 -3.5) (2.5 -3.5);
+Wire  0.127 (-2.1 3.5) (2.1 3.5);
+Wire  0.127 (-2.1 3.5) (-2.5 3.1) (-2.5 2.3);
+Wire  0.127 (2.1 3.5) (2.5 3.1) (2.5 2.3);
+Wire  0.127 (-2.5 -3.5) (-2.5 -2.3);
+Wire  0.127 (2.5 -3.5) (2.5 -2.3);
+Layer 21;
+Wire  0.127 (-2.5908 -2.413) -91.2126 (-2.5654 2.4384);
+Wire  0.127 (2.5908 -2.413) +86.7934 (2.5654 2.4384);
+Wire  0.127 (1.7272 -1.27) (1.7272 -2.0828);
+Wire  0.127 (1.3462 -1.6764) (2.159 -1.6764);
+Layer 51;
+Circle 0.127 (0 0) (3.4 0);
+Layer 1;
+Smd '-' 5 2.4 -0 R0 (0 2.8);
+Layer 1;
+Smd '+' 5 1.6 -0 R0 (0 -3.2);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2.28 0.66);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.31 -1.21);
+
+Edit 'EIA3528-KIT.pac';
+Description '\
+<h3>EIA3528-KIT</h3>\n\
+<b>Warning:</b> This is the KIT version of this package. This package has longer pads to make hand soldering easier.<br>';
+Layer 21;
+Wire  0.2032 (-0.9 -1.6) (-3.1 -1.6) (-3.1 1.55) (-0.9 1.55);
+Wire  0.2032 (1 -1.55) (2.7 -1.55) (3.1 -1.2) (3.1 1.25) \
+      (2.7 1.55) (1 1.55);
+Change Style longdash;
+Wire  0.4 (0.609 1.311) (0.609 -1.286);
+Layer 1;
+Smd 'C' 1.7 2.5 -0 R0 (-1.9 0);
+Layer 1;
+Smd 'A' 1.7 2.5 -0 R0 (1.9 0);
+Layer 25;
+Change Size 1.27;
+Change Align bottom left;
+Text '>NAME' R90 (-2.27 -1.27);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R90 (3.24 -1.37);
+
+Edit 'EIA3216-KIT.pac';
+Description '\
+<h3>EIA3216-KIT</h3>\n\
+<b>Warning:</b> This is the KIT version of this package. This package has longer pads to make hand soldering easier.<br>';
+Layer 21;
+Change Style continuous;
+Wire  0.2032 (-1 -1.2) (-3 -1.2) (-3 1.2) (-1 1.2);
+Wire  0.2032 (1 -1.2) (2.6 -1.2) (3 -0.8) (3 0.8) \
+      (2.6 1.2) (1 1.2);
+Wire  0.127 (0.381 1.016) (0.381 -1.016);
+Layer 1;
+Smd 'C' 1.9 1.6 -0 R0 (-1.65 0);
+Layer 1;
+Smd 'A' 1.9 1.6 -0 R0 (1.65 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2.54 1.381);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (0.408 1.332);
+
+Edit '0603.pac';
+Description '';
+Layer 39;
+Wire  0.0508 (-1.473 0.983) (1.473 0.983) (1.473 -0.983) (-1.473 -0.983) \
+      (-1.473 0.983);
+Layer 51;
+Wire  0.1016 (-0.356 0.432) (0.356 0.432);
+Wire  0.1016 (-0.356 -0.419) (0.356 -0.419);
+Layer 1;
+Smd '1' 1.1 1 -0 R0 (-0.85 0);
+Layer 1;
+Smd '2' 1.1 1 -0 R0 (0.85 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font vector;
+Text '>NAME' R0 (-0.889 0.762);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.016 -1.143);
+Layer 51;
+Rect R0 (-0.8382 -0.4699) (-0.3381 0.4801);
+Layer 51;
+Rect R0 (0.3302 -0.4699) (0.8303 0.4801);
+Layer 35;
+Rect R0 (-0.1999 -0.3) (0.1999 0.3);
+
+Edit 'FUSE_5MM.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-3.2258 -10.127) (-3.2258 -4.1072);
+Wire  0.2032 (-3.2258 -10.127) (3.2258 -10.127) (3.2258 -4.031) (-3.2258 -4.031);
+Wire  0.2032 (3.2258 10.127) (3.2258 4.1072);
+Wire  0.2032 (3.2258 10.127) (-3.2258 10.127) (-3.2258 4.031) (3.2258 4.031);
+Layer 51;
+Wire  0.2032 (-2.921 9.812) (-2.921 -9.619) (0.254 -9.619) (2.794 -9.619) \
+      (2.794 9.177) (2.794 9.812) (-2.921 9.812);
+Change Drill 2.54;Pad '1' round 3.556 R0 (0 -10);
+Change Drill 2.54;Pad '2' round 3.556 R0 (0 -4.158);
+Change Drill 2.54;Pad '4' round 3.556 R180 (0 10);
+Change Drill 2.54;Pad '3' round 3.556 R180 (0 4.158);
+
+Edit 'INDUCTOR-1206.pac';
+Description '';
+Layer 21;
+Wire  0.127 (-1.778 2.032) (-3.81 2.032) (-3.81 -2.032) (-1.524 -2.032);
+Wire  0.127 (1.524 2.032) (3.81 2.032) (3.81 -2.032) (1.524 -2.032);
+Layer 1;
+Smd 'P$1' 3.556 2.032 -0 R90 (-2.54 0);
+Layer 1;
+Smd 'P$2' 3.556 2.032 -0 R90 (2.54 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font proportional;
+Text '>Name' R0 (-1.27 2.54);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-1.27 -2.54);
+
+Edit 'CR54.pac';
+Description '';
+Layer 51;
+Wire  0.127 (2.8 2.98) (-2.8 2.98) (-2.8 -3) (2.8 -3) \
+      (2.8 2.98);
+Layer 21;
+Wire  0.2032 (-3.048 2.794) (-3.048 -3.048) (-2.794 -3.302) (2.794 -3.302) \
+      (3.048 -3.048) (3.048 3.048) (2.794 3.302) (-2.794 3.302) \
+      (-3.048 3.048) (-3.048 2.794);
+Layer 21;
+Circle 0.2032 (0 0.508) (0.127 0.508);
+Layer 1;
+Smd 'P$1' 5.5 2.15 -0 R0 (0 1.92);
+Layer 1;
+Smd 'P$2' 5.5 2.15 -0 R0 (0 -1.92);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 3.81);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (0 3.81);
+
+Edit 'CDRH125.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-3.5 6) (-6 6) (-6 -6) (-3.5 -6);
+Wire  0.2032 (3.5 -6) (6 -6) (6 6) (3.5 6);
+Layer 1;
+Smd '1' 5.4 4 -0 R0 (0 4.9);
+Layer 1;
+Smd '2' 5.4 4 -0 R0 (0 -4.9);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-2.54 -1.27);
+
+Edit 'C0402.pac';
+Description '\
+<b>CAPACITOR</b><p>\n\
+chip';
+Layer 51;
+Wire  0.1524 (-0.245 0.224) (0.245 0.224);
+Wire  0.1524 (0.245 -0.224) (-0.245 -0.224);
+Layer 39;
+Wire  0.0508 (-1.473 0.483) (1.473 0.483) (1.473 -0.483) (-1.473 -0.483) \
+      (-1.473 0.483);
+Layer 1;
+Smd '1' 0.7 0.9 -0 R0 (-0.65 0);
+Layer 1;
+Smd '2' 0.7 0.9 -0 R0 (0.65 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.889 0.6985);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.0795 -1.143);
+Layer 51;
+Rect R0 (-0.554 -0.3048) (-0.254 0.2951);
+Layer 51;
+Rect R0 (0.2588 -0.3048) (0.5588 0.2951);
+Layer 35;
+Rect R0 (-0.1999 -0.3) (0.1999 0.3);
+
+Edit 'B82462G.pac';
+Description '';
+Layer 51;
+Wire  0.127 (3.15 3.15) (-3.15 3.15) (-3.15 -3.15) (3.15 -3.15) \
+      (3.15 3.15);
+Layer 21;
+Wire  0.2032 (-3.15 3.15) (-2 3.15);
+Wire  0.2032 (-3.15 3.15) (-3.15 -3.15) (-2 -3.15);
+Wire  0.2032 (2 -3.15) (3.15 -3.15) (3.15 3.15) (2 3.15);
+Layer 1;
+Smd 'P$1' 2.4 1.5 -0 R0 (0 2.75);
+Layer 1;
+Smd 'P$2' 2.4 1.5 -0 R0 (0 -2.75);
+
+Edit 'CR75.pac';
+Description '';
+Layer 21;
+Wire  0.127 (-1 3.65) (7 3.65) (7 2.55);
+Wire  0.127 (-1 3.65) (-1 2.55);
+Wire  0.127 (-1 -3.65) (7 -3.65) (7 -2.55);
+Wire  0.127 (-1 -3.65) (-1 -2.55);
+Layer 1;
+Smd 'P$1' 4.7 1.75 -0 R90 (0 0);
+Layer 1;
+Smd 'P$2' 4.7 1.75 -0 R90 (6.05 0);
+
+Edit '1007.pac';
+Description '1007 (2518 metric) package';
+Layer 51;
+Wire  0.127 (0.9 1.25) (-0.9 1.25) (-0.9 -1.25) (0.9 -1.25) \
+      (0.9 1.25);
+Layer 21;
+Wire  0.127 (-1 -0.4) (-1 0.4);
+Wire  0.127 (1 -0.4) (1 0.4);
+Layer 1;
+Smd '1' 2 0.8 -0 R0 (0 1);
+Layer 1;
+Smd '2' 2 0.8 -0 R0 (0 -1);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1 1.6);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1 -2);
+
+Edit 'COOPER_UP4B.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-6.3 7) (-7.5 2) (-7.5 -2) (-6.3 -7);
+Wire  0.2032 (7.5 2) (7.5 -2);
+Wire  0.2032 (7.5 2) (6.3 7);
+Wire  0.2032 (7.5 -2) (6.3 -7);
+Layer 1;
+Smd '1' 12 4.3 -0 R0 (0 8.9);
+Layer 1;
+Smd '2' 12 4.3 -0 R0 (0 -8.9);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-2.54 -1.27);
+
+Edit 'CDRH3D28.pac';
+Description '';
+Layer 51;
+Wire  0.127 (-2.0503 -0.677) (-2.0505 0.6629);
+Wire  0.127 (0.6192 1.9926) (-0.7206 1.9927);
+Wire  0.127 (1.9491 0.6627) (1.9491 -0.677);
+Wire  0.127 (-2.0505 0.6629) (-0.7206 1.9927);
+Wire  0.127 (1.9491 0.6627) (0.6192 1.9926);
+Wire  0.127 (1.9503 -0.6737) (-0.0506 -2.6748);
+Layer 21;
+Wire  0.127 (-0.0436 -2.6999) (1.2914 -1.3649);
+Wire  0.127 (-0.0436 -2.6999) (-1.3785 -1.3649);
+Layer 51;
+Wire  0.127 (-2.0434 -0.68) (-0.0535 -2.6698);
+Layer 21;
+Wire  0.127 (-1.7435 1) (-0.7895 1.954);
+Wire  0.127 (1.6563 0.9999) (0.7024 1.9538);
+Layer 1;
+Smd '2' 1.5 1.4 -0 R270 (1.849 -0.007);
+Layer 1;
+Smd '1' 1.5 1.4 -0 R270 (-1.9504 -0.007);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2.492 2.524);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.492 -3.27);
+
+Edit 'CR75_V2.pac';
+Description '';
+Layer 21;
+Wire  0.127 (-1 3.65) (7 3.65) (7 2.55);
+Wire  0.127 (-1 3.65) (-1 2.55);
+Wire  0.127 (-1 -3.65) (7 -3.65) (7 -2.55);
+Wire  0.127 (-1 -3.65) (-1 -2.55);
+Layer 1;
+Smd 'P$1' 2.54 1.524 -0 R90 (-0.254 0);
+Layer 1;
+Smd 'P$2' 2.54 1.524 -0 R90 (6.304 0);
+
+Edit 'CDRH2D09.pac';
+Description '1.3x1.3mm 1.7mm between. Fits Sumida CDRH2D09, CDRH2D18 inductor';
+Layer 21;
+Wire  0.2032 (-1.2 0.9) (-0.6 1.5) (0.6 1.5) (1.2 0.9);
+Wire  0.2032 (-1.2 -0.9) (-0.6783 -1.3739) +85.4207 (0.6783 -1.3739) (1.2 -0.9);
+Layer 51;
+Wire  0.03 (-1.5 -0.6) (-0.7071 -1.3929) +90 (0.7071 -1.3929) (1.5 -0.6) \
+      (1.5 0.6) (0.6 1.5) (-0.6 1.5) (-1.5 0.6) \
+      (-1.5 -0.6);
+Layer 1;
+Smd 'P$1' 1.3 1.3 -0 R90 (-1.5 0);
+Layer 1;
+Smd 'P$2' 1.3 1.3 -0 R90 (1.5 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (2.8 0.7);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (2.8 -1);
+
+Edit 'NPI75C.pac';
+Description '';
+Layer 51;
+Wire  0.1778 (-3.9 3.5) (-3.9 -3.5) (3.9 -3.5) (3.9 3.5);
+Layer 21;
+Wire  0.1778 (0.8 3.5) (-0.8 3.5);
+Wire  0.1778 (-0.8 -3.5) (0.8 -3.5);
+Layer 51;
+Wire  0.1778 (3.9 3.5) (-3.9 3.5);
+Layer 1;
+Smd '1' 3 7.5 -0 R0 (-2.5 0);
+Layer 1;
+Smd '2' 3 7.5 -0 R0 (2.5 0);
+
+Edit 'SRU5028.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (1.2048 -2.473) (2.4476 -1.2048);
+Layer 51;
+Wire  0.2032 (2.6 -0.9) (2.6 0.9);
+Layer 21;
+Wire  0.2032 (2.473 1.2048) (1.2048 2.4476);
+Layer 51;
+Wire  0.2032 (0.9 2.6) (-0.9 2.6);
+Layer 21;
+Wire  0.2032 (-1.1794 2.4222) (-2.4222 1.2048);
+Layer 51;
+Wire  0.2032 (-2.6 0.9) (-2.6 -0.9);
+Layer 21;
+Wire  0.2032 (-2.3968 -1.1794) (-1.2048 -2.4476);
+Layer 51;
+Wire  0.2032 (-0.9 -2.6) (0.9 -2.6);
+Layer 21;
+Circle 0.4 (1.5 0) (1.6414 0);
+Layer 1;
+Smd 'P$1' 2 1.1 -0 R0 (0 2.4);
+Layer 1;
+Smd 'P$2' 2 1.1 -0 R0 (0 -2.4);
+Layer 1;
+Smd '1' 2 1.1 -0 R90 (2.4 0);
+Layer 1;
+Smd '2' 2 1.1 -0 R90 (-2.4 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-2.54 3.175);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.54 -3.81);
+
+Edit 'SRU1038.pac';
+Description '';
+Layer 51;
+Wire  0.2032 (-5 -1.6) (-5 1.6) (-1.6 5) (1.6 5) \
+      (5 1.6) (5 -1.6) (1.6 -5) (-1.6 -5) \
+      (-5 -1.6);
+Layer 21;
+Wire  0.254 (-4.5 2.1) (-1.6 5) (1.6 5);
+Wire  0.254 (1.6 -5) (-1.6 -5);
+Wire  0.254 (1.6 5) (4.5 2.1);
+Wire  0.254 (-4.5 -2.1) (-1.6 -5);
+Wire  0.254 (1.6 -5) (4.5 -2.1);
+Layer 1;
+Smd '2' 1.8 3.6 -0 R0 (4.5 0);
+Layer 1;
+Smd '1' 1.8 3.6 -0 R0 (-4.5 0);
+Layer 25;
+Change Size 1.016;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 2.54);
+Layer 27;
+Change Size 1.016;
+Change Align bottom left;
+Text '>Value' R0 (-2.54 -3.302);
+
+Edit 'CR54-KIT.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-3.048 -3.548) (-2.794 -3.802) (2.794 -3.802) (3.048 -3.548) \
+      (3.048 3.548) (2.794 3.802) (-2.794 3.802) (-3.048 3.548) \
+      (-3.048 -3.548);
+Layer 51;
+Wire  0.1778 (-2.5 -2.5) (-2.5 2.5) (2.5 2.5) (2.5 -2.5) \
+      (-2.5 -2.5);
+Layer 21;
+Circle 0.2032 (0 0.508) (0.127 0.508);
+Layer 1;
+Smd 'P$1' 5 2.65 -0 R0 (0 2.17);
+Layer 1;
+Smd 'P$2' 5 2.65 -0 R0 (0 -2.17);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 4.01);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Value' R0 (-2.7 -4.39);
+
+Edit '1X02.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-0.635 1.27) (0.635 1.27) (1.27 0.635);
+Wire  0.2032 (1.27 -0.635) (0.635 -1.27);
+Wire  0.2032 (1.27 0.635) (1.905 1.27) (3.175 1.27) (3.81 0.635);
+Wire  0.2032 (3.81 -0.635) (3.175 -1.27) (1.905 -1.27) (1.27 -0.635);
+Wire  0.2032 (-1.27 0.635) (-1.27 -0.635);
+Wire  0.2032 (-0.635 1.27) (-1.27 0.635);
+Wire  0.2032 (-1.27 -0.635) (-0.635 -1.27);
+Wire  0.2032 (0.635 -1.27) (-0.635 -1.27);
+Wire  0.2032 (3.81 0.635) (3.81 -0.635);
+Change Drill 1.016;Pad '1' round 1.8796 R90 (0 0);
+Change Drill 1.016;Pad '2' round 1.8796 R90 (2.54 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Text '>NAME' R0 (-1.3462 1.8288);
+Layer 27;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -3.175);
+Layer 51;
+Rect R0 (2.286 -0.254) (2.794 0.254);
+Layer 51;
+Rect R0 (-0.254 -0.254) (0.254 0.254);
+
+Edit 'SJ_2S.pac';
+Description 'Small solder jumper with big paste layer so it will short during reflow.';
+Layer 21;
+Wire  0.1524 (0.8 -1) (-0.8 -1);
+Wire  0.1524 (0.8 1) -90 (1.1 0.75);
+Wire  0.1524 (-1.1 0.75) -90 (-0.8 1);
+Wire  0.1524 (-1.1 -0.75) +90.1147 (-0.8 -1);
+Wire  0.1524 (0.8 -1) +90 (1.1 -0.75) (1.1 0.75);
+Wire  0.1524 (-1.1 -0.75) (-1.1 0.75);
+Wire  0.1524 (-0.8 1) (0.8 1);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 (-0.4119 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 (0.4119 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.9498 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.9498 -1.651);
+Layer 31;
+Rect R0 (-1.2192 -1.143) (1.2192 1.143);
+
+Edit '1X02_LOCK.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-0.635 1.27) (0.635 1.27) (1.27 0.635);
+Wire  0.2032 (1.27 -0.635) (0.635 -1.27);
+Wire  0.2032 (1.27 0.635) (1.905 1.27) (3.175 1.27) (3.81 0.635);
+Wire  0.2032 (3.81 -0.635) (3.175 -1.27) (1.905 -1.27) (1.27 -0.635);
+Wire  0.2032 (-1.27 0.635) (-1.27 -0.635);
+Wire  0.2032 (-0.635 1.27) (-1.27 0.635);
+Wire  0.2032 (-1.27 -0.635) (-0.635 -1.27);
+Wire  0.2032 (0.635 -1.27) (-0.635 -1.27);
+Wire  0.2032 (3.81 0.635) (3.81 -0.635);
+Change Drill 1.016;Pad '1' round 1.8796 R90 (-0.1778 0);
+Change Drill 1.016;Pad '2' round 1.8796 R90 (2.7178 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Text '>NAME' R0 (-1.3462 1.8288);
+Layer 27;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -3.175);
+Layer 51;
+Rect R0 (-0.2921 -0.2921) (0.2921 0.2921);
+Layer 51;
+Rect R0 (2.2479 -0.2921) (2.8321 0.2921);
+
+Edit 'SJ_2S-NO.pac';
+Description 'Small solder jumper with no paste layer so it will open after reflow.';
+Layer 21;
+Wire  0.2032 (0.8 -1) (-0.8 -1);
+Wire  0.2032 (0.8 1) -90 (1 0.7);
+Wire  0.2032 (-1 0.7) -90 (-0.8 1);
+Wire  0.2032 (-1 -0.7) +90 (-0.8 -1);
+Wire  0.2032 (0.8 -1) +90 (1 -0.7);
+Wire  0.2032 (-0.8 1) (0.8 1);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 NOCREAM (-0.45 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0.45 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.908 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.908 -1.651);
+
+Edit 'SJ_2S-NO-NS.pac';
+Description '';
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 NOCREAM (-0.45 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0.45 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.908 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.908 -1.651);
+
+Edit 'SJ_3.pac';
+Description '';
+Layer 21;
+Wire  0.1524 (1.27 -1.016) (-1.27 -1.016);
+Wire  0.1524 (1.27 1.016) -90 (1.524 0.762);
+Wire  0.1524 (-1.524 0.762) -90 (-1.27 1.016);
+Wire  0.1524 (-1.524 -0.762) +90 (-1.27 -1.016);
+Wire  0.1524 (1.27 -1.016) +90 (1.524 -0.762) (1.524 0.762);
+Wire  0.1524 (-1.524 -0.762) (-1.524 0.762);
+Wire  0.1524 (-1.27 1.016) (1.27 1.016);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 NOCREAM (-0.889 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0 0);
+Layer 1;
+Smd '3' 0.635 1.27 -0 R0 NOCREAM (0.889 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.02;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.1001 0);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -1.905);
+
+Edit '1X03.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (3.81 0.635) (4.445 1.27) (5.715 1.27) (6.35 0.635);
+Wire  0.2032 (6.35 -0.635) (5.715 -1.27) (4.445 -1.27) (3.81 -0.635);
+Wire  0.2032 (-0.635 1.27) (0.635 1.27) (1.27 0.635);
+Wire  0.2032 (1.27 -0.635) (0.635 -1.27);
+Wire  0.2032 (1.27 0.635) (1.905 1.27) (3.175 1.27) (3.81 0.635);
+Wire  0.2032 (3.81 -0.635) (3.175 -1.27) (1.905 -1.27) (1.27 -0.635);
+Wire  0.2032 (-1.27 0.635) (-1.27 -0.635);
+Wire  0.2032 (-0.635 1.27) (-1.27 0.635);
+Wire  0.2032 (-1.27 -0.635) (-0.635 -1.27);
+Wire  0.2032 (0.635 -1.27) (-0.635 -1.27);
+Wire  0.2032 (6.35 0.635) (6.35 -0.635);
+Change Drill 1.016;Pad '1' round 1.8796 R90 (0 0);
+Change Drill 1.016;Pad '2' round 1.8796 R90 (2.54 0);
+Change Drill 1.016;Pad '3' round 1.8796 R90 (5.08 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Text '>NAME' R0 (-1.3462 1.8288);
+Layer 27;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -3.175);
+Layer 51;
+Rect R0 (4.826 -0.254) (5.334 0.254);
+Layer 51;
+Rect R0 (2.286 -0.254) (2.794 0.254);
+Layer 51;
+Rect R0 (-0.254 -0.254) (0.254 0.254);
+
+Edit 'SJ_3_PASTE1&2.pac';
+Description '';
+Layer 21;
+Wire  0.1524 (1.27 -1.016) (-1.27 -1.016);
+Wire  0.1524 (1.27 1.016) -90 (1.524 0.762);
+Wire  0.1524 (-1.524 0.762) -90 (-1.27 1.016);
+Wire  0.1524 (-1.524 -0.762) +90 (-1.27 -1.016);
+Wire  0.1524 (1.27 -1.016) +90 (1.524 -0.762) (1.524 0.762);
+Wire  0.1524 (-1.524 -0.762) (-1.524 0.762);
+Wire  0.1524 (-1.27 1.016) (1.27 1.016);
+Layer 51;
+Wire  0.127 (0.1905 0.508) (-1.016 0.508) (-1.016 -0.508) (0.1905 -0.508) \
+      (0.1905 0.508);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 NOCREAM (-0.8128 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0 0);
+Layer 1;
+Smd '3' 0.635 1.27 -0 R0 NOCREAM (0.8128 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.02;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.1001 0);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -1.905);
+Layer 51;
+Change Size 0.254;
+Change Align bottom left;
+Text 'PASTE' R40 (-0.762 -0.4445);
+Layer 31;
+Rect R0 (-1.4478 -1.016) (0.2794 0.9398);
+
+Edit 'SJ_3_PASTE2&3.pac';
+Description '';
+Layer 21;
+Wire  0.1524 (1.27 -1.016) (-1.27 -1.016);
+Wire  0.1524 (1.27 1.016) -90 (1.524 0.762);
+Wire  0.1524 (-1.524 0.762) -90 (-1.27 1.016);
+Wire  0.1524 (-1.524 -0.762) +90 (-1.27 -1.016);
+Wire  0.1524 (1.27 -1.016) +90 (1.524 -0.762) (1.524 0.762);
+Wire  0.1524 (-1.524 -0.762) (-1.524 0.762);
+Wire  0.1524 (-1.27 1.016) (1.27 1.016);
+Layer 51;
+Wire  0.127 (1.016 0.508) (-0.1905 0.508) (-0.1905 -0.508) (1.016 -0.508) \
+      (1.016 0.508);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 NOCREAM (-0.8128 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0 0);
+Layer 1;
+Smd '3' 0.635 1.27 -0 R0 NOCREAM (0.8128 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-1.27 1.27);
+Layer 27;
+Change Size 0.02;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.1001 0);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.27 -1.905);
+Layer 51;
+Change Size 0.254;
+Change Align bottom left;
+Text 'PASTE' R40 (0.0635 -0.4445);
+Layer 31;
+Rect R0 (-0.2794 -1.016) (1.4224 0.9906);
+
+Edit 'AXIAL-0.3.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-2.54 0.762) (2.54 0.762) (2.54 0) (2.54 -0.762) \
+      (-2.54 -0.762) (-2.54 0) (-2.54 0.762);
+Wire  0.2032 (2.54 0) (2.794 0);
+Wire  0.2032 (-2.54 0) (-2.794 0);
+Change Drill 0.9;Pad 'P$1' round 1.8796 R0 (-3.81 0);
+Change Drill 0.9;Pad 'P$2' round 1.8796 R0 (3.81 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font vector;
+Text '>Name' R0 (-2.54 1.27);
+Layer 21;
+Change Size 1.016;
+Change Ratio 15;
+Change Align bottom left;
+Text '>Value' R0 (-2.032 -0.381);
+
+Edit 'AXIAL-0.3EZ.pac';
+Description '\
+This is the "EZ" version of the standard .3" spaced resistor package.<br>\n\
+It has a reduced top mask to make it harder to install upside-down.';
+Layer 21;
+Wire  0.2032 (-2.54 0.762) (2.54 0.762) (2.54 0) (2.54 -0.762) \
+      (-2.54 -0.762) (-2.54 0) (-2.54 0.762);
+Wire  0.2032 (2.54 0) (2.794 0);
+Wire  0.2032 (-2.54 0) (-2.794 0);
+Change Drill 0.9;Pad 'P$1' round 1.8796 R0 NOSTOP (-3.81 0);
+Change Drill 0.9;Pad 'P$2' round 1.8796 R0 NOSTOP (3.81 0);
+Layer 25;
+Change Size 0.4064;
+Change Ratio 8;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 1.27);
+Layer 21;
+Change Size 1.016;
+Change Ratio 15;
+Change Align bottom left;
+Text '>Value' R0 (-2.032 -0.381);
+Layer 29;
+Circle 0 (-3.81 0) (-3.302 0);
+Layer 29;
+Circle 0 (3.81 0) (4.333634375 0);
+Layer 30;
+Circle 0 (-3.81 0) (-2.78609375 0);
+Layer 30;
+Circle 0 (3.81 0) (4.85726875 0);
+
+Edit 'R2010.pac';
+Description '\
+<b>RESISTOR</b><p>\n\
+chip';
+Layer 51;
+Wire  0.1524 (-1.662 1.245) (1.662 1.245);
+Wire  0.1524 (-1.637 -1.245) (1.687 -1.245);
+Layer 39;
+Wire  0.0508 (-3.473 1.483) (3.473 1.483) (3.473 -1.483) (-3.473 -1.483) \
+      (-3.473 1.483);
+Layer 21;
+Wire  0.1524 (-1.027 1.245) (1.027 1.245);
+Wire  0.1524 (-1.002 -1.245) (1.016 -1.245);
+Layer 1;
+Smd '1' 1.8 2.7 -0 R0 (-2.2 0);
+Layer 1;
+Smd '2' 1.8 2.7 -0 R0 (2.2 0);
+Layer 25;
+Change Size 0.4064;
+Change Ratio 8;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-2.54 1.5875);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.54 -2.032);
+Layer 51;
+Rect R0 (-2.4892 -1.3208) (-1.6393 1.3292);
+Layer 51;
+Rect R0 (1.651 -1.3208) (2.5009 1.3292);
+
+Edit '0603-RES.pac';
+Description '';
+Layer 39;
+Wire  0.0508 (-1.473 0.983) (1.473 0.983) (1.473 -0.983) (-1.473 -0.983) \
+      (-1.473 0.983);
+Layer 51;
+Wire  0.1016 (-0.356 0.432) (0.356 0.432);
+Wire  0.1016 (-0.356 -0.419) (0.356 -0.419);
+Layer 1;
+Smd '1' 1.1 1 -0 R0 (-0.85 0);
+Layer 1;
+Smd '2' 1.1 1 -0 R0 (0.85 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font vector;
+Text '>NAME' R0 (-0.889 0.762);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.016 -1.143);
+Layer 51;
+Rect R0 (-0.8382 -0.4699) (-0.3381 0.4801);
+Layer 51;
+Rect R0 (0.3302 -0.4699) (0.8303 0.4801);
+Layer 35;
+Rect R0 (-0.1999 -0.3) (0.1999 0.3);
+Layer 21;
+Rect R0 (-0.2286 -0.381) (0.2286 0.381);
+
+Edit '0402-RES.pac';
+Description '\
+<b>CAPACITOR</b><p>\n\
+chip';
+Layer 51;
+Wire  0.1524 (-0.245 0.224) (0.245 0.224);
+Wire  0.1524 (0.245 -0.224) (-0.245 -0.224);
+Layer 39;
+Wire  0.0508 (-1.473 0.483) (1.473 0.483) (1.473 -0.483) (-1.473 -0.483) \
+      (-1.473 0.483);
+Layer 1;
+Smd '1' 0.7 0.9 -0 R0 (-0.65 0);
+Layer 1;
+Smd '2' 0.7 0.9 -0 R0 (0.65 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-0.889 0.6985);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.0795 -1.143);
+Layer 51;
+Rect R0 (-0.554 -0.3048) (-0.254 0.2951);
+Layer 51;
+Rect R0 (0.2588 -0.3048) (0.5588 0.2951);
+Layer 35;
+Rect R0 (-0.1999 -0.3) (0.1999 0.3);
+Layer 21;
+Rect R0 (-0.2032 -0.3556) (0.2032 0.3556);
+
+Edit '1/6W-RES.pac';
+Description '1/6W Thru-hole Resistor - *UNPROVEN*';
+Layer 21;
+Wire  0.2032 (-1.55 0.85) (-1.55 -0.85) (1.55 -0.85) (1.55 0.85) \
+      (-1.55 0.85);
+Change Drill 0.762;Pad '1' round 0 R0 (-2.5 0);
+Change Drill 0.762;Pad '2' round 0 R0 (2.5 0);
+Layer 25;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>NAME' R0 (-1.2662 0.9552);
+Layer 21;
+Change Size 0.8128;
+Change Ratio 15;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.423 -0.4286);
+
+Edit 'R2512.pac';
+Description '';
+Layer 51;
+Wire  0.1524 (-2.362 1.473) (2.387 1.473);
+Wire  0.1524 (-2.362 -1.473) (2.387 -1.473);
+Layer 1;
+Smd '1' 1.8 3.2 -0 R0 (-2.8 0);
+Layer 1;
+Smd '2' 1.8 3.2 -0 R0 (2.8 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R0 (-2.54 1.905);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.54 -3.175);
+Layer 51;
+Rect R0 (-3.2004 -1.5494) (-2.3505 1.5507);
+Layer 51;
+Rect R0 (2.3622 -1.5494) (3.2121 1.5507);
+
+Edit 'AXIAL-0.4.pac';
+Description '\
+1/4W Resistor, 0.4" wide<p>\n\
+\n\
+Yageo CFR series <a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf">http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf</a>';
+Layer 21;
+Wire  0.2032 (-3.15 -1.2) (-3.15 1.2) (3.15 1.2) (3.15 -1.2) \
+      (-3.15 -1.2);
+Change Drill 0.9;Pad 'P$1' round 1.8796 R0 (-5.08 0);
+Change Drill 0.9;Pad 'P$2' round 1.8796 R0 (5.08 0);
+Layer 25;
+Change Size 0.8128;
+Change Ratio 15;
+Change Align bottom left;
+Change Font vector;
+Text '>Name' R0 (-3.175 1.905);
+Layer 21;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-2.286 -0.381);
+
+Edit 'AXIAL-0.5.pac';
+Description '\
+1/2W Resistor, 0.5" wide<p>\n\
+\n\
+Yageo CFR series <a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf">http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf</a>';
+Layer 21;
+Wire  0.2032 (-4.5 -1.65) (-4.5 1.65) (4.5 1.65) (4.5 -1.65) \
+      (-4.5 -1.65);
+Change Drill 0.9;Pad 'P$1' round 1.8796 R0 (-6.35 0);
+Change Drill 0.9;Pad 'P$2' round 1.8796 R0 (6.35 0);
+Layer 25;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Name' R0 (-4.445 2.54);
+Layer 21;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-3.429 -0.381);
+
+Edit 'AXIAL-0.6.pac';
+Description '\
+1W Resistor, 0.6" wide<p>\n\
+\n\
+Yageo CFR series <a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf">http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf</a>';
+Layer 21;
+Wire  0.2032 (-5.75 -2.25) (-5.75 2.25) (5.75 2.25) (5.75 -2.25) \
+      (-5.75 -2.25);
+Change Drill 1.2;Pad 'P$1' round 1.8796 R0 (-7.62 0);
+Change Drill 1.2;Pad 'P$2' round 1.8796 R0 (7.62 0);
+Layer 25;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Name' R0 (-5.715 3.175);
+Layer 21;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-4.064 -0.381);
+
+Edit 'AXIAL-0.8.pac';
+Description '\
+2W Resistor, 0.8" wide<p>\n\
+\n\
+Yageo CFR series <a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf">http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf</a>';
+Layer 21;
+Wire  0.2032 (-7.75 -2.5) (-7.75 2.5) (7.75 2.5) (7.75 -2.5) \
+      (-7.75 -2.5);
+Change Drill 1.2;Pad 'P$1' round 1.8796 R0 (-10.16 0);
+Change Drill 1.2;Pad 'P$2' round 1.8796 R0 (10.16 0);
+Layer 25;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Name' R0 (-7.62 3.175);
+Layer 21;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-5.969 -0.381);
+
+Edit 'AXIAL-0.3-KIT.pac';
+Description '\
+<h3>AXIAL-0.3-KIT</h3>\n\
+\n\
+Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.<br>\n\
+<br>\n\
+\n\
+<b>Warning:</b> This is the KIT version of the AXIAL-0.3 package. This package has a smaller diameter top stop mask, which doesn''t cover the diameter of the pad. This means only the bottom side of the pads'' copper will be exposed. You''ll only be able to solder to the bottom side.';
+Layer 21;
+Wire  0.254 (-2.54 1.27) (2.54 1.27) (2.54 0) (2.54 -1.27) \
+      (-2.54 -1.27) (-2.54 0) (-2.54 1.27);
+Wire  0.254 (2.54 0) (2.794 0);
+Wire  0.254 (-2.54 0) (-2.794 0);
+Change Drill 1.016;Pad 'P$1' round 2.032 R0 NOSTOP (-3.81 0);
+Change Drill 1.016;Pad 'P$2' round 2.032 R0 NOSTOP (3.81 0);
+Layer 25;
+Change Size 0.4064;
+Change Ratio 8;
+Change Align bottom left;
+Text '>Name' R0 (-2.54 1.27);
+Layer 21;
+Change Size 1.27;
+Change Ratio 15;
+Change Align bottom left;
+Text '>Value' R0 (-2.159 -0.762);
+Layer 30;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (3.8201 -0.9449) -90 (2.8652 -0.0152) -90.0117 (3.8176 0.9602) -90 (4.7676 -0.0178) -90.0242 \
+      (3.8201 -0.9449);
+Layer 29;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (3.8176 -0.4369) -90.0129 (3.3731 -0.0127) -90 (3.8176 0.4546) -90 (4.2595 -0.0025) -90.013 \
+      (3.8176 -0.4369);
+Layer 30;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (-3.8075 -0.9525) -90 (-4.7624 -0.0228) -90.0117 (-3.81 0.9526) -90 (-2.86 -0.0254) -90.0242 \
+      (-3.8075 -0.9525);
+Layer 29;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.127  (-3.81 -0.4445) -90.0129 (-4.2545 -0.0203) -90 (-3.81 0.447) -90 (-3.3681 -0.0101) -90.013 \
+      (-3.81 -0.4445);
+
+Edit '0603-ARV.pac';
+Description '\
+<b>Chip Resistor Array</b> size 4 × 0603<p>\n\
+convex termination - Phycomp Components<br>\n\
+Source: RS Components';
+Layer 51;
+Wire  0.1016 (-1.55 0.45) (1.55 0.45) (1.55 -0.45);
+Wire  0.1016 (-1.55 -0.45) (-1.55 0.45);
+Wire  0.1016 (1.55 -0.45) (-1.55 -0.45);
+Layer 1;
+Smd '1' 0.5 0.65 -0 R0 (-1.2 -0.625);
+Layer 1;
+Smd '2' 0.5 0.65 -0 R0 (-0.4 -0.625);
+Layer 1;
+Smd '3' 0.5 0.65 -0 R0 (0.4 -0.625);
+Layer 1;
+Smd '4' 0.5 0.65 -0 R0 (1.2 -0.625);
+Layer 1;
+Smd '5' 0.5 0.65 -0 R0 (1.2 0.625);
+Layer 1;
+Smd '6' 0.5 0.65 -0 R0 (0.4 0.625);
+Layer 1;
+Smd '7' 0.5 0.65 -0 R0 (-0.4 0.625);
+Layer 1;
+Smd '8' 0.5 0.65 -0 R0 (-1.2 0.625);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-1.905 -2.54);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.905 1.27);
+Layer 51;
+Rect R0 (-1.6 0.7) (-0.9 0.8);
+Layer 51;
+Rect R0 (-0.7 0.7) (-0.1 0.8);
+Layer 51;
+Rect R0 (0.1 0.7) (0.7 0.8);
+Layer 51;
+Rect R0 (0.9 0.7) (1.6 0.8);
+Layer 51;
+Rect R0 (-1.5 0.5) (-0.95 0.7);
+Layer 51;
+Rect R0 (-0.65 0.5) (-0.15 0.7);
+Layer 51;
+Rect R0 (0.15 0.5) (0.65 0.7);
+Layer 51;
+Rect R0 (0.95 0.5) (1.5 0.7);
+Layer 51;
+Rect R0 (0.9 -0.8) (1.6 -0.7);
+Layer 51;
+Rect R0 (0.1 -0.8) (0.7 -0.7);
+Layer 51;
+Rect R0 (-0.7 -0.8) (-0.1 -0.7);
+Layer 51;
+Rect R0 (-1.6 -0.8) (-0.9 -0.7);
+Layer 51;
+Rect R0 (0.95 -0.7) (1.5 -0.5);
+Layer 51;
+Rect R0 (0.15 -0.7) (0.65 -0.5);
+Layer 51;
+Rect R0 (-0.65 -0.7) (-0.15 -0.5);
+Layer 51;
+Rect R0 (-1.5 -0.7) (-0.95 -0.5);
+
+Edit 'RPACK-SIP-PTH-5.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-1.27 0) -180 (1.27 0);
+Wire  0.2032 (1.27 -12.7) -180 (-1.27 -12.7);
+Wire  0.2032 (-1.27 0) (-1.27 -1.27) (-1.27 -12.7);
+Wire  0.2032 (1.27 -12.7) (1.27 -1.27) (1.27 0);
+Wire  0.2032 (-1.27 -1.27) (1.27 -1.27);
+Change Drill 0.8;Pad 'P$1' square 0 R0 (0 0);
+Change Drill 0.8;Pad 'P$2' round 0 R0 (0 -2.54);
+Change Drill 0.8;Pad 'P$3' round 0 R0 (0 -5.08);
+Change Drill 0.8;Pad 'P$4' round 0 R0 (0 -7.62);
+Change Drill 0.8;Pad 'P$5' round 0 R0 (0 -10.16);
+Change Drill 0.8;Pad 'P$6' round 0 R0 (0 -12.7);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R90 (-1.778 -12.7);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R270 (-3.048 0);
+
+Edit 'SJ_2S-TRACE.pac';
+Description 'Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.';
+Layer 21;
+Wire  0.2032 (0.8255 -1.016) (-0.8255 -1.016);
+Wire  0.2032 (0.8255 1.016) -90 (1.0795 0.762);
+Wire  0.2032 (-1.0795 0.762) -90 (-0.8255 1.016);
+Wire  0.2032 (-1.0795 -0.762) +90 (-0.8255 -1.016);
+Wire  0.2032 (0.8255 -1.016) +90 (1.0795 -0.762);
+Wire  0.2032 (-0.8255 1.016) (0.8255 1.016);
+Layer 1;
+Wire  0.2032 (-0.381 0) (0.381 0);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R0 NOCREAM (-0.508 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0.508 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.9525 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.9525 -1.651);
+
+Edit 'SJ_2S-NOTRACE.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (0.8 -1) (-0.8 -1);
+Wire  0.2032 (0.8 1) -90.0764 (1 0.7);
+Wire  0.2032 (-1 0.7) -90.0382 (-0.8 1);
+Wire  0.2032 (-1 -0.7) +90.0382 (-0.8 -1);
+Wire  0.2032 (0.8 -1) +90.0382 (1 -0.7);
+Wire  0.2032 (-0.8 1) (0.8 1);
+Layer 1;
+Smd '1' 0.635 1.27 -0 R180 NOCREAM (-0.4009 0);
+Layer 1;
+Smd '2' 0.635 1.27 -0 R0 NOCREAM (0.4127 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-0.9525 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.9525 -1.651);
+Layer 31;
+Rect R0 (-1.016 -1.016) (1.016 1.016);
+
+Edit 'SJ_2W.pac';
+Description '<b>Solder jumper</b>';
+Layer 21;
+Wire  0.1524 (3.175 -1.524) (-3.175 -1.524);
+Wire  0.1524 (3.175 1.524) -90 (3.429 1.27);
+Wire  0.1524 (-3.429 1.27) -90 (-3.175 1.524);
+Wire  0.1524 (-3.429 -1.27) +90 (-3.175 -1.524);
+Wire  0.1524 (3.175 -1.524) +90 (3.429 -1.27) (3.429 1.27);
+Wire  0.1524 (-3.429 -1.27) (-3.429 1.27);
+Wire  0.1524 (-3.175 1.524) (3.175 1.524);
+Layer 51;
+Wire  0.1524 (2.794 0) (3.302 0);
+Wire  0.1524 (-2.794 0) (-3.302 0);
+Wire  0.1524 (0 0.762) (0 1.397);
+Wire  0.1524 (0 -1.397) (0 -0.762);
+Wire  1.27 (2.032 0.127) flat -180 (2.032 -0.127);
+Wire  1.27 (-2.032 -0.127) flat -180 (-2.032 0.127);
+Layer 1;
+Smd '1' 1.27 2.54 -0 R0 (-2.54 0);
+Layer 1;
+Smd '2' 1.27 2.54 -0 R0 (0 0);
+Layer 1;
+Smd '3' 1.27 2.54 -0 R0 (2.54 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Text '>NAME' R0 (-3.429 1.778);
+Layer 27;
+Change Size 0.02;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.1001 0);
+Layer 51;
+Rect R0 (-0.508 -0.762) (0.508 0.762);
+
+Edit 'SJ_2.pac';
+Description '<b>Solder jumper</b>';
+Layer 21;
+Wire  0.1524 (2.159 -1.016) (-2.159 -1.016);
+Wire  0.1524 (2.159 1.016) -90 (2.413 0.762);
+Wire  0.1524 (-2.413 0.762) -90 (-2.159 1.016);
+Wire  0.1524 (-2.413 -0.762) +90 (-2.159 -1.016);
+Wire  0.1524 (2.159 -1.016) +90 (2.413 -0.762) (2.413 0.762);
+Wire  0.1524 (-2.413 -0.762) (-2.413 0.762);
+Wire  0.1524 (-2.159 1.016) (2.159 1.016);
+Layer 51;
+Wire  0.1524 (1.778 0) (2.286 0);
+Wire  0.1524 (-1.778 0) (-2.286 0);
+Wire  0.1524 (0 0.762) (0 1.016);
+Wire  0.1524 (0 -1.016) (0 -0.762);
+Wire  1.27 (1.016 0.127) flat -180 (1.016 -0.127);
+Wire  1.27 (-1.016 -0.127) flat -180 (-1.016 0.127);
+Layer 1;
+Smd '1' 1.1684 1.6002 -0 R0 (-1.524 0);
+Layer 1;
+Smd '2' 1.1684 1.6002 -0 R0 (0 0);
+Layer 1;
+Smd '3' 1.1684 1.6002 -0 R0 (1.524 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Text '>NAME' R0 (-2.413 1.27);
+Layer 27;
+Change Size 0.02;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-0.1001 0);
+Layer 51;
+Rect R0 (-0.508 -0.762) (0.508 0.762);
+
+Edit 'PAD.02X.02.pac';
+Description '';
+Layer 1;
+Smd 'P$1' 0.508 0.508 -0 R0 (0 0);
+
+Edit 'PAD.03X.03.pac';
+Description '';
+Layer 1;
+Smd 'P$1' 0.762 0.762 -100 R0 NOCREAM (0 0);
+
+Edit 'PAD.03X.05.pac';
+Description '';
+Layer 1;
+Smd 'P$1' 1.27 1.27 -100 R0 NOCREAM (0 0);
+
+Edit 'GND_CONNECT.pac';
+Description '';
+Layer 1;
+Smd '1' 1.016 1.016 -0 R0 (-1.016 0);
+Layer 1;
+Smd '2' 1.016 1.016 -0 R0 (-1.016 -1.27);
+Layer 1;
+Smd '3' 1.016 1.016 -0 R0 (0.254 -0.635);
+Layer 25;
+Change Size 1.27;
+Change Align bottom left;
+Text '>NAME' R0 (-0.889 1.27);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R0 (-1.143 -4.064);
+
+Edit 'DR1030.pac';
+Description 'For Coiltronics/Cooper DR1030 series inductors';
+Layer 21;
+Wire  0.127 (5.15 5.25) (5.15 -5.25);
+Wire  0.127 (-5.15 -5.25) (-5.15 5.25);
+Layer 1;
+Smd '2' 3.3 1.6 -0 R0 (0 -4.45);
+Layer 1;
+Smd '1' 3.3 1.6 -0 R0 (0 4.45);
+Layer 21;
+Wire  0.127 (5.15 -5.25) (2 -5.25);
+Wire  0.127 (-5.15 -5.25) (-2 -5.25);
+Wire  0.127 (-5.15 5.25) (-2 5.25);
+Wire  0.127 (5.15 5.25) (2 5.25);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>NAME' R0 (-3.81 1.27);
+Layer 27;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>VALUE' R0 (-3.81 -1.27);
+
+Edit 'CPOL-RADIAL-10UF-25V-KIT.pac';
+Description '';
+Layer 21;
+Circle 0.2032 (0 0) (2.5 0);
+Change Drill 0.7;Pad '1' square 1.651 R0 NOSTOP (1.27 0);
+Change Drill 0.7;Pad '2' round 1.651 R0 NOSTOP (-1.27 0);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.889 1.524);
+Layer 27;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-1.905 -3.683);
+Layer 29;
+Circle 0 (-1.27 0) (-0.9144 0);
+Layer 30;
+Circle 0 (-1.27 0) (-0.3048 0);
+Layer 29;
+Circle 0 (1.27 0) (1.6256 0);
+Layer 30;
+Rect R0 (0.3048 -0.9652) (2.2352 0.9652);
+Layer 21;
+Wire  0.2032 (-0.762 1.397) (-1.778 1.397);
+Wire  0.2032 (1.778 1.397) (0.762 1.397);
+Wire  0.2032 (1.27 1.905) (1.27 0.889);
+
+Edit 'CPOL-RADIAL-1000UF-25V-KIT.pac';
+Description '';
+Layer 21;
+Wire  0.2032 (-1.905 1.27) (-3.175 1.27);
+Layer 21;
+Circle 0.2032 (0 0) (5.461 0);
+Change Drill 0.9;Pad '-' round 1.9304 R0 NOSTOP (-2.5 0);
+Change Drill 0.9;Pad '+' square 1.9304 R0 NOSTOP (2.5 0);
+Layer 27;
+Change Size 0.8128;
+Change Align bottom left;
+Text '>Value' R0 (-2.005 -4.018);
+Layer 25;
+Change Size 0.4064;
+Change Align bottom left;
+Text '>Name' R0 (-0.762 2.921);
+Layer 29;
+Circle 0 (-2.5 0) (-2.052959375 0);
+Layer 29;
+Circle 0 (2.5 0) (2.95 0);
+Layer 30;
+Rect R0 (1.5 -1) (3.5 1);
+Layer 30;
+Circle 0 (-2.5 0) (-1.5221 0);
+Layer 21;
+Wire  0.2032 (2.978 1.497) (1.962 1.497);
+Wire  0.2032 (2.47 2.005) (2.47 0.989);
+
+Edit 'NIC_10X10.5_CAP.pac';
+Description '';
+Layer 1;
+Smd '+' 4.5 2.5 -0 R0 (4.5 0);
+Layer 1;
+Smd '-' 4.5 2.5 -0 R0 (-4.5 0);
+Layer 21;
+Wire  0.2032 (-5.5 -5.5) (3.5 -5.5);
+Wire  0.2032 (-5.5 5.5) (3.5 5.5) (5.5 3.5);
+Wire  0.2032 (5.5 -3.5) (3.5 -5.5);
+Wire  0.2032 (-4.826 1.524) -147.716 (4.826 1.397);
+Wire  0.2032 (-4.826 -1.524) +147.716 (4.826 -1.397);
+Wire  0.2032 (5.5 3.5) (5.5 1.5);
+Wire  0.2032 (5.5 -3.5) (5.5 -1.5);
+Wire  0.2032 (-5.5 -5.5) (-5.5 -1.5);
+Wire  0.2032 (-5.5 1.5) (-5.5 5.5);
+
+Edit 'CAP.dev';
+Prefix 'C';
+Description '\
+<b>Capacitor</b>\n\
+Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package 'CAP-PTH-SMALL' 'PTH';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'CAP-PTH-SMALL2' 'PTH2';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package '0805' '0805';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'CAP-PTH-LARGE' 'PTH3';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'GRM43D' 'SMD';
+Technology '';
+Connect  'G$1.1' 'A'  'G$1.2' 'C';
+Package '0603-CAP' '0603-CAP';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package '0402-CAP' '0402-CAP';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'CAP-PTH-5MM' 'PTH1';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'AXIAL-5MM' '_';
+Technology '';
+Connect  'G$1.1' 'P$1'  'G$1.2' 'P$2';
+Package '1210' '1210';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package '1206' '1206';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'CTZ3' 'ASMD';
+Technology '';
+Connect  'G$1.1' '+'  'G$1.2' '-';
+Package 'CAP-PTH-SMALL-KIT' 'KIT';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package 'CAP-PTH-SMALLEZ' 'EZ';
+Technology '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit 'CAP_ADJ.dev';
+Prefix 'C';
+Description 'Variable, non-polarized capacitor';
+Value off;
+Add CAP_ADJ 'G$1' next 0 (0 0);
+Package 'CTZ3' 'SMD';
+Technology '';
+Connect  'G$1.3' '+'  'G$1.4' '-';
+
+Edit 'CAP_POL.dev';
+Prefix 'C';
+Description '\
+<b>Capacitor Polarized</b>\n\
+These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in electrolytic and tantalum varieties. Always verify the external diameter of the through hole cap, it varies with capacity, voltage, and manufacturer. The EIA devices should be standard.';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'EIA3216' '1206';
+Technology '';
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+Package 'EIA3528' '3528';
+Technology '';
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+Package 'CPOL-RADIAL-100UF-25V' 'PTH1';
+Technology '';
+Connect  'G$1.+' '1'  'G$1.-' '2';
+Package 'CPOL-RADIAL-10UF-25V' 'PTH2';
+Technology '';
+Connect  'G$1.+' '1'  'G$1.-' '2';
+Package 'EIA7343' '7343';
+Technology '';
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+Package 'PANASONIC_G' 'G';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'PANASONIC_E' 'E';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'PANASONIC_C' 'C';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'NIPPON_F80' 'F80';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'PANASONIC_D' 'D';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'CPOL-RADIAL-1000UF-63V' 'PTH3';
+Technology '';
+Connect  'G$1.+' '1'  'G$1.-' '2';
+Package 'CPOL-RADIAL-1000UF-25V' 'PTH4';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'VISHAY_C' 'SMD';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'PANASONIC_H13' 'H13';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'EIA6032' '6032';
+Technology '';
+Connect  'G$1.+' 'P$1'  'G$1.-' 'P$2';
+Package 'EN_J2' 'EN_J2';
+Technology '';
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'EIA3528-KIT' '3528-KIT';
+Technology '';
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+Package 'EIA3216-KIT' '1206-KIT';
+Technology '';
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+
+Edit '100UF-63V-20%(ELECT).dev';
+Prefix 'C';
+Description '\
+CAP-08362 <BR>\n\
+100uF electrolytic SMT<br>\n\
+ 63V 20%';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'NIC_10X10.5_CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08362' constant;
+Attribute VALUE '100uF' constant;
+Connect  'G$1.+' '+'  'G$1.-' '-';
+
+Edit '47UF-10V-10%(TANT).dev';
+Prefix 'C';
+Description '\
+CAP-08310 <BR>\n\
+47uF Tantalum SMT<br>\n\
+ 10V 10% (EIA-3528)';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'EIA3528' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08310' constant;
+Attribute VALUE '47uF' variable;
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+
+Edit '0.01UF-1000V-10%(1812).dev';
+Prefix 'C';
+Description 'CAP-09114';
+Value on;
+
+Edit '0.1UF-100V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-08390';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08390' variable;
+Attribute VALUE '0.1uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.1UF-25V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08604';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08604' constant;
+Attribute VALUE '0.1uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.1UF-25V(+80/-20%)(0603).dev';
+Prefix 'C';
+Description '\
+CAP-00810<br>\n\
+Ceramic<br>\n\
+Standard decoupling cap';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-00810' constant;
+Attribute VALUE '0.1uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.1UF-50V-20%(PTH).dev';
+Prefix 'C';
+Description 'CAP-08370';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package 'CAP-PTH-SMALL-KIT' 'KIT-EZ';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08370' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.22UF-25V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-07822';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07822' variable;
+Attribute VALUE '0.22uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.22UF50V-20%,+80%(0603).dev';
+Prefix 'C';
+Description 'CAP-09885';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09885' variable;
+Attribute VALUE '0.22uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.33UF-50V-10%(0805).dev';
+Prefix 'C';
+Description 'CAP-08469';
+Value on;
+
+Edit '0.33UF-50V-10%(TANT).dev';
+Prefix 'C';
+Description 'CAP-08617';
+Value on;
+
+Edit '0.47UF-25V--20%,+80%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09152';
+Value on;
+
+Edit '0.75PF-50V(-/+.25PF)(0603).dev';
+Prefix 'C';
+Description 'CAP-07878';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07878' variable;
+Attribute VALUE '0.75pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.0PF-50V(-/+.25PF)(0603).dev';
+Prefix 'C';
+Description 'CAP-07879';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07879' variable;
+Attribute VALUE '1.0pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.0UF50V10%(1206).dev';
+Prefix 'C';
+Description 'CAP-09822';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '1206' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09822' constant;
+Attribute VALUE '1.0uF' constant;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.0UF-100V-10%(1206).dev';
+Prefix 'C';
+Description 'CAP-10742';
+Value on;
+
+Edit '1.0UF-16V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-00868';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-00868' constant;
+Attribute VALUE '1.0uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.0UF-50V-20%-(ELECT).dev';
+Prefix 'C';
+Description 'CAP-10222';
+Value on;
+
+Edit '1.2PF-50V-20%(0603).dev';
+Prefix 'C';
+Description 'CAP-09201';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09201' variable;
+Attribute VALUE '1.2pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.5PF-50V(+/-.25PF)(0603).dev';
+Prefix 'C';
+Description 'CAP-08763';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08763' variable;
+Attribute VALUE '1.5pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1000UF-10V-20%(PTH).dev';
+Prefix 'C';
+Description 'CAP-08514';
+Value on;
+
+Edit '1000UF-25V-20%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09538';
+Value on;
+
+Edit '1000UF-25V(PTH).dev';
+Prefix 'C';
+Description 'CAP-08070';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'CPOL-RADIAL-1000UF-25V' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09538' variable;
+Attribute VALUE 'CAP-09538' variable;
+Connect  'G$1.+' '+'  'G$1.-' '-';
+Package 'CPOL-RADIAL-1000UF-25V-KIT' 'KIT';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09538' variable;
+Attribute VALUE '1000uf/25V' variable;
+Connect  'G$1.+' '+'  'G$1.-' '-';
+
+Edit '100PF-200V-5%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09181';
+Value on;
+
+Edit '100PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-07883';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07883' variable;
+Attribute VALUE '100pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '100UF-10V-10%(TANT).dev';
+Prefix 'C';
+Description 'CAP-07890';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'EIA7343' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07890' constant;
+Attribute VALUE '100uF' constant;
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+
+Edit '100UF-16V-10%(TANT).dev';
+Prefix 'C';
+Description 'CAP-08702';
+Value on;
+
+Edit '100UF-25V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08498';
+Value on;
+
+Edit '100UF-25V-20%(PTH).dev';
+Prefix 'C';
+Description 'CAP-08439';
+Value on;
+
+Edit '100UF-35V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-09297';
+Value on;
+
+Edit '100UF6.3V20%(1210).dev';
+Prefix 'C';
+Description 'CAP-09827';
+Value on;
+
+Edit '10NF-100V-10%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09183';
+Value on;
+
+Edit '10NF(0.01UF/10,000PF)-1000V-10%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09321';
+Value on;
+
+Edit '10NF/10000PF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-00867';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-00867' variable;
+Attribute VALUE '10nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '10PF-200V-5%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09180';
+Value on;
+
+Edit '10UF-16V-10%(TANT).dev';
+Prefix 'C';
+Description '\
+CAP-00811<BR>\n\
+1206/EIA-3216 Tantalum capacitor';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'EIA3216' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-00811' constant;
+Attribute VALUE '10uF' variable;
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+
+Edit '10UF-20V-10%(TANT).dev';
+Prefix 'C';
+Description 'CAP-08063';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'EIA3528' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08063' constant;
+Attribute VALUE '10uF' constant;
+Connect  'G$1.+' 'A'  'G$1.-' 'C';
+
+Edit '10UF-25V-20%(PTH).dev';
+Prefix 'C';
+Description 'CAP-08440';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'CPOL-RADIAL-10UF-25V' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08440' variable;
+Connect  'G$1.+' '1'  'G$1.-' '2';
+Package 'CPOL-RADIAL-10UF-25V-KIT' 'KIT';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08440' variable;
+Connect  'G$1.+' '1'  'G$1.-' '2';
+
+Edit '10UF-6.3V-20%(1206).dev';
+Prefix 'C';
+Description '\
+CAP-10057<BR>\n\
+Ceramic<br>';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '1206' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-10057' constant;
+Attribute VALUE '10uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '10UF-6.3V-20%(0603).dev';
+Prefix 'C';
+Description 'CAP-11015';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-11015' variable;
+Attribute VALUE '10uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '10UF10V10%(0805).dev';
+Prefix 'C';
+Description 'CAP-11330';
+Value on;
+
+Edit '10UF50V20%(1210).dev';
+Prefix 'C';
+Description 'CAP-09824';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '1210' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09824' constant;
+Attribute VALUE '10uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '12PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-09137';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09137' variable;
+Attribute VALUE '12pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '15000PF(15NF)-25V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-08710';
+Value on;
+
+Edit '15NF-250V-10%(0805).dev';
+Prefix 'C';
+Description 'CAP-11077';
+Value on;
+
+Edit '15PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-07881';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07881' constant;
+Attribute VALUE '15pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '18PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08267';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08267' variable;
+Attribute VALUE '18pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1NF-100V-5%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09182';
+Value on;
+
+Edit '1NF/1000PF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-07886';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07886' variable;
+Attribute VALUE '1nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1UF-25V-10%(0805).dev';
+Prefix 'C';
+Description 'CAP-08064';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0805' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08064' constant;
+Attribute VALUE '1uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1UF-35V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-09577';
+Value on;
+
+Edit '1UF-50V--20,+80%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09184';
+Value on;
+
+Edit '2.2NF/2200PF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-07877';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07877' variable;
+Attribute VALUE '2.2nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '2.2UF-10V-20%(0603).dev';
+Prefix 'C';
+Description 'CAP-07888';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07888' variable;
+Attribute VALUE '2.2uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '2.2UF50V10%(1206).dev';
+Prefix 'C';
+Description 'CAP-10009';
+Value on;
+Add CAP 'G$1' next 0 (0 -1.27);
+Package '1206' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-10009' variable;
+Attribute VALUE '2.2UF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '220PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08722';
+Value on;
+
+Edit '220UF-16V-20%(PTH).dev';
+Prefix 'C';
+Description 'CAP-10898';
+Value on;
+
+Edit '220UF-16V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-09578';
+Value on;
+
+Edit '22NF/22,000PF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-07885';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07885' variable;
+Attribute VALUE '22nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '22PF-200V-5%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09128';
+Value on;
+
+Edit '22PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-07876';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07876' variable;
+Attribute VALUE '22pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '22UF-16V-20%-(1210).dev';
+Prefix 'C';
+Description 'CAP-10381';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '1210' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-10381' constant;
+Attribute VALUE '22uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '22UF-16V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-09576';
+Value on;
+
+Edit '22UF-35V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08618';
+Value on;
+
+Edit '22UF-6.3V-20%(0805).dev';
+Prefix 'C';
+Description '\
+CAP-08402<BR>\n\
+Ceramic<BR>';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0805' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08402' constant;
+Attribute VALUE '22uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '27PF50V5%(0603).dev';
+Prefix 'C';
+Description 'CAP-09989';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09989' variable;
+Attribute VALUE '27pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '3.3NF-100V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-09633';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09633' variable;
+Attribute VALUE '3.3nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '330PF-25V-10%-(0603).dev';
+Prefix 'C';
+Description 'CAP-10108';
+Value on;
+
+Edit '33NF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-07887';
+Value on;
+
+Edit '33PF-50V-5%-(0603).dev';
+Prefix 'C';
+Description 'CAP-10142';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-10142' variable;
+Attribute VALUE '33pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '33UF-16V-20%(TANT).dev';
+Prefix 'C';
+Description 'CAP-09017';
+Value on;
+
+Edit '33UF-50V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08826';
+Value on;
+
+Edit '390NF-10V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-10986';
+Value on;
+
+Edit '4.7NF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-11378';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-11378' variable;
+Attribute VALUE '4.7nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '4.7PF-50V(-/+.25PF)(0603).dev';
+Prefix 'C';
+Description 'CAP-07880';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07880' variable;
+Attribute VALUE '4.7pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '4.7UF-16V-20%,+80%-(1206).dev';
+Prefix 'C';
+Description 'CAP-10300';
+Value on;
+
+Edit '4.7UF-35V-10%(TANT).dev';
+Prefix 'C';
+Description 'CAP-08313';
+Value on;
+
+Edit '4.7UF-6.3V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-08280';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0603-CAP' '0603';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08280' constant;
+Attribute VALUE '4.7uF' constant;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '430PF-100V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08709';
+Value on;
+
+Edit '470NF-16V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-09041';
+Value on;
+
+Edit '470PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-07884';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' 'SMD';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-07884' variable;
+Attribute VALUE '470pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '470UF-25V(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08700';
+Value on;
+
+Edit '470UF-6.3V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08408';
+Value on;
+
+Edit '470UF16V?20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-10043';
+Value on;
+
+Edit '470UF16V(PTH).dev';
+Prefix 'C';
+Description 'CAP-08088';
+Value on;
+
+Edit '47NF(0.047UF/47000PF)-25V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08605';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0603-CAP' 'SMD';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08605' variable;
+Attribute VALUE '47nF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '47PF-1500V-5%(0805).dev';
+Prefix 'C';
+Description 'CAP-09202';
+Value on;
+
+Edit '47PF-500V-10%(PTH).dev';
+Prefix 'C';
+Description 'CAP-09326';
+Value on;
+
+Edit '47PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08913';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08913' constant;
+Attribute VALUE '47pF' constant;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '47UF-25V(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08699';
+Value on;
+
+Edit '47UF-35V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-08478';
+Value on;
+
+Edit '47UF-50V-20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-10547';
+Value on;
+Add CAP_POL 'G$1' next 0 (0 0);
+Package 'PANASONIC_D' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-10547' variable;
+Connect  'G$1.+' '+'  'G$1.-' '-';
+
+Edit '560PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08749';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-08749' constant;
+Attribute VALUE '560pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '560UF25V20%(ELECT).dev';
+Prefix 'C';
+Description 'CAP-09983';
+Value on;
+
+Edit '680PF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-09232';
+Value on;
+
+Edit '680PF-50V-5%(0805).dev';
+Prefix 'C';
+Description 'CAP-08472';
+Value on;
+
+Edit '68PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-08804';
+Value on;
+
+Edit '68UF-10V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-08312';
+Value on;
+
+Edit '68UF-10V-10%(TANT).dev';
+Prefix 'C';
+Description 'CAP-10790';
+Value on;
+
+Edit '8200PF(PTH).dev';
+Prefix 'C';
+Description 'CAP-08081';
+Value on;
+
+Edit '8200PF/8.2NF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-08309';
+Value on;
+
+Edit '9.0PF-50V-10%(0603).dev';
+Prefix 'C';
+Description 'CAP-09341';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-09341' variable;
+Attribute VALUE '9.0pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.0UF-25V-+80/-20(0805).dev';
+Prefix 'C';
+Description 'CAP-11625';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0805' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-11625' constant;
+Attribute VALUE '1.0uF' constant;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '2.2UF-25V-+80/-20(0805).dev';
+Prefix 'C';
+Description 'CAP-11624';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0805' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-11624' constant;
+Attribute VALUE '2.2uF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '0.1UF-16V(+-10%)(0402).dev';
+Prefix 'C';
+Description '';
+Value on;
+Add CAP 'G$1' next 0 (0 0);
+Package '0402-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-12416' constant;
+Attribute VALUE '0.1uF' constant;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '1.0UF-16V-10%(0402).dev';
+Prefix 'C';
+Description '';
+Value on;
+Add CAP 'G$1' next 0 (0 -2.54);
+Package '0402-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-12417' constant;
+Attribute VALUE '1.0uF' constant;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+
+Edit '10PF-50V-5%(0603).dev';
+Prefix 'C';
+Description 'CAP-11812';
+Value off;
+Add CAP 'G$1' next 0 (0 0);
+Package '0603-CAP' '';
+Technology '';
+Technology '';
+Attribute PROD_ID 'CAP-11812' variable;
+Attribute VALUE '10pF' variable;
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Grid inch;

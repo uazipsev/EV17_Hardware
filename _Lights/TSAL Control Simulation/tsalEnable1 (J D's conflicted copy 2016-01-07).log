@@ -1,0 +1,22 @@
+Circuit: * C:\Users\Desktop\Dropbox\EV\2016 Hardware\_Lights Done\TSAL Simulation\tsalEnable1.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Jan 07 21:25:02 2016
+Total elapsed time: 0.315 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 14099
+traniter = 14070
+tranpoints = 3788
+accept = 2874
+rejected = 914
+matrix size = 22
+fillins = 12
+solver = Normal
+Matrix Compiler1: 2.88 KB object code size  0.9/0.6/[0.2]
+Matrix Compiler2: off  [0.4]/0.5/0.4
+
+
