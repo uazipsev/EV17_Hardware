@@ -7046,10 +7046,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="C10" library="FSAE Electric" deviceset="CAP" device="_0.1UF_50V_0805" value="0.1UF"/>
 <part name="J3" library="FSAE Electric" deviceset="M8" device="S08B-PASK-2(LF)(SN)"/>
-<part name="R35" library="FSAE Electric" deviceset="RES" device="_2.2K_1%_0805" value="2.2K"/>
-<part name="SUPPLY3" library="supply2" deviceset="VSS" device=""/>
-<part name="R36" library="FSAE Electric" deviceset="RES" device="_2.2K_1%_0805" value="2.2K"/>
-<part name="SUPPLY5" library="supply2" deviceset="VSS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7089,8 +7085,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND10" gate="1" x="228.6" y="63.5" rot="MR0"/>
 <instance part="+3V4" gate="G$1" x="86.36" y="53.34" rot="MR0"/>
 <instance part="+3V17" gate="G$1" x="55.88" y="35.56" rot="MR0"/>
-<instance part="SUPPLY12" gate="G$1" x="312.42" y="33.02"/>
-<instance part="SUPPLY24" gate="G$1" x="342.9" y="35.56"/>
+<instance part="SUPPLY12" gate="G$1" x="312.42" y="38.1"/>
+<instance part="SUPPLY24" gate="G$1" x="342.9" y="38.1"/>
 <instance part="TX3" gate="G$1" x="355.6" y="147.32"/>
 <instance part="TX4" gate="G$1" x="355.6" y="198.12"/>
 <instance part="GND5" gate="1" x="327.66" y="129.54"/>
@@ -7311,10 +7307,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="VALUE" x="284.48" y="63.5" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="279.4" y="62.738" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R35" gate="G$1" x="304.8" y="40.64" rot="MR90"/>
-<instance part="SUPPLY3" gate="G$1" x="304.8" y="33.02"/>
-<instance part="R36" gate="G$1" x="350.52" y="43.18" rot="MR90"/>
-<instance part="SUPPLY5" gate="G$1" x="350.52" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -7851,8 +7843,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="304.8" y1="45.72" x2="294.64" y2="45.72" width="0.1524" layer="91"/>
 <label x="294.64" y="45.72" size="1.778" layer="95"/>
 <pinref part="U23" gate="-A" pin="G"/>
-<pinref part="R35" gate="G$1" pin="2"/>
-<junction x="304.8" y="45.72"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="AN4/C1IN-/RP2(1)/CN6/RB2"/>
@@ -8170,9 +8160,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="350.52" y1="53.34" x2="360.68" y2="53.34" width="0.1524" layer="91"/>
 <label x="350.52" y="53.34" size="1.778" layer="95"/>
 <pinref part="U23" gate="-B" pin="G"/>
-<pinref part="R36" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="48.26" x2="350.52" y2="53.34" width="0.1524" layer="91"/>
-<junction x="350.52" y="53.34"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="AN5/C1IN+/RP3(1)/CN7/RB3"/>
@@ -8538,12 +8525,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="SUPPLY12" gate="G$1" pin="VSS"/>
 <pinref part="U23" gate="-A" pin="S"/>
-<wire x1="312.42" y1="35.56" x2="312.42" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U23" gate="-B" pin="S"/>
 <pinref part="SUPPLY24" gate="G$1" pin="VSS"/>
-<wire x1="342.9" y1="38.1" x2="342.9" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="40.64" x2="342.9" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="2"/>
@@ -8578,14 +8564,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="SUPPLY2" gate="G$1" pin="VSS"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="121.92" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R35" gate="G$1" pin="1"/>
-<pinref part="SUPPLY3" gate="G$1" pin="VSS"/>
-</segment>
-<segment>
-<pinref part="R36" gate="G$1" pin="1"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VSS"/>
 </segment>
 </net>
 <net name="N$19" class="0">
