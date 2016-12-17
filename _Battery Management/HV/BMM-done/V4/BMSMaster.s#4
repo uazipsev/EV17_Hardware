@@ -662,26 +662,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="2.06" y1="-0.44" x2="2.06" y2="0.47" width="0.2032" layer="21"/>
 <wire x1="-1.04" y1="-1.16" x2="1.04" y2="-1.16" width="0.2032" layer="21"/>
 </package>
-<package name="STAND-OFF">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
-</package>
-<package name="STAND-OFF-TIGHT">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.048"/>
-</package>
 <package name="TACTILE-SWITCH-1101NE">
 <description>SparkFun SKU# COM-08229</description>
 <wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
@@ -891,9 +871,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="STAND-OFF">
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SWITCH-MOMENTARY-2" prefix="S">
@@ -1044,25 +1021,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <technology name="">
 <attribute name="PROD_ID" value="COMP-12265" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="STAND-OFF" prefix="STANDOFF">
-<description>&lt;b&gt;#4 Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<gates>
-<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="STAND-OFF">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIGHT" package="STAND-OFF-TIGHT">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6902,7 +6860,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND65" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="FSAE Eletric (2)" deviceset="IND" device="PK1"/>
@@ -7117,7 +7074,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND65" gate="1" x="203.2" y="170.18"/>
 <instance part="GND2" gate="1" x="330.2" y="91.44"/>
 <instance part="GND3" gate="1" x="25.4" y="137.16"/>
-<instance part="STANDOFF3" gate="G$1" x="12.7" y="5.08"/>
 <instance part="FRAME2" gate="G$1" x="-5.08" y="-5.08"/>
 <instance part="GND6" gate="1" x="40.64" y="124.46"/>
 <instance part="U$1" gate="G$1" x="2.54" y="2.54"/>
