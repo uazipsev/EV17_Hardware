@@ -2934,6 +2934,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="ID" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="FT24C64A">
+<pin name="SDA" x="-12.7" y="2.54" length="middle"/>
+<pin name="SCL" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VCC" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="WP" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PE-68386NLT" prefix="TX">
@@ -5132,6 +5145,28 @@ In this library the device names are the same as the pin names of the symbols, t
 </device>
 </devices>
 </deviceset>
+<deviceset name="FT24C64A" prefix="U1">
+<description>IC EEPROM 64KBIT 1MHZ SOT23-5</description>
+<gates>
+<gate name="G$1" symbol="FT24C64A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="WP" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="FT24C64A-ULR-T" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Connectors">
@@ -7051,6 +7086,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J13" library="SparkFun-Connectors" deviceset="M02" device="LOCK_LONGPADS"/>
 <part name="J4" library="FSAE Electric" deviceset="M8" device="S08B-PASK-2(LF)(SN)"/>
 <part name="J14" library="FSAE Electric" deviceset="USB" device="_B_RA"/>
+<part name="U12" library="FSAE Electric" deviceset="FT24C64A" device=""/>
+<part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND31" library="supply1" deviceset="GND" device=""/>
+<part name="C10" library="FSAE Electric" deviceset="CAP" device="_0.1UF_50V_0805" value="0.1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7310,6 +7349,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="NAME" x="279.4" y="84.582" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="J14" gate="G$1" x="127" y="35.56"/>
+<instance part="U12" gate="G$1" x="137.16" y="162.56"/>
+<instance part="+3V13" gate="G$1" x="149.86" y="172.72"/>
+<instance part="GND31" gate="1" x="149.86" y="157.48"/>
+<instance part="C10" gate="G$1" x="154.94" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -7666,6 +7709,13 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND61" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 </segment>
+<segment>
+<pinref part="U12" gate="G$1" pin="GND"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<junction x="149.86" y="160.02"/>
+<pinref part="C10" gate="G$1" pin="-"/>
+<wire x1="149.86" y1="160.02" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="WDI" class="0">
 <segment>
@@ -7910,6 +7960,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="187.96" y="231.14" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="*SCL1/RP8(1)/CN22/PMD4/RB8"/>
 </segment>
+<segment>
+<pinref part="U12" gate="G$1" pin="SCL"/>
+<wire x1="124.46" y1="160.02" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
+<label x="119.38" y="160.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -7925,6 +7980,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="76.2" y1="231.14" x2="66.04" y2="231.14" width="0.1524" layer="91"/>
 <label x="66.04" y="231.14" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="SDA1/RP9/CN21/PMD3/RB9*"/>
+</segment>
+<segment>
+<pinref part="U12" gate="G$1" pin="SDA"/>
+<wire x1="124.46" y1="165.1" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
+<label x="119.38" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8041,6 +8101,18 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="261.62" y1="177.8" x2="261.62" y2="185.42" width="0.1524" layer="91"/>
 <junction x="261.62" y="185.42"/>
 <junction x="261.62" y="193.04"/>
+</segment>
+<segment>
+<pinref part="U12" gate="G$1" pin="VCC"/>
+<pinref part="+3V13" gate="G$1" pin="+3V3"/>
+<wire x1="149.86" y1="165.1" x2="149.86" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="+"/>
+<wire x1="149.86" y1="167.64" x2="149.86" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="167.64" x2="149.86" y2="167.64" width="0.1524" layer="91"/>
+<junction x="149.86" y="167.64"/>
+<pinref part="U12" gate="G$1" pin="WP"/>
+<wire x1="149.86" y1="162.56" x2="149.86" y2="165.1" width="0.1524" layer="91"/>
+<junction x="149.86" y="165.1"/>
 </segment>
 </net>
 <net name="+9V" class="0">
