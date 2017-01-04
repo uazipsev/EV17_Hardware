@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6193,8 +6193,9 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="3" y1="-3.5" x2="-3" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="-3" y1="-3.5" x2="-3" y2="8.2" width="0.127" layer="21"/>
 <wire x1="3" y1="-3.5" x2="3" y2="8.2" width="0.127" layer="21"/>
-<text x="-3.9" y="1.9" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5" y="1" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-3.9" y="-2.3418" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.0508" y="-2.683" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-4.191" y="5.2324" size="1.27" layer="21">1</text>
 </package>
 </packages>
 <symbols>
@@ -16382,6 +16383,17 @@ transients up to ±350V and differential voltages up to ±500V. The LT1990 is id
 <technologies>
 <technology name="">
 <attribute name="PARTNO" value="0022232021" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="S02B-PASK-2(LF)(SN)" package="S02B-PASK-2(LF)(SN)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="S02B-PASK-2(LF)(SN)" constant="no"/>
 </technology>
 </technologies>
 </device>
