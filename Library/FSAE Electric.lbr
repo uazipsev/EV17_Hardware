@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6197,6 +6197,18 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="5.0508" y="-2.683" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <text x="-4.191" y="5.2324" size="1.27" layer="21">1</text>
 </package>
+<package name="VLF5014AT">
+<smd name="1" x="-2.4" y="0" dx="1.6" dy="0.95" layer="1" rot="R90"/>
+<smd name="2" x="2.4" y="0" dx="1.6" dy="0.95" layer="1" rot="R90"/>
+<wire x1="-2.35" y1="-2.35" x2="2.35" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.35" x2="2.35" y2="2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.35" x2="-2.35" y2="1.05" width="0.127" layer="21"/>
+<wire x1="2.35" y1="2.35" x2="2.35" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-2.35" x2="-2.35" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-2.35" x2="2.35" y2="-1.05" width="0.127" layer="21"/>
+<text x="-2.25" y="4.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.25" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="REC7.5-1205SRW/H2/A/M">
@@ -10053,8 +10065,8 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 <symbol name="TPS54386PWPR">
 <pin name="PVDD1" x="-15.24" y="12.7" length="middle"/>
 <pin name="BOOT1" x="-15.24" y="7.62" length="middle"/>
-<pin name="BOOT3" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="PWDD2" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="BOOT2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="PVDD2" x="15.24" y="12.7" length="middle" rot="R180"/>
 <pin name="SW1" x="-15.24" y="-2.54" length="middle"/>
 <pin name="SW2" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="GND" x="-15.24" y="-17.78" length="middle"/>
@@ -10062,7 +10074,15 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 <pin name="!EN2" x="-15.24" y="-12.7" length="middle"/>
 <pin name="SEQ" x="15.24" y="-12.7" length="middle" rot="R180"/>
 <pin name="ILIM2" x="15.24" y="-15.24" length="middle" rot="R180"/>
-<pin name="SEQ2" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="BP" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="FB2" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="FB1" x="-15.24" y="-10.16" length="middle"/>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16607,7 +16627,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technology>
 </technologies>
 </device>
-<device name="_" package="COOPER_UP4B">
+<device name="LG" package="COOPER_UP4B">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -16616,7 +16636,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="-" package="CDRH3D28">
+<device name="MD" package="CDRH3D28">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -16643,7 +16663,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="." package="CDRH2D09">
+<device name="SM" package="CDRH2D09">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -16760,7 +16780,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technology>
 </technologies>
 </device>
-<device name="" package="INDUCTOR-SRP4020">
+<device name="IDK" package="INDUCTOR-SRP4020">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -16813,6 +16833,17 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-10789" constant="no"/>
 <attribute name="VALUE" value="47uH" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-220MR62" package="VLF5014AT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="VLF5014AT-220MR62" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -18170,13 +18201,32 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS54386PWPR">
+<deviceset name="TPS54386PWPR" prefix="U1">
 <gates>
+<gate name="G$1" symbol="TPS54386PWPR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="!EN1" pad="5"/>
+<connect gate="G$1" pin="!EN2" pad="6"/>
+<connect gate="G$1" pin="BOOT1" pad="2"/>
+<connect gate="G$1" pin="BOOT2" pad="13"/>
+<connect gate="G$1" pin="BP" pad="11"/>
+<connect gate="G$1" pin="FB1" pad="7"/>
+<connect gate="G$1" pin="FB2" pad="8"/>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
+<connect gate="G$1" pin="ILIM2" pad="9"/>
+<connect gate="G$1" pin="PVDD1" pad="1"/>
+<connect gate="G$1" pin="PVDD2" pad="14"/>
+<connect gate="G$1" pin="SEQ" pad="10"/>
+<connect gate="G$1" pin="SW1" pad="3"/>
+<connect gate="G$1" pin="SW2" pad="12"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="TPS54386PWPR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
