@@ -14882,7 +14882,9 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="CPF0603F422RC1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_10_5%" package="0603">
@@ -15336,7 +15338,9 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 <connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="LMK212ABJ475MG-T" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_470PF_25V_0603" package="0603">
@@ -15374,7 +15378,9 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 <connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="C0603C103M3RACTU" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_0.033UF_25V_0603" package="0603">
