@@ -16780,7 +16780,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technology>
 </technologies>
 </device>
-<device name="IDK" package="INDUCTOR-SRP4020">
+<device name="" package="INDUCTOR-SRP4020">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -16833,17 +16833,6 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-10789" constant="no"/>
 <attribute name="VALUE" value="47uH" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-220MR62" package="VLF5014AT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNO" value="VLF5014AT-220MR62" constant="no"/>
 </technology>
 </technologies>
 </device>

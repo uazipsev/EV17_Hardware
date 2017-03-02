@@ -8729,7 +8729,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <plain>
 </plain>
 <instances>
-<instance part="P+18" gate="1" x="152.4" y="96.52"/>
+<instance part="P+18" gate="1" x="152.4" y="99.06"/>
 <instance part="SUPPLY11" gate="G$1" x="127" y="106.68"/>
 <instance part="GND4" gate="1" x="109.22" y="12.7" rot="MR0"/>
 <instance part="+3V4" gate="G$1" x="139.7" y="55.88" rot="MR0"/>
@@ -8801,6 +8801,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND32" gate="1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="!EN2"/>
+<pinref part="U2" gate="G$1" pin="!EN1"/>
+<wire x1="172.72" y1="71.12" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="68.58" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="172.72" y="66.04"/>
+<junction x="172.72" y="68.58"/>
 </segment>
 </net>
 <net name="N$88" class="0">

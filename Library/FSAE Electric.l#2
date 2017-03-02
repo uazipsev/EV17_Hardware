@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15274,73 +15274,6 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 </technology>
 </technologies>
 </device>
-<device name="_10UF_25V_1206" package="1206">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNO" value="C3216X5R1E106M" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_4.7UF_10V_0805" package="0805">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_470PF_25V_0603" package="0603">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_6.8NF_25V_0603" package="0603">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_10UF_6.3V_0805" package="0805">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNO" value="C2012X5R0J106M" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_10NF_25V_0603" package="0603">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0.033UF_25V_0603" package="0603">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="2N7002DW-7-F" prefix="Q1">
@@ -16904,14 +16837,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technologies>
 </device>
 <device name="-220MR62" package="VLF5014AT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
 <technologies>
-<technology name="">
-<attribute name="PARTNO" value="VLF5014AT-220MR62" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
