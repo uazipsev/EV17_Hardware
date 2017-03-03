@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.85" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6198,8 +6198,16 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-4.191" y="5.2324" size="1.27" layer="21">1</text>
 </package>
 <package name="VLF5014AT">
-<smd name="1" x="-2.85" y="0" dx="1.6" dy="0.95" layer="1" rot="R90"/>
-<smd name="2" x="2.85" y="0" dx="1.6" dy="0.95" layer="1" rot="R90"/>
+<smd name="1" x="-2.4" y="0" dx="1.6" dy="0.95" layer="1" rot="R90"/>
+<smd name="2" x="2.4" y="0" dx="1.6" dy="0.95" layer="1" rot="R90"/>
+<wire x1="-2.35" y1="-2.35" x2="2.35" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.35" x2="2.35" y2="2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.35" x2="-2.35" y2="1.05" width="0.127" layer="21"/>
+<wire x1="2.35" y1="2.35" x2="2.35" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-2.35" x2="-2.35" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-2.35" x2="2.35" y2="-1.05" width="0.127" layer="21"/>
+<text x="-2.25" y="4.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.25" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -16619,7 +16627,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technology>
 </technologies>
 </device>
-<device name="_" package="COOPER_UP4B">
+<device name="LG" package="COOPER_UP4B">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -16628,7 +16636,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="-" package="CDRH3D28">
+<device name="MD" package="CDRH3D28">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -16655,7 +16663,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="." package="CDRH2D09">
+<device name="SM" package="CDRH2D09">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -16772,7 +16780,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technology>
 </technologies>
 </device>
-<device name="" package="INDUCTOR-SRP4020">
+<device name="IDK" package="INDUCTOR-SRP4020">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -16826,6 +16834,11 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <attribute name="PROD_ID" value="NDUC-10789" constant="no"/>
 <attribute name="VALUE" value="47uH" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="-220MR62" package="VLF5014AT">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

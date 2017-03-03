@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -202,6 +202,7 @@
 <wire x1="49.7" y1="56.375" x2="43.7" y2="62.375" width="0.001" layer="20" curve="90"/>
 <wire x1="49.7" y1="56.375" x2="60.7623" y2="49.775" width="0.001" layer="20" curve="118.357619"/>
 <wire x1="63.13716875" y1="50.375" x2="60.7623" y2="49.775" width="0.001" layer="20" curve="28.35764"/>
+<dimension x1="-41.3258" y1="51.2572" x2="-87.8332" y2="36.0934" x3="-90.1446" y3="43.6753" textsize="1.778" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="FSAE Electric">
@@ -345,10 +346,6 @@
 <circle x="0" y="0" radius="1.151715625" width="0.127" layer="21"/>
 <text x="-1.5748" y="1.2192" size="0.6096" layer="21" font="vector">pp</text>
 </package>
-<package name="NTC-NXRT15XH103FA5B">
-<pad name="P$1" x="0" y="0" drill="0.5"/>
-<pad name="P$2" x="2.5" y="0" drill="0.5"/>
-</package>
 <package name="PE-68386NLT">
 <smd name="1" x="-3.3782" y="2.54" dx="2.032" dy="1.143" layer="1" rot="R90"/>
 <smd name="2" x="-3.3782" y="0" dx="2.032" dy="1.143" layer="1" rot="R90"/>
@@ -387,6 +384,16 @@
 <text x="-3.9" y="-2.3418" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="5.0508" y="-2.683" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <text x="-4.191" y="5.2324" size="1.27" layer="21">1</text>
+</package>
+<package name="103JT-025">
+<pad name="1" x="-0.9" y="0" drill="0.8"/>
+<pad name="2" x="0.9" y="0" drill="0.8"/>
+<wire x1="-1.8" y1="0.9" x2="-1.8" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-0.9" x2="1.8" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-0.9" x2="1.8" y2="0.9" width="0.127" layer="21"/>
+<wire x1="1.8" y1="0.9" x2="-1.8" y2="0.9" width="0.127" layer="21"/>
+<text x="-2.7" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.7" y="-2.7" size="1.27" layer="25">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -8682,18 +8689,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.3858" y="2.1336" size="1.27" layer="26" font="vector" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="15.6972" y="1.4859" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="R143" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="6.731" y="36.2712" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="-266.065" y="238.9632" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="R144" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="-4.064" y="7.62" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="271.272" y="-200.152" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R145" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="7.0358" y="-18.796" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="284.9118" y="-231.648" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R146" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="-4.064" y="-44.958" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="276.352" y="-262.89" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="TX1" library="FSAE Electric" package="PE-68386NLT" value="PE-68386NLT" x="70.9168" y="39.37" smashed="yes">
 <attribute name="PARTNO" value="PE-68386NLT" x="-107.1372" y="-340.614" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="73.4568" y="43.18" size="1.27" layer="25" font="vector" ratio="20"/>
@@ -9277,18 +9272,6 @@ design rules under a new name.</description>
 <element name="U$11" library="FSAE Electric" package="POGOPIN" value="POGOPIN" x="50.7238" y="35.0012" locked="yes" smashed="yes"/>
 <element name="U$12" library="FSAE Electric" package="POGOPIN" value="POGOPIN" x="39.878" y="43.7388" locked="yes" smashed="yes"/>
 <element name="U$13" library="FSAE Electric" package="POGOPIN" value="POGOPIN" x="49.4792" y="51.2572" locked="yes" smashed="yes"/>
-<element name="R71" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="52.07" y="33.782" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="721.868" y="-325.374" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R72" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="41.402" y="7.366" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="713.74" y="-356.87" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R73" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="52.07" y="-18.542" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="726.948" y="-387.858" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R147" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="38.354" y="-45.212" smashed="yes">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="-356.362" y="-722.63" size="1.778" layer="27" display="off"/>
-</element>
 <element name="TX2" library="FSAE Electric" package="PE-68386NLT" value="PE-68386NLT" x="70.739" y="29.845" smashed="yes">
 <attribute name="PARTNO" value="PE-68386NLT" x="-291.211" y="-747.141" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="73.279" y="33.655" size="1.27" layer="25" font="vector" ratio="20"/>
@@ -9781,18 +9764,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-41.5798" y="8.9535" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="-38.7858" y="8.001" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="R218" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="-38.735" y="33.909" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="1021.969" y="-547.243" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R219" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="-49.657" y="7.493" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="1013.587" y="-578.739" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R220" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="-38.735" y="-18.669" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="1027.049" y="-609.981" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R221" library="FSAE Electric" package="NTC-NXRT15XH103FA5B" value="10K-NTC" x="-49.403" y="-45.085" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NXFT15XH103FA1B025" x="1018.921" y="-641.477" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="TX3" library="FSAE Electric" package="PE-68386NLT" value="PE-68386NLT" x="70.9168" y="20.32" smashed="yes">
 <attribute name="PARTNO" value="PE-68386NLT" x="-484.0732" y="-1147.572" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="73.4568" y="24.13" size="1.27" layer="25" font="vector" ratio="20"/>
@@ -10097,6 +10068,18 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-19.3802" y="-26.8986" size="1.27" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="-18.4912" y="-32.3342" size="1.27" layer="27"/>
 </element>
+<element name="NTC1" library="FSAE Electric" package="103JT-025" value="103JT-025" x="-53.5178" y="51.2064"/>
+<element name="NTC2" library="FSAE Electric" package="103JT-025" value="103JT-025" x="-74.3204" y="-81.6102"/>
+<element name="NTC3" library="FSAE Electric" package="103JT-025" value="103JT-025" x="-74.3204" y="-88.3666"/>
+<element name="NTC4" library="FSAE Electric" package="103JT-025" value="103JT-025" x="-74.3204" y="-95.123"/>
+<element name="NTC5" library="FSAE Electric" package="103JT-025" value="103JT-025" x="-0.5334" y="-72.3646"/>
+<element name="NTC6" library="FSAE Electric" package="103JT-025" value="103JT-025" x="7.4676" y="-72.1868"/>
+<element name="NTC7" library="FSAE Electric" package="103JT-025" value="103JT-025" x="9.2456" y="-79.8322"/>
+<element name="NTC8" library="FSAE Electric" package="103JT-025" value="103JT-025" x="16.1798" y="-87.122"/>
+<element name="NTC9" library="FSAE Electric" package="103JT-025" value="103JT-025" x="86.4108" y="-9.0678"/>
+<element name="NTC10" library="FSAE Electric" package="103JT-025" value="103JT-025" x="88.9" y="-28.448"/>
+<element name="NTC11" library="FSAE Electric" package="103JT-025" value="103JT-025" x="87.4776" y="-40.3606"/>
+<element name="NTC12" library="FSAE Electric" package="103JT-025" value="103JT-025" x="83.2104" y="-46.0502"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -10106,10 +10089,6 @@ design rules under a new name.</description>
 <contactref element="R188" pad="2"/>
 <contactref element="U3" pad="30"/>
 <contactref element="U3" pad="31"/>
-<contactref element="R218" pad="P$1"/>
-<contactref element="R219" pad="P$1"/>
-<contactref element="R220" pad="P$1"/>
-<contactref element="R221" pad="P$1"/>
 <contactref element="SJ11" pad="3"/>
 <contactref element="SJ12" pad="3"/>
 <contactref element="SJ13" pad="3"/>
@@ -10137,6 +10116,14 @@ design rules under a new name.</description>
 <wire x1="-37.1602" y1="5.8674" x2="-36.8046" y2="6.223" width="0.1778" layer="1"/>
 <wire x1="-36.8046" y1="6.223" x2="-35.778375" y2="6.223" width="0.1778" layer="1"/>
 <wire x1="-35.778375" y1="6.223" x2="-35.695375" y2="6.14" width="0.1778" layer="1"/>
+<contactref element="NTC1" pad="1"/>
+<contactref element="NTC2" pad="1"/>
+<contactref element="NTC3" pad="1"/>
+<contactref element="NTC4" pad="1"/>
+<wire x1="-75.2204" y1="-88.3666" x2="-75.2204" y2="-95.123" width="0" layer="19" extent="1-1"/>
+<wire x1="-75.2204" y1="-81.6102" x2="-75.2204" y2="-88.3666" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.466" y1="-49.569" x2="-75.2204" y2="-81.6102" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.7604" y1="30.0084" x2="-40.756" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IPA">
 <contactref element="U2" pad="42"/>
@@ -11207,7 +11194,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO2">
 <contactref element="U2" pad="28"/>
-<contactref element="R144" pad="P$2"/>
 <contactref element="R139" pad="2"/>
 <wire x1="18.660625" y1="0.195" x2="19.7186" y2="0.195" width="0.1778" layer="1"/>
 <wire x1="19.7186" y1="0.195" x2="20.0914" y2="-0.1778" width="0.1778" layer="1"/>
@@ -11233,7 +11219,6 @@ design rules under a new name.</description>
 <wire x1="-2.4892" y1="6.5786" x2="-2.4892" y2="9.779" width="0.1778" layer="16"/>
 <wire x1="-2.4892" y1="9.779" x2="-2.8448" y2="10.1346" width="0.1778" layer="16"/>
 <wire x1="-2.8448" y1="10.1346" x2="-4.0494" y2="10.1346" width="0.1778" layer="16"/>
-<wire x1="-4.0494" y1="10.1346" x2="-4.064" y2="10.12" width="0.1778" layer="16"/>
 <wire x1="13.2842" y1="0.1778" x2="13.589" y2="-0.127" width="0.1778" layer="16"/>
 <wire x1="13.589" y1="-0.127" x2="13.589" y2="-1.016" width="0.1778" layer="16"/>
 <via x="13.589" y="-1.016" extent="1-16" drill="0.5"/>
@@ -11243,6 +11228,8 @@ design rules under a new name.</description>
 <wire x1="14.224" y1="0" x2="14.351" y2="0.127" width="0.1778" layer="1"/>
 <wire x1="14.351" y1="0.127" x2="18.592625" y2="0.127" width="0.1778" layer="1"/>
 <wire x1="18.592625" y1="0.127" x2="18.660625" y2="0.195" width="0.1778" layer="1"/>
+<contactref element="NTC6" pad="2"/>
+<wire x1="17.0688" y1="-23.6474" x2="8.3676" y2="-72.1868" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$175">
 <contactref element="D24" pad="A"/>
@@ -11311,7 +11298,6 @@ design rules under a new name.</description>
 <signal name="GPIO1">
 <contactref element="U2" pad="27"/>
 <contactref element="R139" pad="1"/>
-<contactref element="R143" pad="P$2"/>
 <wire x1="16.5354" y1="-1.143" x2="16.5354" y2="-14.4018" width="0.1778" layer="16"/>
 <wire x1="16.5354" y1="-14.4018" x2="16.002" y2="-14.9352" width="0.1778" layer="16"/>
 <via x="16.002" y="-14.9352" extent="1-16" drill="0.5"/>
@@ -11324,7 +11310,6 @@ design rules under a new name.</description>
 <wire x1="7.8232" y1="2.4892" x2="7.8232" y2="33.6042" width="0.1778" layer="16"/>
 <wire x1="7.8232" y1="33.6042" x2="7.6454" y2="33.782" width="0.1778" layer="16"/>
 <wire x1="7.6454" y1="33.782" x2="6.7418" y2="33.782" width="0.1778" layer="16"/>
-<wire x1="6.7418" y1="33.782" x2="6.731" y2="33.7712" width="0.1778" layer="16"/>
 <wire x1="18.660625" y1="-0.305" x2="15.189" y2="-0.305" width="0.1778" layer="1"/>
 <wire x1="15.189" y1="-0.305" x2="14.986" y2="-0.508" width="0.1778" layer="1"/>
 <wire x1="14.986" y1="-0.508" x2="14.986" y2="-1.016" width="0.1778" layer="1"/>
@@ -11333,6 +11318,8 @@ design rules under a new name.</description>
 <wire x1="16.4084" y1="-1.016" x2="16.5354" y2="-1.143" width="0.1778" layer="16"/>
 <wire x1="14.859" y1="1.778" x2="14.986" y2="1.651" width="0.1778" layer="16"/>
 <wire x1="14.986" y1="1.651" x2="14.986" y2="-1.016" width="0.1778" layer="16"/>
+<contactref element="NTC5" pad="2"/>
+<wire x1="16.276" y1="-21.855" x2="0.3666" y2="-72.3646" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF2">
 <contactref element="U2" pad="34"/>
@@ -11375,7 +11362,6 @@ design rules under a new name.</description>
 <signal name="GPIO4">
 <contactref element="U2" pad="32"/>
 <contactref element="R139" pad="4"/>
-<contactref element="R146" pad="P$2"/>
 <wire x1="18.660625" y1="2.195" x2="19.8522" y2="2.195" width="0.1778" layer="1"/>
 <wire x1="19.8522" y1="2.195" x2="20.0914" y2="1.9558" width="0.1778" layer="1"/>
 <wire x1="20.0914" y1="1.9558" x2="20.0914" y2="0.889" width="0.1778" layer="1"/>
@@ -11391,7 +11377,6 @@ design rules under a new name.</description>
 <via x="18.8468" y="-28.448" extent="1-16" drill="0.5"/>
 <wire x1="18.8468" y1="-28.448" x2="18.8468" y2="-21.9258" width="0.1778" layer="1"/>
 <wire x1="18.8468" y1="-21.9258" x2="18.776" y2="-21.855" width="0.1778" layer="1"/>
-<wire x1="-4.064" y1="-42.458" x2="-4.064" y2="-41.402" width="0.1778" layer="1"/>
 <wire x1="-4.064" y1="-41.402" x2="-3.7338" y2="-41.0718" width="0.1778" layer="1"/>
 <wire x1="-3.7338" y1="-41.0718" x2="8.3566" y2="-41.0718" width="0.1778" layer="1"/>
 <wire x1="8.3566" y1="-41.0718" x2="8.89" y2="-40.5384" width="0.1778" layer="1"/>
@@ -11399,6 +11384,8 @@ design rules under a new name.</description>
 <wire x1="8.89" y1="-40.5384" x2="17.9578" y2="-40.5384" width="0.1778" layer="16"/>
 <wire x1="17.9578" y1="-40.5384" x2="18.8468" y2="-39.6494" width="0.1778" layer="16"/>
 <wire x1="18.8468" y1="-39.6494" x2="18.8468" y2="-28.448" width="0.1778" layer="16"/>
+<contactref element="NTC8" pad="2"/>
+<wire x1="17.9578" y1="-40.5384" x2="17.0798" y2="-87.122" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VREG">
 <contactref element="C60" pad="1"/>
@@ -11523,7 +11510,6 @@ design rules under a new name.</description>
 <signal name="GPIO3">
 <contactref element="U2" pad="29"/>
 <contactref element="R139" pad="3"/>
-<contactref element="R145" pad="P$2"/>
 <wire x1="18.660625" y1="0.695" x2="19.752" y2="0.695" width="0.1778" layer="1"/>
 <wire x1="19.752" y1="0.695" x2="20.447" y2="0" width="0.1778" layer="1"/>
 <wire x1="20.447" y1="0" x2="20.447" y2="-9.0678" width="0.1778" layer="1"/>
@@ -11535,8 +11521,9 @@ design rules under a new name.</description>
 <via x="17.9578" y="-25.0698" extent="1-16" drill="0.5"/>
 <wire x1="17.9578" y1="-25.0698" x2="17.9578" y2="-21.8868" width="0.1778" layer="1"/>
 <wire x1="17.9578" y1="-21.8868" x2="17.926" y2="-21.855" width="0.1778" layer="1"/>
-<wire x1="7.0358" y1="-16.296" x2="17.7184" y2="-16.296" width="0.1778" layer="16"/>
 <wire x1="17.7184" y1="-16.296" x2="17.9578" y2="-16.5354" width="0.1778" layer="16"/>
+<contactref element="NTC7" pad="2"/>
+<wire x1="17.9578" y1="-25.0698" x2="10.1456" y2="-79.8322" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$192">
 <contactref element="R139" pad="7"/>
@@ -12968,7 +12955,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO6">
 <contactref element="U1" pad="28"/>
-<contactref element="R72" pad="P$2"/>
 <contactref element="R67" pad="2"/>
 <wire x1="67.403225" y1="-0.694" x2="68.6136" y2="-0.694" width="0.1778" layer="1"/>
 <wire x1="68.6136" y1="-0.694" x2="69.342" y2="-1.4224" width="0.1778" layer="1"/>
@@ -12980,7 +12966,6 @@ design rules under a new name.</description>
 <via x="68.0974" y="-8.7122" extent="1-16" drill="0.5"/>
 <wire x1="68.0974" y1="-8.7122" x2="67.0098" y2="-8.7122" width="0.1778" layer="1"/>
 <wire x1="67.0098" y1="-8.7122" x2="66.94" y2="-8.782" width="0.1778" layer="1"/>
-<wire x1="41.402" y1="9.866" x2="44.5408" y2="9.866" width="0.1778" layer="16"/>
 <wire x1="44.5408" y1="9.866" x2="44.8056" y2="9.6012" width="0.1778" layer="16"/>
 <wire x1="44.8056" y1="9.6012" x2="44.8056" y2="8.89" width="0.1778" layer="16"/>
 <wire x1="44.8056" y1="8.89" x2="44.9834" y2="8.7122" width="0.1778" layer="16"/>
@@ -13000,6 +12985,8 @@ design rules under a new name.</description>
 <wire x1="65.6082" y1="-0.5334" x2="65.9638" y2="-0.7112" width="0.1778" layer="1"/>
 <wire x1="65.9638" y1="-0.7112" x2="67.386025" y2="-0.7112" width="0.1778" layer="1"/>
 <wire x1="67.386025" y1="-0.7112" x2="67.403225" y2="-0.694" width="0.1778" layer="1"/>
+<contactref element="NTC10" pad="2"/>
+<wire x1="70.231" y1="-8.7122" x2="89.8" y2="-28.448" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$47">
 <contactref element="D13" pad="A"/>
@@ -13091,14 +13078,12 @@ design rules under a new name.</description>
 <signal name="GPIO7">
 <contactref element="U1" pad="27"/>
 <contactref element="R67" pad="1"/>
-<contactref element="R71" pad="P$2"/>
 <wire x1="67.403225" y1="-1.194" x2="68.4024" y2="-1.194" width="0.1778" layer="1"/>
 <wire x1="68.4024" y1="-1.194" x2="68.9864" y2="-1.778" width="0.1778" layer="1"/>
 <wire x1="68.9864" y1="-1.778" x2="68.9864" y2="-9.0678" width="0.1778" layer="1"/>
 <wire x1="68.9864" y1="-9.0678" x2="68.453" y2="-9.6012" width="0.1778" layer="1"/>
 <wire x1="68.453" y1="-9.6012" x2="66.9708" y2="-9.6012" width="0.1778" layer="1"/>
 <wire x1="66.9708" y1="-9.6012" x2="66.94" y2="-9.632" width="0.1778" layer="1"/>
-<wire x1="52.07" y1="36.282" x2="59.5522" y2="36.282" width="0.1778" layer="16"/>
 <wire x1="59.5522" y1="36.282" x2="59.9186" y2="35.9156" width="0.1778" layer="16"/>
 <wire x1="59.9186" y1="35.9156" x2="59.9186" y2="17.9578" width="0.1778" layer="16"/>
 <wire x1="59.9186" y1="17.9578" x2="59.7408" y2="17.78" width="0.1778" layer="16"/>
@@ -13112,6 +13097,8 @@ design rules under a new name.</description>
 <wire x1="63.119" y1="-0.889" x2="63.4746" y2="-1.2446" width="0.1778" layer="1"/>
 <wire x1="63.4746" y1="-1.2446" x2="67.352625" y2="-1.2446" width="0.1778" layer="1"/>
 <wire x1="67.352625" y1="-1.2446" x2="67.403225" y2="-1.194" width="0.1778" layer="1"/>
+<contactref element="NTC9" pad="2"/>
+<wire x1="68.9864" y1="-9.0678" x2="87.3108" y2="-9.0678" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF4">
 <contactref element="U1" pad="34"/>
@@ -13145,7 +13132,6 @@ design rules under a new name.</description>
 <signal name="GPIO8">
 <contactref element="U1" pad="32"/>
 <contactref element="R67" pad="4"/>
-<contactref element="R147" pad="P$2"/>
 <wire x1="70.231" y1="1.0668" x2="70.231" y2="-4.9784" width="0.1778" layer="1"/>
 <wire x1="70.231" y1="-4.9784" x2="70.5866" y2="-5.334" width="0.1778" layer="1"/>
 <via x="70.5866" y="-5.334" extent="1-16" drill="0.5"/>
@@ -13160,7 +13146,6 @@ design rules under a new name.</description>
 <via x="67.0306" y="-5.6896" extent="1-16" drill="0.5"/>
 <wire x1="67.0306" y1="-5.6896" x2="67.0306" y2="-7.0414" width="0.1778" layer="1"/>
 <wire x1="67.0306" y1="-7.0414" x2="66.94" y2="-7.132" width="0.1778" layer="1"/>
-<wire x1="40.854" y1="-45.212" x2="61.1124" y2="-45.212" width="0.1778" layer="16"/>
 <wire x1="61.1124" y1="-45.212" x2="61.6966" y2="-44.6278" width="0.1778" layer="16"/>
 <wire x1="61.6966" y1="-44.6278" x2="61.6966" y2="-16.7132" width="0.1778" layer="16"/>
 <wire x1="61.6966" y1="-16.7132" x2="62.5856" y2="-15.8242" width="0.1778" layer="16"/>
@@ -13170,6 +13155,8 @@ design rules under a new name.</description>
 <wire x1="66.8528" y1="-5.8674" x2="67.0306" y2="-5.6896" width="0.1778" layer="16"/>
 <wire x1="67.403225" y1="1.306" x2="69.9918" y2="1.306" width="0.1778" layer="1"/>
 <wire x1="69.9918" y1="1.306" x2="70.231" y2="1.0668" width="0.1778" layer="1"/>
+<contactref element="NTC12" pad="2"/>
+<wire x1="61.6966" y1="-44.6278" x2="84.1104" y2="-46.0502" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VREG1">
 <contactref element="C32" pad="1"/>
@@ -13313,7 +13300,6 @@ design rules under a new name.</description>
 <signal name="GPIO9">
 <contactref element="U1" pad="29"/>
 <contactref element="R67" pad="3"/>
-<contactref element="R73" pad="P$2"/>
 <wire x1="67.403225" y1="-0.194" x2="69.4471" y2="-0.194" width="0.1778" layer="1"/>
 <wire x1="69.7865" y1="-6.7564" x2="70.231" y2="-7.112" width="0.1778" layer="1"/>
 <via x="70.231" y="-7.112" extent="1-16" drill="0.5"/>
@@ -13326,7 +13312,6 @@ design rules under a new name.</description>
 <wire x1="68.0974" y1="-7.8232" x2="67.9196" y2="-8.001" width="0.1778" layer="1"/>
 <wire x1="67.9196" y1="-8.001" x2="66.959" y2="-8.001" width="0.1778" layer="1"/>
 <wire x1="66.959" y1="-8.001" x2="66.94" y2="-7.982" width="0.1778" layer="1"/>
-<wire x1="52.07" y1="-16.042" x2="52.07" y2="-13.0048" width="0.1778" layer="16"/>
 <wire x1="52.07" y1="-13.0048" x2="52.451" y2="-12.6238" width="0.1778" layer="16"/>
 <wire x1="52.451" y1="-12.6238" x2="53.34" y2="-12.6238" width="0.1778" layer="16"/>
 <wire x1="53.34" y1="-12.6238" x2="53.6956" y2="-12.2682" width="0.1778" layer="16"/>
@@ -13340,6 +13325,8 @@ design rules under a new name.</description>
 <wire x1="67.9196" y1="-4.0894" x2="68.0974" y2="-4.2672" width="0.1778" layer="1"/>
 <wire x1="69.4471" y1="-0.194" x2="69.7865" y2="-0.5334" width="0.1778" layer="1"/>
 <wire x1="69.7865" y1="-0.5334" x2="69.7865" y2="-6.7564" width="0.1778" layer="1"/>
+<contactref element="NTC11" pad="2"/>
+<wire x1="70.231" y1="-7.112" x2="88.3776" y2="-40.3606" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$52">
 <contactref element="R67" pad="7"/>
@@ -14525,9 +14512,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO11">
 <contactref element="U3" pad="28"/>
-<contactref element="R219" pad="P$2"/>
 <contactref element="R214" pad="2"/>
-<wire x1="-49.657" y1="9.993" x2="-45.339" y2="9.993" width="0.1778" layer="16"/>
 <via x="-40.3606" y="5.6896" extent="1-16" drill="0.5"/>
 <wire x1="-40.3606" y1="5.6896" x2="-40.3606" y2="4.8006" width="0.1778" layer="1"/>
 <wire x1="-40.3606" y1="4.8006" x2="-40.1828" y2="4.6228" width="0.1778" layer="1"/>
@@ -14553,6 +14538,8 @@ design rules under a new name.</description>
 <wire x1="-44.4246" y1="5.6896" x2="-44.831" y2="6.096" width="0.1778" layer="16"/>
 <wire x1="-44.831" y1="6.096" x2="-44.831" y2="9.485" width="0.1778" layer="16"/>
 <wire x1="-44.831" y1="9.485" x2="-45.339" y2="9.993" width="0.1778" layer="16"/>
+<contactref element="NTC2" pad="2"/>
+<wire x1="-37.6936" y1="-12.6238" x2="-73.4204" y2="-81.6102" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$101">
 <contactref element="D36" pad="A"/>
@@ -14636,7 +14623,6 @@ design rules under a new name.</description>
 <signal name="GPIO12">
 <contactref element="U3" pad="27"/>
 <contactref element="R214" pad="1"/>
-<contactref element="R218" pad="P$2"/>
 <wire x1="-32.523" y1="-11.8564" x2="-34.016" y2="-11.8564" width="0.1778" layer="1"/>
 <wire x1="-34.016" y1="-11.8564" x2="-34.3154" y2="-11.557" width="0.1778" layer="1"/>
 <wire x1="-34.3154" y1="-11.557" x2="-34.3154" y2="-11.3792" width="0.1778" layer="1"/>
@@ -14652,7 +14638,6 @@ design rules under a new name.</description>
 <wire x1="-38.5826" y1="3.9116" x2="-38.4048" y2="4.0894" width="0.1778" layer="1"/>
 <wire x1="-38.4048" y1="4.0894" x2="-35.745975" y2="4.0894" width="0.1778" layer="1"/>
 <wire x1="-35.745975" y1="4.0894" x2="-35.695375" y2="4.14" width="0.1778" layer="1"/>
-<wire x1="-38.735" y1="36.409" x2="-37.8314" y2="36.409" width="0.1778" layer="16"/>
 <wire x1="-37.8314" y1="36.409" x2="-37.6936" y2="36.2712" width="0.1778" layer="16"/>
 <wire x1="-37.6936" y1="36.2712" x2="-37.6936" y2="12.065" width="0.1778" layer="16"/>
 <wire x1="-38.5826" y1="3.7338" x2="-35.0012" y2="3.7338" width="0.1778" layer="16"/>
@@ -14665,6 +14650,8 @@ design rules under a new name.</description>
 <wire x1="-36.195" y1="11.176" x2="-36.576" y2="11.557" width="0.1778" layer="16"/>
 <wire x1="-36.576" y1="11.557" x2="-37.1856" y2="11.557" width="0.1778" layer="16"/>
 <wire x1="-37.1856" y1="11.557" x2="-37.6936" y2="12.065" width="0.1778" layer="16"/>
+<contactref element="NTC1" pad="2"/>
+<wire x1="-52.6178" y1="51.2064" x2="-37.8314" y2="36.409" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VREF6">
 <contactref element="U3" pad="34"/>
@@ -14690,8 +14677,6 @@ design rules under a new name.</description>
 <signal name="GPIO13">
 <contactref element="U3" pad="32"/>
 <contactref element="R214" pad="4"/>
-<contactref element="R221" pad="P$2"/>
-<wire x1="-49.403" y1="-42.585" x2="-49.403" y2="-33.2232" width="0.1778" layer="1"/>
 <wire x1="-49.403" y1="-33.2232" x2="-49.0728" y2="-32.893" width="0.1778" layer="1"/>
 <wire x1="-49.0728" y1="-32.893" x2="-44.0944" y2="-32.893" width="0.1778" layer="1"/>
 <via x="-44.0944" y="-32.893" extent="1-16" drill="0.5"/>
@@ -14721,6 +14706,8 @@ design rules under a new name.</description>
 <wire x1="-31.8262" y1="-14.1351" x2="-32.004" y2="-14.3129" width="0.1778" layer="1"/>
 <wire x1="-32.004" y1="-14.3129" x2="-32.4795" y2="-14.3129" width="0.1778" layer="1"/>
 <wire x1="-32.4795" y1="-14.3129" x2="-32.523" y2="-14.3564" width="0.1778" layer="1"/>
+<contactref element="NTC4" pad="2"/>
+<wire x1="-49.403" y1="-33.2232" x2="-73.4204" y2="-95.123" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREG2">
 <contactref element="C92" pad="1"/>
@@ -14833,8 +14820,6 @@ design rules under a new name.</description>
 <signal name="GPIO14">
 <contactref element="U3" pad="29"/>
 <contactref element="R214" pad="3"/>
-<contactref element="R220" pad="P$2"/>
-<wire x1="-38.735" y1="-16.169" x2="-38.735" y2="-14.0208" width="0.1778" layer="1"/>
 <wire x1="-38.735" y1="-14.0208" x2="-38.227" y2="-13.5128" width="0.1778" layer="1"/>
 <wire x1="-38.227" y1="-13.5128" x2="-37.338" y2="-13.5128" width="0.1778" layer="1"/>
 <wire x1="-37.338" y1="-13.5128" x2="-32.5294" y2="-13.5128" width="0.1778" layer="1"/>
@@ -14847,6 +14832,8 @@ design rules under a new name.</description>
 <wire x1="-36.9824" y1="-13.1572" x2="-37.338" y2="-13.5128" width="0.1778" layer="1"/>
 <wire x1="-36.8046" y1="0.5334" x2="-36.9824" y2="0.3556" width="0.1778" layer="1"/>
 <wire x1="-36.9824" y1="0.3556" x2="-36.9824" y2="-13.1572" width="0.1778" layer="1"/>
+<contactref element="NTC3" pad="2"/>
+<wire x1="-38.735" y1="-14.0208" x2="-73.4204" y2="-88.3666" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$114">
 <contactref element="R214" pad="7"/>
@@ -15405,10 +15392,6 @@ design rules under a new name.</description>
 <signal name="GNDA">
 <contactref element="R113" pad="2"/>
 <contactref element="C57" pad="2"/>
-<contactref element="R143" pad="P$1"/>
-<contactref element="R144" pad="P$1"/>
-<contactref element="R145" pad="P$1"/>
-<contactref element="R146" pad="P$1"/>
 <contactref element="C58" pad="2"/>
 <contactref element="C59" pad="2"/>
 <contactref element="C60" pad="2"/>
@@ -15445,15 +15428,19 @@ design rules under a new name.</description>
 <via x="16.383" y="1.016" extent="1-16" drill="0.5"/>
 <wire x1="18.660625" y1="1.195" x2="16.383" y2="1.195" width="0.1778" layer="1"/>
 <wire x1="16.383" y1="1.195" x2="16.383" y2="1.016" width="0.1778" layer="1"/>
+<contactref element="NTC6" pad="1"/>
+<contactref element="NTC7" pad="1"/>
+<contactref element="NTC8" pad="1"/>
+<contactref element="NTC5" pad="1"/>
+<wire x1="6.5676" y1="-72.1868" x2="8.3456" y2="-79.8322" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.4334" y1="-72.3646" x2="6.5676" y2="-72.1868" width="0" layer="19" extent="1-1"/>
+<wire x1="15.2798" y1="-87.122" x2="8.3456" y2="-79.8322" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.064" y1="-49.442" x2="-1.4334" y2="-72.3646" width="0" layer="19" extent="1-1"/>
 <wire x1="4.0894" y1="-26.8478" x2="7.112" y2="-20.6248" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GNDI">
 <contactref element="R41" pad="2"/>
 <contactref element="C29" pad="2"/>
-<contactref element="R71" pad="P$1"/>
-<contactref element="R72" pad="P$1"/>
-<contactref element="R73" pad="P$1"/>
-<contactref element="R147" pad="P$1"/>
 <contactref element="C31" pad="2"/>
 <contactref element="C30" pad="2"/>
 <contactref element="R70" pad="1"/>
@@ -15489,7 +15476,16 @@ design rules under a new name.</description>
 <vertex x="30.5816" y="-60.0964"/>
 </polygon>
 <via x="64.7192" y="10.1346" extent="1-16" drill="0.5"/>
+<contactref element="NTC9" pad="1"/>
+<contactref element="NTC10" pad="1"/>
+<contactref element="NTC11" pad="1"/>
+<contactref element="NTC12" pad="1"/>
+<wire x1="68.8467" y1="0.7129" x2="85.5108" y2="-9.0678" width="0" layer="19" extent="16-16"/>
 <wire x1="67.403225" y1="0.806" x2="68.8467" y2="0.7129" width="0" layer="19" extent="1-16"/>
+<wire x1="67.564" y1="-18.669" x2="67.403225" y2="0.306" width="0" layer="19" extent="1-1"/>
+<wire x1="82.3104" y1="-46.0502" x2="71.1691" y2="-41.2496" width="0" layer="19" extent="1-1"/>
+<wire x1="86.5776" y1="-40.3606" x2="82.3104" y2="-46.0502" width="0" layer="19" extent="1-1"/>
+<wire x1="88" y1="-28.448" x2="86.5776" y2="-40.3606" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$164">
 </signal>

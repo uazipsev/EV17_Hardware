@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6208,6 +6208,16 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="2.35" y1="-2.35" x2="2.35" y2="-1.05" width="0.127" layer="21"/>
 <text x="-2.25" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.25" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="103JT-025">
+<pad name="1" x="-0.9" y="0" drill="0.8"/>
+<pad name="2" x="0.9" y="0" drill="0.8"/>
+<wire x1="-1.8" y1="0.9" x2="-1.8" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-0.9" x2="1.8" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-0.9" x2="1.8" y2="0.9" width="0.127" layer="21"/>
+<wire x1="1.8" y1="0.9" x2="-1.8" y2="0.9" width="0.127" layer="21"/>
+<text x="-2.7" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.7" y="-2.7" size="1.27" layer="25">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -18345,6 +18355,22 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name="">
 <attribute name="PARTNO" value="TPS54386PWPR" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="103JT-025" prefix="NTC1">
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="103JT-025">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

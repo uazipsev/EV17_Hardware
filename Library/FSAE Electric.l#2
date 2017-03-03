@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.9" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6208,6 +6208,16 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="2.35" y1="-2.35" x2="2.35" y2="-1.05" width="0.127" layer="21"/>
 <text x="-2.25" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.25" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="103JT-025">
+<pad name="P$1" x="-0.9" y="0" drill="0.8"/>
+<pad name="P$2" x="0.9" y="0" drill="0.8"/>
+<wire x1="-1.8" y1="0.9" x2="-1.8" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-0.9" x2="1.8" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-0.9" x2="1.8" y2="0.9" width="0.127" layer="21"/>
+<wire x1="1.8" y1="0.9" x2="-1.8" y2="0.9" width="0.127" layer="21"/>
+<text x="-2.7" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.7" y="-2.7" size="1.27" layer="25">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -14876,6 +14886,53 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 </technology>
 </technologies>
 </device>
+<device name="_422_1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="CPF0603F422RC1" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_10_5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_698_1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_3.83K_1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_6.34K_1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RN-4" prefix="R1">
@@ -15272,6 +15329,77 @@ See &lt;a href="http://www.ti.com/lit/ds/symlink/lm134.pdf"&gt;Figure 2&lt;/a&gt
 <technology name="">
 <attribute name="PARTNO" value="EEE-FK1H220P" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="_10UF_25V_1206" package="1206">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="C3216X5R1E106M" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_4.7UF_10V_0805" package="0805">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="LMK212ABJ475MG-T" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_470PF_25V_0603" package="0603">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_6.8NF_25V_0603" package="0603">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_10UF_6.3V_0805" package="0805">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="C2012X5R0J106M" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_10NF_25V_0603" package="0603">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="C0603C103M3RACTU" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0.033UF_25V_0603" package="0603">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -16837,8 +16965,14 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </technologies>
 </device>
 <device name="-220MR62" package="VLF5014AT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNO" value="VLF5014AT-220MR62" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -18221,6 +18355,18 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name="">
 <attribute name="PARTNO" value="TPS54386PWPR" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="103JT-025">
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
