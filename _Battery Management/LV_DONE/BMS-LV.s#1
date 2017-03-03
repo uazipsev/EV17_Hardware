@@ -3725,7 +3725,6 @@ can be selected for high noise reduction</description>
 <part name="R26" library="FSAE Electric" deviceset="RES" device="_100_1%" value="100"/>
 <part name="R27" library="FSAE Electric" deviceset="RES" device="_100_1%" value="100"/>
 <part name="R28" library="FSAE Electric" deviceset="RES" device="_100_1%" value="100"/>
-<part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="C13" library="FSAE Electric" deviceset="CAP" device="_10NF_50V" value="10nF"/>
 <part name="R29" library="FSAE Electric" deviceset="RES" device="_1K_5%" value="1k"/>
 <part name="R30" library="FSAE Electric" deviceset="RES" device="_1K_5%" value="1k"/>
@@ -3774,7 +3773,6 @@ can be selected for high noise reduction</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="R44" library="FSAE Electric" deviceset="RES" device="_10K_1%" value="10k"/>
 <part name="F1" library="FSAE Electric" deviceset="FUSE" device="_0.12A_48V_PTC" value="0.12A 48V PTC"/>
-<part name="F2" library="FSAE Electric" deviceset="FUSE" device="FUSECLIPS" value="FUSE CLIPS"/>
 <part name="J2" library="FSAE Electric" deviceset="M4" device="_1X4_LOCK" value="M1x4"/>
 <part name="J3" library="FSAE Electric" deviceset="M4" device="_1X4_LOCK" value="M1x4"/>
 <part name="J4" library="FSAE Electric" deviceset="M4" device="_1X4_LOCK" value="M1x4"/>
@@ -3811,9 +3809,6 @@ can be selected for high noise reduction</description>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
-<part name="J7" library="FSAE Electric" deviceset="M2" device="770166"/>
-<part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="FRAME1" library="frames" deviceset="DOCFIELD" device=""/>
 <part name="R54" library="FSAE Electric" deviceset="RES" device="_1K_1%_0805" value="100"/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
@@ -3821,6 +3816,7 @@ can be selected for high noise reduction</description>
 <part name="R56" library="FSAE Electric" deviceset="RES" device="_1K_5%" value="1k"/>
 <part name="R57" library="FSAE Electric" deviceset="RES" device="_10K_1%" value="10k"/>
 <part name="R58" library="FSAE Electric" deviceset="RES" device="_10K_1%" value="10k"/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4045,9 +4041,6 @@ ASENSE - AN11
 <attribute name="NAME" x="349.25" y="120.4214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="349.25" y="125.222" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+7" gate="1" x="464.82" y="185.42" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="467.36" y="180.34" size="1.778" layer="96" rot="MR90"/>
-</instance>
 <instance part="C13" gate="G$1" x="353.06" y="215.9" smashed="yes">
 <attribute name="NAME" x="354.076" y="216.535" size="1.778" layer="95"/>
 <attribute name="VALUE" x="354.076" y="211.709" size="1.778" layer="96"/>
@@ -4163,7 +4156,6 @@ ASENSE - AN11
 <attribute name="NAME" x="256.54" y="259.08" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="256.54" y="264.16" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="F2" gate="G$1" x="251.46" y="231.14"/>
 <instance part="J2" gate="G$1" x="22.86" y="91.44"/>
 <instance part="J3" gate="G$1" x="22.86" y="68.58"/>
 <instance part="J4" gate="G$1" x="22.86" y="45.72"/>
@@ -4236,11 +4228,6 @@ ASENSE - AN11
 <instance part="P+12" gate="1" x="462.28" y="203.2" smashed="yes">
 <attribute name="VALUE" x="459.74" y="198.12" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J7" gate="G$1" x="231.14" y="228.6" rot="MR180"/>
-<instance part="GND21" gate="1" x="236.22" y="226.06"/>
-<instance part="P+14" gate="1" x="436.88" y="185.42" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="439.42" y="180.34" size="1.778" layer="96" rot="MR90"/>
-</instance>
 <instance part="FRAME1" gate="G$1" x="424.18" y="7.62" smashed="yes">
 <attribute name="SHEET" x="510.54" y="8.89" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="439.42" y="26.67" size="2.54" layer="94"/>
@@ -4262,6 +4249,9 @@ ASENSE - AN11
 </instance>
 <instance part="R57" gate="G$1" x="147.32" y="238.76" rot="R90"/>
 <instance part="R58" gate="G$1" x="180.34" y="238.76" rot="R90"/>
+<instance part="P+4" gate="1" x="464.82" y="187.96" smashed="yes">
+<attribute name="VALUE" x="462.28" y="182.88" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4475,10 +4465,6 @@ ASENSE - AN11
 <junction x="426.72" y="203.2"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="2"/>
-<pinref part="GND21" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="J6" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="177.8" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
@@ -4614,16 +4600,23 @@ ASENSE - AN11
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VREG"/>
-<wire x1="411.48" y1="180.34" x2="436.88" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="P+14" gate="1" pin="+5V"/>
-<wire x1="436.88" y1="180.34" x2="436.88" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="A0"/>
 <pinref part="P+16" gate="1" pin="+5V"/>
 <wire x1="411.48" y1="200.66" x2="419.1" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="200.66" x2="419.1" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VREG"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<wire x1="411.48" y1="180.34" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="464.82" y1="180.34" x2="464.82" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="+"/>
+<wire x1="464.82" y1="175.26" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+<wire x1="464.82" y1="177.8" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="177.8" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
+<junction x="464.82" y="180.34"/>
+<junction x="464.82" y="177.8"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5493,9 +5486,6 @@ ASENSE - AN11
 <wire x1="215.9" y1="266.7" x2="170.18" y2="266.7" width="0.1524" layer="91"/>
 <junction x="170.18" y="266.7"/>
 <wire x1="170.18" y1="266.7" x2="132.08" y2="266.7" width="0.1524" layer="91"/>
-<pinref part="F2" gate="G$1" pin="P$2"/>
-<wire x1="259.08" y1="231.14" x2="259.08" y2="254" width="0.1524" layer="91"/>
-<junction x="259.08" y="254"/>
 <pinref part="U3" gate="G$1" pin="IP+"/>
 <label x="251.46" y="256.54" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -5660,18 +5650,6 @@ ASENSE - AN11
 <label x="63.5" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VREG" class="0">
-<segment>
-<pinref part="C23" gate="G$1" pin="+"/>
-<wire x1="421.64" y1="177.8" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="464.82" y1="177.8" x2="464.82" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="464.82" y1="182.88" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
-<junction x="464.82" y="177.8"/>
-<label x="414.02" y="180.34" size="1.778" layer="95"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="GPIO5"/>
@@ -5780,13 +5758,6 @@ ASENSE - AN11
 <wire x1="73.66" y1="264.16" x2="73.66" y2="266.7" width="0.1524" layer="91"/>
 <junction x="73.66" y="266.7"/>
 <pinref part="K1" gate="G$2" pin="C"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="J7" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="231.14" x2="243.84" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="F2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$15" class="0">

@@ -3725,7 +3725,6 @@ can be selected for high noise reduction</description>
 <part name="R26" library="FSAE Electric" deviceset="RES" device="_100_1%" value="100"/>
 <part name="R27" library="FSAE Electric" deviceset="RES" device="_100_1%" value="100"/>
 <part name="R28" library="FSAE Electric" deviceset="RES" device="_100_1%" value="100"/>
-<part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="C13" library="FSAE Electric" deviceset="CAP" device="_10NF_50V" value="10nF"/>
 <part name="R29" library="FSAE Electric" deviceset="RES" device="_1K_5%" value="1k"/>
 <part name="R30" library="FSAE Electric" deviceset="RES" device="_1K_5%" value="1k"/>
@@ -3813,7 +3812,6 @@ can be selected for high noise reduction</description>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="J7" library="FSAE Electric" deviceset="M2" device="770166"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="FRAME1" library="frames" deviceset="DOCFIELD" device=""/>
 <part name="R54" library="FSAE Electric" deviceset="RES" device="_1K_1%_0805" value="100"/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
@@ -3821,6 +3819,7 @@ can be selected for high noise reduction</description>
 <part name="R56" library="FSAE Electric" deviceset="RES" device="_1K_5%" value="1k"/>
 <part name="R57" library="FSAE Electric" deviceset="RES" device="_10K_1%" value="10k"/>
 <part name="R58" library="FSAE Electric" deviceset="RES" device="_10K_1%" value="10k"/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4045,9 +4044,6 @@ ASENSE - AN11
 <attribute name="NAME" x="349.25" y="120.4214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="349.25" y="125.222" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+7" gate="1" x="464.82" y="185.42" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="467.36" y="180.34" size="1.778" layer="96" rot="MR90"/>
-</instance>
 <instance part="C13" gate="G$1" x="353.06" y="215.9" smashed="yes">
 <attribute name="NAME" x="354.076" y="216.535" size="1.778" layer="95"/>
 <attribute name="VALUE" x="354.076" y="211.709" size="1.778" layer="96"/>
@@ -4211,9 +4207,9 @@ ASENSE - AN11
 <instance part="QB1" gate="G$1" x="309.88" y="208.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="302.26" y="205.74" size="1.778" layer="95"/>
 </instance>
-<instance part="J6" gate="G$1" x="205.74" y="172.72" smashed="yes" rot="R180">
-<attribute name="VALUE" x="213.36" y="185.42" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="210.82" y="164.338" size="1.778" layer="95" rot="R180"/>
+<instance part="J6" gate="G$1" x="210.82" y="172.72" smashed="yes" rot="R180">
+<attribute name="VALUE" x="218.44" y="185.42" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="215.9" y="164.338" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C1" gate="G$1" x="63.5" y="248.92" smashed="yes">
 <attribute name="NAME" x="59.436" y="249.555" size="1.778" layer="95"/>
@@ -4238,9 +4234,6 @@ ASENSE - AN11
 </instance>
 <instance part="J7" gate="G$1" x="231.14" y="228.6" rot="MR180"/>
 <instance part="GND21" gate="1" x="236.22" y="226.06"/>
-<instance part="P+14" gate="1" x="436.88" y="185.42" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="439.42" y="180.34" size="1.778" layer="96" rot="MR90"/>
-</instance>
 <instance part="FRAME1" gate="G$1" x="424.18" y="7.62" smashed="yes">
 <attribute name="SHEET" x="510.54" y="8.89" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="439.42" y="26.67" size="2.54" layer="94"/>
@@ -4262,6 +4255,9 @@ ASENSE - AN11
 </instance>
 <instance part="R57" gate="G$1" x="147.32" y="238.76" rot="R90"/>
 <instance part="R58" gate="G$1" x="180.34" y="238.76" rot="R90"/>
+<instance part="P+4" gate="1" x="464.82" y="187.96" smashed="yes">
+<attribute name="VALUE" x="462.28" y="182.88" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4404,14 +4400,6 @@ ASENSE - AN11
 <wire x1="431.8" y1="271.78" x2="431.8" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="195.58" y="170.18" size="1.778" layer="95"/>
-<pinref part="J6" gate="G$1" pin="5"/>
-<wire x1="195.58" y1="170.18" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="J6" gate="G$1" pin="4"/>
-<wire x1="200.66" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="172.72" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="4"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="27.94" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
@@ -4485,6 +4473,14 @@ ASENSE - AN11
 <segment>
 <pinref part="J7" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="177.8" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="5"/>
+<wire x1="200.66" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
+<label x="200.66" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VEXTERNAL" class="0">
@@ -4614,16 +4610,23 @@ ASENSE - AN11
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VREG"/>
-<wire x1="411.48" y1="180.34" x2="436.88" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="P+14" gate="1" pin="+5V"/>
-<wire x1="436.88" y1="180.34" x2="436.88" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="A0"/>
 <pinref part="P+16" gate="1" pin="+5V"/>
 <wire x1="411.48" y1="200.66" x2="419.1" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="200.66" x2="419.1" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VREG"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<wire x1="411.48" y1="180.34" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="464.82" y1="180.34" x2="464.82" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="+"/>
+<wire x1="464.82" y1="175.26" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+<wire x1="464.82" y1="177.8" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="177.8" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
+<junction x="464.82" y="180.34"/>
+<junction x="464.82" y="177.8"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4768,16 +4771,17 @@ ASENSE - AN11
 <pinref part="U4" gate="G$1" pin="A"/>
 <wire x1="182.88" y1="177.8" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="185.42" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="4"/>
+<wire x1="205.74" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="172.72" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
 <junction x="195.58" y="177.8"/>
-<pinref part="J6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="B"/>
-<wire x1="200.66" y1="180.34" x2="185.42" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="180.34" x2="185.42" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="180.34" x2="182.88" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="185.42" x2="185.42" y2="180.34" width="0.1524" layer="91"/>
@@ -5482,13 +5486,6 @@ ASENSE - AN11
 <junction x="269.24" y="271.78"/>
 </segment>
 </net>
-<net name="CHARGECTRL" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="RD2"/>
-<wire x1="106.68" y1="195.58" x2="121.92" y2="195.58" width="0.1524" layer="91"/>
-<label x="109.22" y="195.58" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BATTFUSED" class="0">
 <segment>
 <pinref part="K1" gate="G$1" pin="-"/>
@@ -5666,18 +5663,6 @@ ASENSE - AN11
 <label x="63.5" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VREG" class="0">
-<segment>
-<pinref part="C23" gate="G$1" pin="+"/>
-<wire x1="421.64" y1="177.8" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="464.82" y1="177.8" x2="464.82" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="464.82" y1="182.88" x2="464.82" y2="177.8" width="0.1524" layer="91"/>
-<junction x="464.82" y="177.8"/>
-<label x="414.02" y="180.34" size="1.778" layer="95"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="GPIO5"/>
@@ -5772,8 +5757,11 @@ ASENSE - AN11
 <net name="I/O" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="6"/>
-<wire x1="200.66" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
-<label x="195.58" y="167.64" size="1.778" layer="95"/>
+<wire x1="205.74" y1="167.64" x2="198.12" y2="167.64" width="0.1524" layer="91"/>
+<label x="200.66" y="167.64" size="1.778" layer="95"/>
+<pinref part="J6" gate="G$1" pin="3"/>
+<wire x1="198.12" y1="175.26" x2="198.12" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="175.26" x2="198.12" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="53.34" y="266.7" size="1.778" layer="95"/>
@@ -5783,11 +5771,6 @@ ASENSE - AN11
 <wire x1="73.66" y1="264.16" x2="73.66" y2="266.7" width="0.1524" layer="91"/>
 <junction x="73.66" y="266.7"/>
 <pinref part="K1" gate="G$2" pin="C"/>
-</segment>
-<segment>
-<pinref part="J6" gate="G$1" pin="3"/>
-<wire x1="200.66" y1="175.26" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
-<label x="195.58" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
