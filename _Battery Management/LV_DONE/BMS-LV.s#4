@@ -4351,9 +4351,9 @@ ASENSE - AN11
 <instance part="R12" gate="-2" x="53.34" y="83.82"/>
 <instance part="R12" gate="-3" x="53.34" y="60.96"/>
 <instance part="R12" gate="-4" x="53.34" y="68.58"/>
-<instance part="R13" gate="-1" x="99.06" y="50.8"/>
-<instance part="R13" gate="-2" x="99.06" y="43.18"/>
-<instance part="R13" gate="-3" x="99.06" y="35.56"/>
+<instance part="R13" gate="-1" x="58.42" y="38.1"/>
+<instance part="R13" gate="-2" x="58.42" y="45.72"/>
+<instance part="R13" gate="-3" x="58.42" y="25.4"/>
 <instance part="R13" gate="-4" x="99.06" y="27.94"/>
 </instances>
 <busses>
@@ -5633,10 +5633,11 @@ ASENSE - AN11
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="53.34" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="45.72" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 <label x="35.56" y="43.18" size="1.778" layer="95"/>
+<pinref part="R13" gate="-2" pin="1"/>
+<wire x1="50.8" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TEMP2" class="0">
@@ -5675,19 +5676,19 @@ ASENSE - AN11
 <pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="38.1" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
 <label x="35.56" y="38.1" size="1.778" layer="95"/>
+<pinref part="R13" gate="-1" pin="1"/>
 </segment>
 </net>
 <net name="N$78" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="D"/>
-<wire x1="71.12" y1="25.4" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="25.4" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="45.72" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="60.96" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="68.58" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="83.82" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="91.44" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
-<junction x="71.12" y="45.72"/>
 <pinref part="R12" gate="-1" pin="2"/>
 <wire x1="58.42" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R12" gate="-2" pin="2"/>
@@ -5700,6 +5701,14 @@ ASENSE - AN11
 <wire x1="58.42" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 <junction x="71.12" y="68.58"/>
 <junction x="71.12" y="60.96"/>
+<pinref part="R13" gate="-3" pin="2"/>
+<wire x1="63.5" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R13" gate="-2" pin="2"/>
+<wire x1="63.5" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R13" gate="-1" pin="2"/>
+<wire x1="63.5" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<junction x="71.12" y="45.72"/>
+<junction x="71.12" y="38.1"/>
 </segment>
 </net>
 <net name="TEMP7" class="0">
@@ -5710,8 +5719,9 @@ ASENSE - AN11
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="35.56" y="25.4" size="1.778" layer="95"/>
+<pinref part="R13" gate="-3" pin="1"/>
 </segment>
 </net>
 <net name="VREF2" class="0">
