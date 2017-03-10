@@ -12546,12 +12546,12 @@ design rules under a new name.</description>
 <contactref element="SJ4" pad="1"/>
 <contactref element="U1" pad="40"/>
 <contactref element="U$30" pad="P$3"/>
-<wire x1="64.643" y1="-18.7198" x2="64.643" y2="-21.2598" width="0.1778" layer="1"/>
-<wire x1="64.643" y1="-21.2598" x2="64.643" y2="-23.7998" width="0.1778" layer="1"/>
-<wire x1="64.643" y1="-23.7998" x2="64.643" y2="-26.3398" width="0.1778" layer="1"/>
 <wire x1="64.6176" y1="-26.3144" x2="64.643" y2="-26.3398" width="0.1778" layer="1"/>
 <contactref element="R56" pad="2"/>
 <wire x1="64.643" y1="-26.3398" x2="-74.08" y2="-119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="64.643" y1="-23.7998" x2="64.6176" y2="-26.3144" width="0" layer="19" extent="1-1"/>
+<wire x1="64.643" y1="-21.2598" x2="64.643" y2="-23.7998" width="0" layer="19" extent="1-1"/>
+<wire x1="64.643" y1="-18.7198" x2="64.643" y2="-21.2598" width="0" layer="19" extent="1-1"/>
 <wire x1="65.0312" y1="-14.986" x2="64.643" y2="-18.7198" width="0" layer="19" extent="1-1"/>
 <wire x1="68.8467" y1="2.5129" x2="65.0312" y2="-14.986" width="0" layer="19" extent="1-16"/>
 <wire x1="54.830225" y1="9.14" x2="68.8467" y2="2.5129" width="0" layer="19" extent="1-16"/>
@@ -14267,8 +14267,6 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
 <wire x1="54.830225" y1="6.14" x2="54.830225" y2="5.64" width="0.1778" layer="1"/>
-<wire x1="67.564" y1="-18.669" x2="66.3194" y2="-18.669" width="0.1778" layer="1"/>
-<wire x1="66.3194" y1="-18.669" x2="66.2686" y2="-18.7198" width="0.1778" layer="1"/>
 <polygon width="0.1778" layer="1">
 <vertex x="21.59" y="67.31"/>
 <vertex x="21.59" y="-63.5"/>
