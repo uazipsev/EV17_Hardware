@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -162,7 +162,7 @@
 <wire x1="83.82" y1="91.3892" x2="83.82" y2="-0.0508" width="0.254" layer="20"/>
 <wire x1="83.82" y1="-0.0508" x2="0" y2="-0.0508" width="0.254" layer="20"/>
 <dimension x1="0" y1="0" x2="0" y2="79.66" x3="-13.3096" y3="39.83" textsize="1.27" textratio="20" layer="47" dtype="vertical" unit="inch" visible="yes"/>
-<dimension x1="83.82" y1="0" x2="0" y2="0" x3="41.91" y3="-20.2946" textsize="1.27" textratio="20" layer="47" dtype="vertical" visible="yes"/>
+<dimension x1="88.9" y1="0" x2="0" y2="0" x3="44.45" y3="-20.2946" textsize="1.27" textratio="20" layer="47" dtype="vertical" unit="inch" visible="yes"/>
 <text x="18.8976" y="3.8608" size="1.27" layer="21" font="vector" ratio="20" rot="R90">PRECHARGE</text>
 <text x="27.8892" y="6.1468" size="1.27" layer="21" font="vector" ratio="20" rot="R90">BOTTOM</text>
 <text x="47.7774" y="3.937" size="1.27" layer="21" font="vector" ratio="20" rot="R90">INTERLOCK</text>
@@ -208,7 +208,6 @@
 <wire x1="50.8254" y1="20.5486" x2="50.8254" y2="25.6286" width="1.4224" layer="30"/>
 <text x="80.1798" y="68.8006" size="1.27" layer="21" font="vector" ratio="20">HV</text>
 <text x="67.7926" y="69.7484" size="1.27" layer="21" font="vector" ratio="20">LV</text>
-<dimension x1="83.82" y1="91.3892" x2="83.82" y2="-0.0508" x3="124.7648" y3="45.6692" textsize="1.778" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
